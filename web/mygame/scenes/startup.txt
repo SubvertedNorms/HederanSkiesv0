@@ -1,0 +1,318 @@
+*title Hederan Skies: Fatal Fortunes
+*author Subverted Norms
+*scene_list
+  startup
+  1-thunderstorm
+  2-stowaways
+  3-device
+  4-openseason
+  5-lightpockets
+  6-takingprisoners
+  7-repairs
+  8-locker
+  9-bountyhunters
+  10-geminaiisland
+  11-heartofdarkness
+  12-brokenshackles
+  13-uprising
+  14-captainslegacy
+
+*create settlement "Geminaia"
+*create ship_name "T. S. Pyritos"
+*create name ""
+*create surname ""
+*create father "Jayce"
+*create mother "Jaina"
+*create gender ""
+*create race ""
+*create male false
+*create female false
+*create gender_diverse true
+*create MC_hisher "their"
+*create MC_heshe "they"
+*create MC_himher "them"
+*create MC_hesshes "they're"
+*create MC_himselfherself "theirself"
+*create MC_sirmaam "Cap'n"
+
+*create health 100
+*create cargo 100
+*create evidence 0
+*create relations 50
+*create morale 50
+*create humanity 50
+*create notoriety 50
+*create wealth 1440
+*create debt 0
+*comment debt "" (switch to this? or hide debt amount until its set by ur ship?
+
+*create addiction 0
+
+*create aeronautics 40
+*create barbarism 40
+*create diplomacy 40
+*create guile 40
+*create agility 40 
+*create thievery 40 
+
+*create responsible 50
+*create honest 50
+*create merciful 50
+*create cautious 50
+*create pragmatic 50
+*create altruistic 50
+
+*create ship_health 100
+*create firepower 50
+*create defense 50
+*create speed 50
+
+*create research 0
+*create military 0
+*create authority 0
+*create family 0
+
+*create Kaolin 50
+*create Malikye 50
+*create Flint 80
+*create Ruby 50
+*create Karst 50
+*create Saphiria 50
+*create Sienna 50
+*create Lazulus 50
+
+*create Otsky 0
+
+*create Olivier 2
+*create Norlanders 2
+
+*create Stowaways 2 
+*create augmentedthief_joins false
+*create mariella_joins false
+*create Donna 2
+*create Mingzhan_Warriors 0
+*create Meifeng false
+*create Kaolins_clan 5
+
+*create Narcissa 2
+*comment Narcissa or Malice?
+*create Calumny 2
+*create Alcock 2
+
+*create owemoney 0
+
+*create evil_ending 0
+
+*create time 100
+
+*create cores 0
+
+*create gauntlet 0
+
+*create gondola false
+
+*create cores_keep false
+*create cores_give false
+*create cores_betray false
+*create cores_surrender false
+
+*create Malikye_owesmoney true
+*create Malikye_owesinterest true
+
+*create Karstsrealname false
+*create Karst_evil false
+
+*create murderer false
+
+*create Sienna_injured false
+
+*create admitted_geminai false
+*create checked_self false
+
+*create geminais_captured false
+*create parents_located false
+
+*create keep_Gemma false
+*create reunion_delayed false
+*create Malikye_dead false
+*create reunited false
+*create madeup false
+*comment did shab and Kaolin become friends in ch 13?
+*create Karst_repents false
+*create npc_dead false
+*create genocide false
+*create chosen ""
+*create lover ""
+*create loveriswithyou false
+*create married_Karst false
+
+*create relationship_started false
+*create Flint_lover false
+*create Kaolin_lover false
+*create Malikye_lover false
+*create Ruby_lover false
+*create Saphiria_lover false
+
+*comment Promised Ruby you wont kill again
+*create promisednottokill false
+
+*create Siennaquest 0
+
+*create gio_warned false
+*comment Gio helped you escape prison, warned you would be on opposite sides.
+
+*create Ruby_quits false
+
+*create kiwi_alive true
+*create beryl_alive false
+
+*create death_from_overdose false
+
+*create Karst_tiedup false
+
+*create Ruby_present true
+*create Sienna_present true
+*create Lazulus_present true
+*create parents_present false
+*create Karst_present true
+*create Flint_present 1
+*create Malikye_present 1
+*create Kaolin_present 1
+*create Saphiria_present 1
+*comment NPC_present   1 =  they are present  2 = they left or died  3 = they're present, you are helping carry them home 5 = waiting for you to come back
+
+*create master_thief 0
+*create hero_complex 8
+
+*achievement delivered_cargo visible 10 Natural Talent
+  Deliver your first shipment without losing a single crate.
+  First shipment delivered successfully! Was it beginner's luck?
+
+*achievement underdog visible 10 Underdog
+  Get the worst score possible on your first mission.
+  Mopped the deck! With your face… Git gud, scrub. Worst start ever. 
+
+*achievement reached_mingzhu visible 50 Safe Haven
+  Find safety beyond the Mingzhu border.
+  You got the geminai to Mingzhu safely!
+
+*achievement caught_thief hidden 10 Five Finger Discount - Abolished
+  hidden
+  Good work, detective. You discovered who the thief was!
+
+*achievement dancing_poundcake visible 10 Dancing Poundcake
+  Find the way to Kaolin's heart.
+  Got a little too excited at a prizefighting competition.
+
+*achievement selfless_benefactor visible 10 Selfless Benefactor
+  Find the way to Malikye's heart.
+  Helped Malikye pay his sister's tuition without asking for repayment.
+
+*achievement talented_smuggler visible 10 Talented Smuggler
+  Deliver cargo safely to the Deepwood Trading Post.
+  Delivery complete! Cargo arrived safely at the Deepwood Trading Post.
+
+*achievement old_friendships visible 10 Unrequited Friendship
+  Find the way to Ruby's heart.
+  Ruby finally overcame her lost friendship thanks to you.
+
+*achievement animal_lovers visible 10 The Budgie Whisperer
+  Find the way to Flint's heart.
+  Flint's budgie, Kiwi, lives to see another day!
+
+*achievement rescued_parents visible 50 Family Reunion
+  Find out what happened to your parents. 
+  You found your parents! Now to demand all the birthday presents you missed out on.
+
+*achievement rescued_sienna hidden 50 Sienna's Hero
+  hidden
+  Sienna escaped Scarwater Hospital and rejoined the crew.
+
+*achievement gio_kills hidden 10 Premature End
+  hidden
+  Congratulations! You unlocked the earliest death possible. Malikye gave no quarter.
+
+*achievement betrayed hidden 10 Total Slaughter
+  hidden
+  Karst convinced the geminai army to exterminate the human race.
+
+*achievement overdosed hidden 10 Adrenaline Junkie
+  hidden
+  Took too much adrenaline and overdosed.
+
+*achievement sky_tyrant visible 50 Tyrant of the Skies
+  Join the dark side. Become a tyrant. Unlock the evil ending.
+  Destroyed the human race. That's one for the resume.
+
+*achievement siblings_reunited visible 50 Siblings Reunited
+  Find a way to reunite Malikye with his sister permanently.
+  Reunited Malikye with his sister Gemma.
+
+*achievement bloodhound visible 50 Bloodhound
+  Destroy all black market trade.
+  Destroyed all black market trade.
+
+*achievement karst_kills hidden 10 Terminated
+  hidden
+  Karst deemed your services redundant and terminated you. But at least you got your revenge.
+
+*achievement ruby_kills hidden 10 No Rest for the Wicked
+  hidden
+  Ruby killed you. Looks like you won't be adding 'successful career villain' to your resume.
+
+*achievement captain_popularity visible 10 Captain Popularity
+  Convince two groups to side with the geminai in the war. 
+  Kaolin's clan and the Triestans side with the geminais.
+
+*achievement uncertain_future hidden 10 Uncertain Future
+  hidden
+  Tensions between humans and geminai remain unresolved.
+
+*achievement mayor_ending visible 50 Acting Mayor
+  Become mayor of the geminai settlement.
+  Gave up live in the skies for a life behind the desk.
+
+*achievement wrestling_ending visible 25 Belle of the Brawl
+  Help Kaolin become a professional prizefighter.
+  Kaolin's prizefighting dreams come true.
+
+*achievement kaolins_assistant visible 25 Part of the Family
+  Convince Kaolin to return to Mingzhu and help her family..
+  Kaolin's family accepts you! But you feel like an overqualified assistant. 
+
+*achievement fairy_godmother visible 50 Fairy Godmother
+  Purchase expensive real-estate for someone special.
+  Wish granted! Malikye moves back into his mansion and lives happily ever after. 
+
+*achievement goody_twoshoes visible 50 Home Sweet Home
+  Help Ruby open an orphanage.
+  Ruby's orphanage is a success, partly thanks to you!
+
+*achievement golden_era visible 100 Golden Era of geminaikind
+  Discover how to harness core energy without harming geminai.
+  Research complete! Discovered how to harness core energy without harming geminai.
+
+*achievement master_thief visible 100 Live Laugh Loot
+  Steal everything that's not nailed down! 
+  Everything that's not nailed down now belongs to you!
+
+*achievement hero_complex visible 100 Hero Complex
+  Be the hero. Save everyone. 
+  All hands on deck! You successfully saved everyone. 
+
+*comment NPC_present   1 = true, they are present  2 = fale, they have left or died  3 = they're present and you are helping carry them home 4 = selected ending with them
+
+When Hedera's two races, human and geminai, are divided by the newly legalized geminai hunts, geminai are forced to flee, increasing business opportunities for high-risk smugglers like yourself. On the other hand, hunting geminai for their highly lucrative cores could save you and your crew from financial destitution, but only if you are willing to compromise your morals and betray the geminai in your own crew first. 
+
+Will you become a beloved captain or a tyrant of the skies? Will you save the geminai from extinction or betray them for profit? Can you stop a medical corporation from exploiting geminai lives for profit? And can you end a war by making the king listen to reason? 
+
+*page_break The story begins...
+
+[i]You can have anything in life if you will sacrifice everything else for it - J.M. Barrie.[/i]
+*finish Chapter One: Navigating the Storm
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+HEDERAN SKIES - how to launch the game on your browser:
+
+1. Open the Hederan Skies folder.
+2. Click: Web - My Game - right click Index - open with Firefox
+3. Browse (Hederan Skies - web - mygame - scenes)
+4. Upload "scenes"

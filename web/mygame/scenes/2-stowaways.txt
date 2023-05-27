@@ -1,0 +1,2358 @@
+
+[b]Chapter Two: Stowaways[/b] 
+*temp met_liam false
+*temp chose_altesa false
+*temp chose_helmsport false
+*temp stow_wait false
+*temp visited_client false
+
+Ancient oak floorboards creak beneath your feet as you lean back in your chair, wondering how to tackle the piles of paperwork on your desk. The candle stub next to your elbow flickers, its wick barely visible in a puddle of melted wax. You desperately scrape the wax together to salvage the remains of your candle. You know it's the last candle left.
+
+From the musky smell of the rotting floorboards you estimate the airship undertook its maiden voyage nearly two centuries ago, yet despite the airship's questionable condition, your former captain, Pyritos, never managed to pay off the debts and surmounting interest owed upon it. Instead, he secretly gambled away every tethla the crew ever made. 
+
+Truth be told, you had ambitions of your own. Although you began life as an unwanted orphan, and struggled to grow up in one of the roughest orphanages to disgrace the realm, you were determined to fashion yourself into something better. When Captain Pyritos first brought you aboard you knew that his airship and tricorn hat had to be yours. And, just as planned, you became the next captain.
+*choice
+  #I was popular with the crew thanks to my natural charm and leadership qualities. Captain Pyritos recruited me to settle disputes but he also valued my ability to understand people's motivations and fears. 
+    *set diplomacy %+20
+    *set responsible %+10
+    Some deckhands jokingly called you the peacemaker who could "defuse a powder keg with words." You didn't just walk a mile in someone's shoes, you could practically slip into their skin and see through their eyes. You saw every problem from at least three different angles. 
+
+    When the crew discovered that Pyritos had gambled away every coin in the treasury, you attempted to negotiate a settlement with him. It almost worked too... until Pyritos panicked and jumped ship. With Pyritos gone, the crew unanimously voted in favor of making you the next captain. If anyone could convince Captain Pyritos's countless disgruntled clients to give the crew a second chance it was you. But could you really pull this crew back from the brink of financial destitution? 
+    *goto identity
+
+  #Captain Pyritos despised me ever since I beat him in a game of cards, so I worked from the shadows against him, putting thoughts into people's heads and spreading discord whenever opportunity arose. 
+    *set guile %+10
+    *set thievery %+10
+    *set honest %-10
+    Captain Pyritos should have marooned you when he had the chance, but he made the mistake of demoting you to a common deck swab instead. 
+
+    While Pyritos was waiting for you to come to his cabin and beg to have your old position back, you used his ego and your new position against him, spreading discord amongst your fellow deckhands while swabbing the decks. When collection agencies began harassing Pyritos for "payment," you knew something was amiss and broke into the crew treasury to discover that Pyritos had emptied the room of every last coin. You informed the deckhands and they left Pyritos to rot on an island in the Blackreef channel, thinking that it had been their idea all along. 
+
+    When it came down to choosing the next captain, you flattered your comrades and convinced them that your clever plots and ability to escape nasty situations would make you ideal for the position. But could you really pull this crew back from the brink of financial destitution?
+    *goto identity 
+
+  #Despite not being very sociable, I was a natural in the skies. The ship obeyed my every command. Even Pyritos acknowledged that I had a knack for flying.
+    *set aeronautics %+20
+    *set responsible %-10
+    You never felt quite right with your feet planted on the earth. The only time you felt truly at home was when you were clutching the helm controls in your sweaty hands with the airship at full tilt.
+
+    At some point the crew discovered that Pyritos had gambled away every coin in the treasury. This seemed to bother the deckhands quite a lot, so they deposited Pyritos on some forlorn rock in the middle of the Blackreef Channel. You almost felt sorry for him. Except that you didn't [i]really[/i] care because you still had control of the helm.
+
+    When the crew realized that you were the only one who really knew how to fly the ship, they made you honorary captain, which was all well and good since the ship officially became yours to command. 
+    *goto identity 
+
+  #One morning Captain Pyritos thought it was clever to steal a slice of bacon from my plate so I lifted him off his feet, carried him to the rail, and hurled him overboard without a second thought.  
+    *set barbarism %+20 
+    *set cautious %-10
+    The crew was shocked. Before they could reach for their blades, you reminded them how Pyritos would nearly soil his britches whenever a lucrative opportunity appeared. “The risk is too great,” the cowardly captain would mutter before dismissing the opportunity with a wave of his hand. 
+
+    But the risk is exactly what you signed up for! The higher the risk, the greater the reward! That's how it worked. So you promised the crew you could do better - that you could make them rich if they dared follow you. By far the toughest of the deckhands, you used muscle to get your way. If anyone had an issue with you, they could taste the sharp side of your blade. As you saw it, life aboard an airship came down to the survival of the fittest.
+
+    Unfortunately, Captain Pyritos had already gambled away the crew treasury by the time you usurped his position. With enough force, you could cripple your competitors and bully potential clients into hiring you. But could you really pull this crew back from the brink of financial destitution?
+    *goto identity
+
+*label identity
+*page_break
+You press your fingers to your temples while considering the foreboding documents piled up on the mahogany desk before you: neglected charters, unanswered shipment requests, empty order forms, denied entrance papers, countless fines, and even a few death threats bearing the seals of money lenders and collection agencies. The only thing in your favor is that Pyritos's frequent failures have left the crew completely unknown to authorities so there is no fear of patrol officers meddling in your business.
+
+Suddenly the cabin door swings open, interupting your thoughts. You glance up, expecting the worst, and come face to face with Flint Moore, the lookout; tall and muscular, with a pale complexion and a bright yellow budgie perched on his shoulder, twittering happily without a care in the world.
+
+"Most people knock before entering," you say.
+
+"Most people didn't grow up with you," Flint shrugs. "Besides, I wanted to make sure everything was okay. What are you planning to do about the geminai cores?" 
+
+"I've already made up my mind about that," you reply uneasily. You feel the wind sneaking through cracks in the walls, tickling the back of your neck and spreading goosebumps along your arms. 
+
+"Sounds like you've got everything under control then," Flint says, sounding somewhat unconvinced. "Another ten minutes and we should be able to see Ithora directly below us." Flint shifts his weight over to one hip and scratches the budgie's neck gently with one finger. "...You sure you're okay?"
+*choice
+  #"I'm fine, but thanks for your concern. It's good to know someone's on my side."
+    "Always," Flint says, smirking mischeviously. "Just try to relax a little. No matter how frustrating things get, it's impossible to look bad when your predecessor was Pyritos." 
+    *goto lll
+
+  #"Not entirely sure. Didn't think smuggling would involve so many moral crossroads."
+    "You always had a habit of picking the worst jobs," Flint laughs.
+    *goto lll
+ 
+  #"Honestly, I have no idea what I'm doing. But I can't appear indecisive or the crew will fall apart."
+    "Don't worry so much about them. It's impossible to look bad when your predecessor was Pyritos," Flint grins. 
+    *goto lll
+
+*label lll
+
+Your lips twitch into a half smile. Although you're concerned about the geminai cores and getting past the checkpoint safely, talking to Flint always puts you at ease. 
+
+You know Flint better than you know any other soul aboard your ship. The two of you grew up together, shared the same revolting porridge every morning at the orphanage, and weathered the same harsh blows from the matron when you failed to complete your chores. You were an inseparable pair.
+*choice
+  #We even shared the same dormitory. 
+    *set male true
+    *set MC_hisher "his"
+    *set MC_heshe "he"
+    *set MC_himher "him"
+    *set MC_hesshes "he's"
+    *set MC_sirmaam "sir"
+    *set MC_himselfherself "himself"
+    *set gender "male"
+    *set Saphiria %+10
+    *set Karst %-10
+    *goto em
+
+  #Except that I stayed in the girls' dormitory at night. 
+    *set female true
+    *set MC_hisher "her"
+    *set MC_heshe "she"
+    *set MC_himher "her"
+    *set MC_hesshes "she's"
+    *set MC_sirmaam "maam"
+    *set MC_himselfherself "herself"
+    *set gender "female"
+    *set Saphiria %-10
+    *set Karst %+10
+    *goto em
+
+*label em
+"Just remember that I'm always ready and willing to jump ship in the middle of the night at your command. All this hard work, remaining vigilant all day, has taken years off my lifespan," Flint says. "I could use some relaxing employment for once, that's for sure." 
+
+"Yeah right. You never want to do [i]anything[/i]," you say, folding your arms and quirking a brow. 
+
+"Finally someone who understands me," Flint spreads his arms open in a sweeping motion that seems to say 'guilty as charged' when the door swings open a second time. You and Flint immediately clamp your mouths shut and wipe the smirks off your faces. Your navigator, Malikye Cavely, just walked in.
+
+"How typical. The two idiots at it again, wasting time like it's cocktail hour." The eccentric man from Trieste habitually mutters scathing comments under his breath, as if you can't hear him. You can't tell if Malikye is doing it on purpose or if it's related to the fact that his breath reeks of alcohol. 
+*choice
+  #"Call me an idiot again and I'll knock the teeth out of your head."
+    *set cautious %-10
+    *set Malikye %-6
+    *set Flint %+6
+    *goto halt
+    
+  #"We're making plans, actually. You're more than welcome to join in."
+    *set responsible %+10
+    *set Malikye %+6
+    *set Flint %-6
+    *goto halt
+
+  #"Ah Malikye, lovely to have you around to brighten the mood."
+    *comment "Not sure why we keep wasting tethlas on fuel when we could power the engines on your breath."  
+    *set responsible %-10
+    Flint chuckles.
+
+    *goto halt
+
+*label halt	
+Malikye's dark brown eyes lock on yours. For a moment he looks disoriented, almost as if he's noticing you for the first time. "Hmm. Did I say something out loud?"
+
+If it wasn't for his tiresome attitude or the fact that his uniform smells like it's been floating in sewage for a week, he could attract endless admirers. Instead, his lustrous locks cling to his forehead in sweaty clumps, he reeks of alcohol and body odor, and the buttons on his uniform protrude from mismatching holes. 
+*comment never match the holes?
+
+It's almost as if he's trying to push people away. You would have dismissed him ages ago if he wasn't so good at finding contracts and charting courses. 
+
+"You've been drinking again," Flint says, narrowing his eyes. You follow his gaze, noticing a half empty bottle in Malikye's pocket.
+*choice
+  #"You should go easy on that stuff. It's not good for you."
+    *set malikye %+5
+    *goto whatdoes
+  #"You're not permitted to drink on shift. You know the rules."
+    *set flint %+5
+    *goto whatdoes
+  #"Flint, confiscate the bottle. This needs to stop."
+    *set flint %+10
+    *set malikye %-5
+    Flint swipes the bottle from Malikye's pocket. Malikye makes a desperate, albiet futile, attempt to recover it before rounding on you. "Return my property at once!" 
+
+    "We're trying to help." You stubbornly push the bottle deep into your pocket. "Wasn't there something you wanted to discuss with me?"
+
+    "Er... yes. There certainly was." Malikye rubs his eyes and pushes some of the tangled chestnut mane away from his face. "Why aren't we headed toward some sort of black market? I hear The Mountain is fairly accessible these days. Imagine what a cut we'd get selling those cores ourselves."    *goto flintsmiles
+
+*label whatdoes
+"What does it matter?" Malikye rubs his eyes and pushes some of the tangled chestnut mane away from his face. "We have important things to discuss. Like why aren't we headed toward some sort of black market? I hear The Mountain is fairly accessible these days. Imagine what a cut we'd get selling those cores ourselves."
+*label flintsmiles
+
+*if cores_keep = true
+  *set Malikye %+15
+  "As it turns out, that's exactly what I intend to do," you say. 
+
+  "Truly?" Malikye ruffles his hair, appearing momentarily relieved. 
+
+  "Yes, but we'll sell them in Ithora. We're nearly there and I know someone who will take them."
+
+  "In that case, the inspection is still problematic should they decide to check the cargo." Malikye paces back and forth restlessly, premature wrinkles stretching across his forehead like ledger lines. 
+
+  "There's no way around it," you say. 
+
+  "Very well," Malikye sighs. "I'll gather the cores and do away with those damned cabbages. They're just taking up space... along with everything else around here." 
+  
+  "Hey! Everyone else might be taking up space, but we plan to eat those cabbages!" says Flint.
+  
+  Malikye snorts before exiting the room.
+
+  "Helpful, isn't he?" Flint grins a little.
+  *choice
+    #"Sure. When our finances are on the line."
+      *set honest %+10
+      "You noticed that too?" Flint asks.
+      *label about_Malikye
+
+      "Indeed. Perhaps I need to figure out what his motivations are," you say. "But he doesn't open up to anyone. Heck, he doesn't even show his face at dinner."
+
+      "If anyone can find out, it's you," says Flint. 
+      *goto ithora
+
+    #"He has his uses, just like everyone aboard this ship."
+      *set pragmatic %+10
+      "Leave it to you to find them," says Flint.
+      *goto about_Malikye
+      
+    #"Some people are good for nothing but looking at."
+      *set responsible %-10
+      Flint rubs the back of his neck. "Really let himself go though. Drinks more than the entire crew combined."
+      *goto about_Malikye
+
+*if cores_surrender = true 
+  *set Malikye %-10
+  "I decided to hand them over to the authorities in Ithora," you tell Malikye.
+
+  "You decided to hand them over to authorities," Malikye echoes hollowly. He begins pacing the room and running his fingers through his hair. "Of course you did. How else could we anger our most influential client and ensure we spend the rest of our days on the run? Who but you could find an option less profitable than fencing the goods ourselves or simply handing them over to our client as promised?" 
+  
+  Before you can respond, Malikye slams his hands down on the table. "Did you ever consider for one second that you're going to get us all killed?"
+  *choice
+    #"It's the right thing to do."
+      "Since when do we care about morals?" Malikye demands. "We're smugglers!"
+
+      *if altruistic > 50
+        "I told the client I didn't want anything to do with human trafficking [i]before[/i] accepting the job. She went behind [i]our[/i] backs," you say angrily.
+
+        Malikye purses his lips. "She shouldn't have done that," he says finally. "But mark my words, this won't end well for us."
+        *goto deadset
+
+      *else
+        *set Malikye %-20
+        "There's a certain amount of risk I'm willing to take. This goes far beyond it," you say.
+
+        "And here I thought it couldn't possibly get worse after Pyritos. What a fool I was." Malikye scowls, turning his cloudy countenance on Flint's budgie instead. "And there the bird goes, shitting all over the floor again. Revolting."
+
+        Flint smiles and ruffles Kiwi's feathers affectionately as Malikye marches out of the room, slamming the door shut behind him. 
+        *goto puppy
+
+    #[Lie] "It's fine. I have a contact in the Ithoran army."
+      *if guile > 58
+        "Then I hope, for your sake, they don't rat us out," Malikye growls, turning his cloudy countenance on Flint's budgie instead. "And there the bird goes, shitting all over the floor again. Revolting."
+
+        Flint smiles and ruffles Kiwi's feathers affectionately as Malikye marches out of the room, slamming the door shut behind him. 
+        *goto puppy
+
+      *else
+        *set Malikye %-20
+        Malikye laughs dryly. "You must think I'm an idiot. You're from an orphanage. You don't know anybody. You've never even been to Ithora."
+
+        You bite your lip, trying to conceal your guilt. "What would you know?"
+
+        "I know enough. But go ahead. Dig your own grave." Malikye scowls, turning his cloudy countenance on Flint's budgie instead. "And there the bird goes, shitting all over the floor again. Revolting."
+
+        Flint smiles and ruffles Kiwi's feathers affectionately as Malikye marches out of the room, slamming the door shut behind him. 
+        *goto puppy
+
+    #"That's enough. Get out of my cabin before I demote you." 
+      *set cautious %-10
+      *set Malikye %-10
+      "Dead set on destroying what's left of this crew. As usual. Fine. Okay, I will do just that." 
+      *goto deadset
+
+*else
+  "You suggest robbing our client?" you ask Malikye.
+
+  "Absolutely. Especially since she wasn't clever enough to put tracking devices on any of the crates. I checked," Malikye says, leaning casually against the wall. "Now, with your permission, I can chart a course that will take us on the fastest route to The Mountain. Anyone can sell illegal goods there. Even a ragtag bunch of bunglers like us."
+
+  "Forget it. We're going to play it safe and deliver the goods to our client as promised," you say.
+  *if cores_betray = true
+    You carefully leave out the fact that you intend to tip the authorities off afterward.
+
+  "Why do that when what I'm suggesting is more profitable?" Malikye asks angrily. 
+  *choice
+    #"It's too risky. Our client would make life very difficult for us if we betrayed her."
+      *set cautious %+10
+      Malikye gives a frustrated sigh and runs a hand through his hair.
+
+      "She wouldn't rest until she got her revenge. You know I'm right. People in her line of work don't last long if they let their underlings get away with treachery," you say.
+      *label fine
+
+      "Fine. Perhaps you plan has the tiniest smidgen of logic behind it after all," Malikye admits begrudgingly, turning his cloudy countenance on Flint's budgie instead. "And there the bird goes, shitting all over the floor again. Revolting."
+
+      Flint smiles and ruffles Kiwi's feathers affectionately as Malikye marches out of the room, slamming the door shut behind him. 
+      *goto puppy
+
+    #"Your idea is short-sighted. If we want better jobs, we need to improve our reputation."
+      *set pragmatic %+10
+      Malikye gives a frustrated sigh and runs a hand through his hair.
+
+      "It'll work out better in the long run. Trust me," you say.
+      *goto fine
+
+    #"I don't need to explain my decisons to you."
+      *set cautious %-10
+      *set Flint %+6
+      *set Malikye %-6
+      "Dead set on destroying what's left of this crew as usual, I see," Malikye seethes.
+
+      "If you're so concerned about our finances then I suggest you start looking into other opportunities we might pursue once we reach Ithora," you say.
+
+      "Fine. Okay, I will do just that." Malikye growls, turning his cloudy countenance on Flint's budgie instead. "And there the bird goes, shitting all over the floor again. Revolting."
+
+      Flint smiles and ruffles Kiwi's feathers affectionately as Malikye marches out of the room, slamming the door shut behind him. 
+      *goto puppy
+
+*label deadset
+Malikye marches out of the room, slamming the door shut behind him.
+*label puppy 
+
+"We should get him a puppy," says Flint.
+*goto ithora
+
+
+*label ithora
+*page_break Fifteen Minutes Later...
+Once your airship finally escapes the storm, you see Ithora, the greatest city in Valterra, sprawling hundreds of feet below, just as Flint said. It's rather a shock to discover that Ithora bears no resemblance to a city at all. It's more like an expansive palace, housing millions of citizens in its countless extravagant turrets and teardrop domes. Colorful flags displaying family crests flutter from flagpoles on each building. 
+
+Automated carriages traverse the narrow passages of the under-city while pedestrians use drawbridges to travel from one elegant tower to the next. Commoners wear the uniforms of their trade while well-to-do aristocrats wear luxurious silk garments decorated with layers of ruffles and lace. Fancy wide brimmed hats dressed with flowers and fruit perch atop their elaborate hairstyles. Balloonmania has taken hold here and a number of the aristocrats even wear comical outfits that puff out like balloons.
+
+Rich fabrics, golden tassels, and banners of King Auberon's face decorate the recreational balloons drifting over the city ramparts. You wonder if it's an accurate depiction or if the artist was pressured into accentuating his regal qualities. Tourists peer from dainty lacquer carriage windows while air taxis shuttle aristocrats and commuters swiftly through narrow tunnels and beneath skybridges. 
+*comment EDITED: You wonder if he really looks that regal or if the artist was pressured into making him look that way.
+*fake_choice
+  #With a bit of networking, I could forge some influential partnerships here.
+    *set diplomacy %+7
+    You want to ensure your smuggling network is as vast and secure as possible. Perhaps someone in this great city could help you achieve your goals.
+
+  #There's so many different airships here, I might get inspiration on how to upgrade ours.
+    *set aeronautics %+7
+
+  #With scads of gullible people and pockets to pick, I'll reap more profit from this trip than anticipated!
+    *set thievery %+7
+    You'd never pass up a profitable opportunity, and the citizens of Ithora are some of the wealthiest in Tethyr. You plan to take advantage of that...
+
+Of course, with only a rudder for steering, you wouldn't dare fly your airship through the narrow tunnels below. Maybe someday you could afford a better ship. Something faster, with more firepower, maneuverability, and cargo space. For now, you'll just have to make do with your old junker and the slow-traffic airspace it's permitted to fly in. 
+
+Instead of joining the orderly line of superior steam-powered ships that hover mid-air with their high-tech propellers and powerful engine boosters, you enter a waiting loop, following other derelict airships in a circular pattern while waiting to be summoned by the hovering inspection shuttle nearby. 
+
+Although your ship isn't the finest specimen around, you're still proud of it. 
+*choice
+  #A small merchant ship built for cutting through the wind. What it lacks in battle, it makes up for in speed. (Debt: Ŧ15,000)
+    *set speed %+40
+    *set defense %-30
+    *set firepower %-30
+    *set debt 15000
+    Indeed, it's a modest ship, but probably the swiftest Pyritos could afford. Best of all, the debt owed on it is manageable.
+    *goto christening
+
+  #A maneuverable sailing vessel equipped with decent cannons, although the light-weight hull makes it a fragile target. (Debt: Ŧ28,000)
+    *set speed %+30
+    *set defense %-20
+    *set firepower %+20
+    *set debt 28000
+    It's an ideal choice for the penurious smuggler, and probably the best Pyritos could afford. The debt owed on it is reasonable enough, yet still a cause for concern as the Bank of Lyon could recind the loan under certain circumstances.
+    *goto christening
+
+  #A large trading vessel, sturdily built and able to withstand attacks and catch the wind, but lacking in gunpower. (Debt: Ŧ35,000)
+    *set speed %+35
+    *set defense %+35
+    *set firepower %-20
+    *set debt 35000
+    Indeed, it's probably the safest vessel Pyritos could afford, though it doesn't provide much in terms of firepower. The debt owed on it is a bit intimidating. You'd rather pay it off quickly, as the Bank of Lyon could recind the loan under certain circumstances.
+    *goto christening
+
+  #A massive, heavily-armored and heavily-gunned warship. Slow and lumbersome, but a terror of the skies during combat. (Debt: Ŧ42,000)
+    *set speed %-20
+    *set defense %+40
+    *set firepower %+50
+    *set debt 42000
+    Despite the ship's haggard look, most battle-hardened aeronauts wouldn't dare face the deadly row of cannons that jut threateningly from its gun ports. But the debt owed on it is crippling, and, though it's unheard of in modern times, the Bank of Lyon could rescind your loan under certain circumstances.
+    *goto christening
+
+*label christening
+
+You called your ship...
+*comment Sapphire Rose, flying fog, the ebony hawk, Dauntless, The Flying Whale, Rapid, Skyskipper, Radient, Sky Mantis, Sunclipse, Dragonfly, Sephyr, Boaty McBoatface
+*choice
+  #Dawnbreaker
+    *set ship_name "Dawnbreaker"
+    *goto sky_gazing
+
+  #Starchaser
+    *set ship_name "Starchaser"
+    *goto sky_gazing
+
+  #Nighthawk
+    *set ship_name "Nighthawk"
+    *goto sky_gazing
+
+  #Dauntless
+    *set ship_name "Dauntless"
+    *goto sky_gazing
+
+  #The Maelstrom
+    *set ship_name "The Maelstrom"
+    *goto sky_gazing
+
+  #The Stormherald
+    *set ship_name "The Stormherald"
+    *goto sky_gazing
+
+  #Actually, I have a better name...
+    *input_text ship_name 
+    *choice
+      #I always thought [i]$!{ship_name}[/i] had a nice ring to it.
+        *goto sky_gazing
+
+      #Actually, I want to rename my ship.
+        *goto christening
+
+*label sky_gazing
+You gaze at the gray sky, thoughts numbed by the incessant sound of steadily grinding motors around you, when one of the high-tech cruisers — rocketing toward a manicured fairway with little gold carriages trundling about the rooftop's emerald hills  — suddenly aims directly at your airship. 
+
+Several floorboards tremble underfoot as the cruiser, armored in impervious calicite metal, scrapes a layer of wood off your starboard hull. As you rush to inspect the damage, you see the pilot, a haughty teenage boy, pull an impossibly sharp U-turn, only possible due to the advanced Lyonese technology of his ship.
+
+Within seconds he pulls alongside your ship, leaning his wirey frame over the fiberglass rail while whistling low. "You'd think such an eyesore would be illegal in a civilized place like Ithora... Why, even the old relic airships at the museum aren't [i]that[/i] dated." The sneering boy folds his arms over a vibrant coat adorned with ruffles and gems. Every inch of fabric seems perfectly cut and tailored to his form.
+
+"Perhaps these junkers are commonplace in the primitive regions of Tethyr," his dark-haired female companion replies, flaunting her fashionable silk-spun, hand-tailored pilot clothes. "Imagine a levitating dustbin like that falling to pieces over mother's Astelmeran sky palace." 
+
+"You here to gripe, or do you actually want something?" you ask.
+
+"As you can see, my ship is ruined thanks to you," the boy replies. "How do you intend to compensate me for the damage you've caused?"
+
+As your eyes travel down to the tiniest scrape blemishing the pristine white hull, you notice the emblem of the Volodeus medical corporation emblazoned on the side of the ship. You suddenly recognize the boy's arrogant face. He's the CEO's son. The newspapers were always cluttered with pointless stories about his destructive gadding. 
+*comment As your eyes travel down to the tiniest scrape blemishing the pristine white hull, you notice the emblem of Volodeus medical corporation emblazoned on the side of the ship. You look back up and instantly recognize the boy's arrogant face. 
+
+He clicks his fingers and a pair of Ithoran knights move to his side. As servants of King Auberon, the knights hold positions above the regular guard and rarely involve themselves with common riffraff like you. Yet here they are, protecting this pampered boy. 
+
+"You owe me six hundred tethlas for the repairs," the boy says. Your snort of disbelief only makes him more aggressive. "If you country folk weren't so undisciplined and knew to stay in the proper zones it wouldn't have come to this in the first place."
+
+You wonder if the zones actually exist or if he's just making it up...
+*choice
+  #I'll pay. I don't want any trouble. 
+    *set wealth -600
+    *label watch_where
+
+    It's humiliating, but what can you do about it? Some people are just born into wealth and power. You toss the boy the credit packs. 
+
+    "Watch where you're going next time," he says, before flying off.
+
+    Teeth grinding together, you clench your hands at your side. 
+
+    "If only we had a decent set of cannons, I'd blast their smug faces out of the sky," Flint growls from the crow's nest. You didn't realize he was watching, but of course he was. 
+
+    "We have to keep a low profile. It was just bad timing," you sigh.   
+    *goto slowlane
+
+  #I'll try convincing him to accept three hundred tethlas instead.
+    *if diplomacy > 45
+      *set wealth -300
+      "We don't want trouble. Would you be satisfied with three hundred tethlas? It's all I can spare right now," you say politely.
+
+      The girl leaps to the boy's defense. "It's only a pittance he's asking. You're lucky he didn't insist on more! If you weren't such a layabout your crew would easily be able to pay the fine. This just goes to show, you shouldn't have permission to fly without an air license from the Royal Academy." 
+
+      "The skies would certainly be safer if everyone had," you agree. "Sadly, our institutions are not nearly so grand on the outskirts."
+
+      The boy sighs impatiently. "Just pay the three hundred tethlas then. I'm not interested in dithering any longer."
+
+      "Appreciate you being reasonable," you say, tossing him the credit packs before he flies off.
+
+      "If only we had a decent set of cannons, I'd blast their smug faces out of the sky," Flint growls from the crow's nest. You didn't realize he was watching, but of course he was. 
+
+      "We have to keep a low profile. It was just bad timing," you sigh.   
+      *goto slowlane
+
+    *else
+      *set wealth -700
+      "Look, we don't want any trouble. I'll give you three hundred tethlas. It's all I can spare right now," you say.
+
+      The girl leaps to the boy's defense. "It's only a pittance he's asking. You're lucky he didn't insist on more! If you weren't such a layabout your crew would easily be able to pay the fine. This just goes to show, you shouldn't have permission to fly without an air license from the Royal Academy." 
+
+      You flush angrily. "You were the one who crashed into me! You should be paying up!"
+
+      "Whose word do you think they'll take when I drag you to the guard station? Yours? Or an Ithoran knight's?" the boy retorts, gesturing at his knight friends, who chuckle conspiratorially. Sighing, you reach into your coat pocket. "Make that seven hundred tethlas for wasting our time," the boy says.
+      *goto watch_where
+
+  #I'll question the suspicious presence of the Ithoran knights. Maybe they'll back off.
+    You lean against the rail of your ship, assuming an air of interest. "Curious to see Ithoran knights so involved in Volodeus business."
+
+    The knights swallow nervously and exchange glances, but the teenage boy seems unfazed. "As a matter of fact, I'm training to be a knight myself."
+
+    *if guile > 55
+      "So you've taken it on yourself to illegally police the skies out of uniform? Aboard a ship that's not registered with the Ithoran army?" Immediately you notice all four faces turn a shade paler. Smiling, you press on relentlessly. "Do your parents know you're using your positions to blackmail innocent visitors to the city? I wonder what they'd say if I told them. No, perhaps I'll just go straight to the press. They'd have a field day."
+
+      The teenage boy loosens his collar while sweat stains pool beneath his arms. "Look, let's just pretend this whole thing never happened. I go my way, you go yours."
+
+      "Sounds like your lucky day," you say, gesturing for him to leave. The teenage boy takes one last look at you before he speeds away.  
+      *goto slowlane
+
+    *else
+      *set wealth -700
+      "So what? You're obviously not one yet," you point out. 
+
+      "But they are," the boy retorts, gesturing at his knight friends, who chuckle conspiringly. "Whose word do you think they'll take when I drag you to the guard station? Yours? Or an Ithoran knight's?" 
+
+      Sighing, you reach into your coat pocket. 
+
+      "Make that seven hundred tethlas for wasting our time," the boy says.
+      *goto watch_where
+
+  #I'm not letting this city-slicker boss me around. [i]He[/i] owes [i]me[/i] for damages. 
+    *set notoriety %+10
+    *if barbarism > 55
+      *set wealth +600
+      You crack your knuckles and lean forward. "It'll take me two seconds to tear through them before I get to you. Do you have any idea what sort of people we run with?" 
+
+      "I-I'll have them arrest you," the boy retorts. 
+
+      "I'll blast your smug faces out of the sky before they can," you retort, angling one of the cannons at the cruiser. The knights shuffle back as the boy swallows nervously. "I'll accept the six hundred tethlas for damages," you say. 
+
+      "Y-You won't get away with this!" The boy's face turns red with humiliation as he tosses over the credit packs. "My father will hear of this. Your face will be all over the papers by morning!"
+
+      "Oooh... I'm shivering in my boots," you sneer. The teenage boy takes one last look at you before he speeds away.
+
+      "That little snivelling git wouldn't be so cocky if we weren't in the city," Flint growls from the crow's nest. You didn't realize he was watching, but of course he was. 
+
+      "Agreed," you say. "Though I should probably try harder to keep a low profile."   
+      *goto slowlane
+
+    *else
+      *label attempt_failed
+      *set wealth -700
+      "Actually, it was you who crashed into me. Maybe you should be paying up," you say.
+
+      "Whose word do you think they'll take when I drag you to the guard station? Yours? Or an Ithoran knight's?" the boy retorts, gesturing at his knight friends, who chuckle conspiratorially. Sighing, you reach into your coat pocket. "Make that seven hundred tethlas for wasting our time," the boy says.
+      *goto watch_where
+
+
+*label slowlane
+You wait until the Volodeus ship is well out of earshot before glancing up at Flint. "We in the right zone, aren't we...?" you ask uncertainly. 
+
+"We are," Flint says. "That kid was full of horseshit."
+*fake_choice
+  #"Figured as much."
+    "People like him have no problem lying and scheming," Flint says. "It's how they get what they want."
+
+  #"Why didn't you speak up?" 
+    "I'm no good with people. You know me: I speak with my blade. Just figured it wasn't the best time for that," Flint shrugs. "Besides, if I did say anything, he would've spun more lies."
+
+"Suppose you've got a point." You sigh. With the Volodeus ship now a speck on the horizon, you glance around for something to do. There's still a few rickety ships ahead of you in the waiting loop. "I'm gonna go grab a bite to eat before we reach the checkpoint."
+
+"Sure thing," Flint says.
+
+You head below deck and bump into Quartermaster Reed as you enter the mess hall. She looks worried. "Something wrong?" you ask.
+
+"Things are heating up. I can feel it." Ruby tucks a loose strand of hair behind her ear uneasily. "I'm worried about Sienna."
+*fake_choice
+  #"She's safe here. The crew cares about her."
+    "It's not enough," Ruby says.
+  #"She's safer here than other places she could be."
+    "After today, I'm not so sure about that," Ruby says.
+  #"It's getting more dangerous. The city would probably be safer."
+    "We can't abandon her, Cap'n. It's not fair," Ruby says.
+
+"I'll speak to her," you promise. "No doubt she had quite the fright during the storm." 
+
+You spot Sienna eating breakfast alone in the corner. Her face is paler than usual.
+*if Sienna_injured
+  She has a fresh bandage tied around her leg and her crutches, far too big for a child, lean against the table beside her. 
+
+  "There you are," you say, sliding onto the bench beside her. "Sorry it took me so long to check on you."
+  *goto Sienna_scared
+
+*else
+  *goto Sienna_healthy
+
+
+*label Sienna_scared
+
+*if Sienna < 31
+  Sienna lowers her spoon and stares listlessly at the unappetizing porridge on her plate. 
+
+  "Sienna?" You adjust your uniform uncomfortably. "Are you mad at me?"
+
+  The girl grips her spoon tightly and furrows her brows. You can't tell if she's angry or upset.
+  *choice
+    #"I'm sorry you got hurt during the storm. I should have been there, but I ran out of time."
+      *set pragmatic %-5
+      A tear trickles down Sienna's face, which she quickly wipes away with her grubby sleeve. Her attempt to stay composed at such a young age is admirable.
+
+      "The doctor said my leg would never get better," she sniffs. "A-Are you going to throw me overboard because I can't work anymore?"
+      *label ocn
+
+      "Of course not. There's still plenty you can do," you say.
+
+      "Does that mean I get to stay?" Sienna asks hopefully.
+      *goto e_choice
+
+    #"You were told not to go outside during the storm, yet you disobeyed. This is on you."
+      *set honest %+5
+      "I'm s-sorry." A tear trickles down Sienna's face, which she quickly wipes away with her grubby sleeve. Her attempt to stay composed at such a young age is admirable.
+
+      "It's fine. You're not in trouble. I just want you to understand why it's important to listen to orders."
+
+      "The doctor said my leg won't get better," she sniffs. "A-Are you going to throw me overboard because I can't work anymore?"
+      *goto ocn
+
+    #"We need to talk about where to leave you. Children don't belong on smuggling ships."
+      *set pragmatic %+5
+      "No, please! I'm s-sorry! I know it was my fault. I should have listened! P-please don't make me leave." A tear trickles down Sienna's face, which she quickly wipes away with her grubby sleeve. Her attempt to stay composed at such a young age is admirable.
+
+      "It's not safe," you say firmly. "Your life will always be at risk."
+
+      "I don't care! I want to stay!" Sienna insists. "Please?"
+      *goto e_choice  
+
+*else
+  As Sienna glances up, her eyes widen. "Cap'n! I...I didn't expect you to check on me at all," she says, lowering her eyes. 
+
+  "Really? Why not?" you ask, glancing down at the unappetizing porridge on her plate. 
+
+  "You're captain! I'm just the cabin girl. And now im an injured one," Sienna sniffs. "You're not going to make me leave, are you?" she asks fearfully, unable to look at you as she twiddles her thumbs. "The doctor said my leg won't get better, but I can still work."
+  *goto e_choice
+
+*label Sienna_healthy
+
+"There you are," you say, sliding onto the bench beside her. "I wanted a word with you."
+
+"I'm n-not in trouble, am I?" Sienna glances up, eyes wide.
+
+"No, not at all. Sorry if it came across that way." You glance at the unappetizing porridge on her plate. Maybe it would be best to wait for dinner...
+
+"I know I shouldn't have been out on deck. I won't disobey orders again. I'll work extra hard from now on!" Sienna promises, unable to look at you as she twiddles her thumbs. "S-So... you're not going to make me leave, are you...?" 
+*label e_choice
+*choice
+  #"You can stay as long as you like. There's plenty of work for you around here."
+    *set Sienna %+8
+    *label rly
+
+    "Really?" Sienna says, her eyes widening. "I can't wait to tell Miss Reed!" Her shoulders relax and she starts shoveling porridge into her mouth.
+    *label aayh
+
+    You quirk a brow. "Ruby's really taken a liking to you, huh?"
+
+    "She's strict, but fair. I think she worries about everybody. Sometimes her eyes look sad, you know."
+
+    "Well I'm sure she's had her share of struggles," you say. 
+    *goto alarm_bell  
+
+  #"Are you sure that's what you want? I could find a nice place for you to stay on land."
+    *set Sienna %+4
+    *set authority %+4
+    Sienna shakes her head frantically. "I like it here."
+
+    "Well... you can stay then. As long as you promise to tell me if life aboard this ship ever gets too much for you, okay?"
+    *goto rly
+
+  #"Sienna. This is serious. Pyritos never should have brought you on board a smuggling ship. It's too dangerous."
+    *set authority %+8
+    Sienna balls her tiny hands into fists. "I don't care about danger! I like it here. You're my family. I promise I won't go out during a storm ever again. Miss Reed made me promise too."
+    *goto aayh
+
+*label alarm_bell
+Just then, the alarm rings, summoning all personnel to the main deck. "We'll discuss this later. I need to get ready." 
+
+*if cores_surrender = false
+  You're only minutes away from the delivery point, but if you botch this inspection up the Ithoran officers will confiscate your cargo. 
+  *goto wardrobe
+
+*else
+  Of course, sneaking past the checkpoint isn't really a concern of yours because you intend to surrender your cargo as planned. At the same time, you don't want to give the officers any reason to detain you as well.
+  *goto wardrobe
+
+*label wardrobe
+You head straight for the Captain's cabin, throw open the wardrobe, burrow through Pyritos's expensive garments, and attire yourself in a respectable-looking uniform lying at the bottom, then spare a quick glance in the mirror. 
+
+You have enough time for a finishing touch:
+*fake_choice
+  #Don Pyritos's fancy feathered hat. I need to look as professional as possible.
+    *set diplomacy %+10
+    Tapping the dust from Pyritos's feathered cap, you give your coat buttons a quick polish with your sleeve.
+  #Conceal some protective armor beneath my uniform, just in case there's a fight.
+    *set barbarism %+10
+    The worn chest plate fits snugly around your torso, beneath your uniform.
+  #Slip on a soft pair of boots that are easy to move around in.
+    *set agility %+10
+    With no time to spare, your fingers work quickly, lacing the leather boots with soft soles.  
+  #Pocket a set of lock picks. Never know when an opportunity will present itself.
+    *set thievery %+10
+    The lock picks slide into your pocket easily. 
+You take another moment to run a comb through your tangled hair before rushing back outside.
+
+You reach the helm just as an amber spotlight illuminates the entire length of your airship. Several grappling hooks fire from the security shuttle's hatches. Thick metal chains wrap around [i]$!{ship_name}[/i]'s rail, locking in place. It would take every welding gun on your ship to safely remove them. 
+*comment The deck jolts underfoot as [i]$!{ship_name}[/i] lurches closer — forced into compliance like a dog on a leash. Attempt to flee now and you'd be blasted out of the sky by the security cannons stationed on the detention center roof below.
+
+The deckhands exchange worried glances. You know exactly what they're thinking because the same thoughts are screaming through your mind. What's with the overbearing security measures? Did the Ithoran officers discover your identity? Did you leave some incriminating detail in sight?
+
+A fold-out rampart extends from the side of the Ithoran shuttle like a tongue until the end reaches your deck. Then the shuttle door slides open soundlessly and an old matriarch-type woman marches out with a stern face, clad in a perfectly crisp uniform.
+
+One look tells you that this is a no-nonsense kind of woman. You're not going to beat around the bush asking for favors. You're going to offer this officer exactly what she wants in as few words as possible. 
+
+"Name?" she asks briskly, glancing down at her handheld database. No point lying. She'll be able to tell if you do.
+
+*if female = true
+  *goto female_name
+*else
+  *goto male_name
+
+*label female_name
+*choice  
+  #Azura
+    *set name "Azura"
+    *goto family_name
+  #Rayne
+    *set name "Raine"
+    *goto family_name
+  #Ivory
+    *set name "Ivory"
+    *goto family_name
+  #Mistina
+    *set name "Mistina"
+    *goto family_name
+  #Soraya
+    *set name "Soraya"
+    *goto family_name
+  #Arianell
+    *set name "Arianell"
+    *goto family_name
+  #Actually, my name is...
+    *input_text name 
+    *goto family_name
+
+*label male_name
+*choice  
+  #Vyse
+    *set name "Vyse"
+    *goto family_name
+  #Quay
+    *set name "Quay"
+    *goto family_name
+  #Hawke
+    *set name "Hawke"
+    *goto family_name
+  #Mica
+    *set name "Mica"
+    *goto family_name
+  #Gale
+    *set name "Gale"
+    *goto family_name
+  #Alabaster
+    *set name "Alabaster"
+    *goto family_name
+  #Actually, my name is...
+    *input_text name 
+    *goto family_name
+
+*label family_name
+"Captain ${name}."
+
+"And your surname?" the officer asks.
+*choice
+  #Silverton
+    *set surname "Silverton"
+    *goto abandonment
+  #Rivera
+    *set surname "Rivera"
+    *goto abandonment
+  #Rockwell 
+    *set surname "Rockwell"
+    *goto abandonment
+  #Stone
+    *set surname "Stone"
+    *goto abandonment
+  #Armstrong
+    *set surname "Armstrong"
+    *goto abandonment
+  #Darkwater
+    *set surname "Darkwater"
+    *goto abandonment
+  #Actually, my family name is...
+    *input_text surname 
+    *goto abandonment
+
+*label abandonment
+The family name somehow stuck even though your parents abandoned you at a young age. You wonder what happened to them. Most of the children at the orphanage did.
+
+Flint developed a mean streak and a fiery temper as a child for this very reason. His temper still flared up occasionally but for the most part he had learned control. He could so effortlessly ignore the harsh opinions of others that it was easy to forget how much criticism from you could crush him.
+
+You never told anyone, not even Flint, but before leaving the orphanage you managed to get a hold of a single photograph of your parents. You saw aspects of yourself in their faces.
+*comment BANANA: how to fix these options? Mingzhan about travel? Could be an amalgamation of vikings and dragon warriors?
+*fake_choice
+  #I'm full-blooded Mingzhan, a virtuous nation that values people and nature. My mother, proud and fearless, holds her head high, radiating confidence with her arms folded over a loose-fitting lab coat. Tall and broad-shouldered, my father towers over her protectively even though she looks the fiercer of the two. 
+    *set race "mingzhan"
+    *set father "Wren"
+    *set mother "Sulfura" 
+    *set agility %+8
+    *set aeronautics %+8 
+
+  #My parents have the rugged Blackreef Channel look about them. Father with his roguish grin cutting through the stubble on his sallow cheeks and unkempt hair falling well past his shoulders. And mother in a tattered jerkin, with eyes like silver marbles and a face full of scorn and daring. The sort of couple straight from a swashbuckling tale.
+    *set race "blackreef"
+    *set father "Crow"
+    *set mother "Dagny"
+    *set guile %+8
+    *set thievery %+8 
+
+  #My father has the typical look of Lyon, a nation of great invention and commerce, with skin like burnished copper and some sort of augmentation fitted over his arm. My mother wears protective, chemical splash goggles and a cheerful smile on her silver face. 
+    *set race "lyonese"
+    *set father "Chert"
+    *set mother "Covelline"
+    *set diplomacy %+8
+    *set aeronautics %+8
+
+  #My parents pose in elaborate Triestan attire. Mother radiates mysterious charm in her jeweled mask and aristocratic ball gown. Father hangs on her arm, clean-shaven with his hair slicked back, clad in a neatly pressed naval uniform, flashing a sophisticated gold-plated designer watch that could feed the crew for a month. 
+    *set race "triesten"
+    *set father "Clay"
+    *set mother "Cerise"
+    *set diplomacy %+8 
+    *set guile %+8
+
+  #From the fearless grins on their faces and the serrated blades decorating their belts, it's clear my parents hail from the Isle of Kathar. In exchange for escaping governance by others, the inhabitants learned to fend for themselves in this lawless place of flexible morals.  
+    *set race "katharan"
+    *set father "Havoc"
+    *set mother "Malice"
+    *set barbarism %+8
+    *set thievery %+8 
+
+They looked happy together. Really happy. Like soulmates. They're arm in arm, pulling each other close, their heads tilted together lovingly.
+
+Staring into those blissful grins made you feel...
+*fake_choice
+  #Bitter.
+    *set merciful %-10
+    Anger boiled up every time you looked at the photograph. How dare they abandon their own child like that? You vowed to hunt them down and demand an answer. Maybe you'd even make them pay for what they did. You had ways of ruining their lives, too.
+
+  #Curious. 
+    *set pragmatic %+10
+    You were anxious to meet them. Surely they had a good reason to leave you behind. You wanted to know why. What important reason could have persuaded them to abandon their own flesh and blood like yesterday's garbage?
+
+  #Indifferent. 
+    *set responsible %-10
+    Your emotions switch off when you look at them. Maybe they were family once, but not anymore. You don't care where they are or what they're doing. As far as you're concerned, they're strangers.
+
+  #Depressed.
+    *set pragmatic %-10
+    On rare occasion you'd take the photograph out and peer at it, but doing so generally made you feel forlorn and depressed. You deserved to know why they discarded you like garbage. Were you just an accident that got in the way of their own happiness and freedom? Is that why they didn't want you? Or was there something wrong with you that you weren't aware of? 
+
+"$!{name} $!{surname}? It says here this ship is registered to Alexandre Pyritos," the officer says, catching you off-guard and bringing you back to the present.
+*choice
+  #Produce stolen documents: "Ah yes. He sold me his ship." 
+    *set thievery %+20
+    You hand over the deed for the ship which you found locked in Pyritos's personal safe soon after you took over. 
+
+    The officer takes a brief look at it. "Looks authentic to me."
+
+    *goto change
+
+  #Lie about it: "Pyritos was captured by debt collectors a month ago."
+    *set guile %+20
+    "And they didn't take his ship as collateral?" the officer asks suspiciously.
+
+    "Would you? Just look at this thing. We offered to make payments instead. Worked out better for both of us," you shrug.
+    *goto change
+
+  #Use aeronautical knowledge: "Can you try checking the ship name again? Sometimes those old systems get confused."
+    *set aeronautics %+20
+    "The ship was registered under the name [i]A. T. Pyritos[/i]," you say, spelling it out as the officer starts inserting details into her handheld console. You need to make sure the details she's entering are the right ones. "Five years ago."
+
+    "Looks like everything checks out," she says, nodding.
+
+    *goto change
+
+*label change
+"So why the new procedures?" You slip your hands into your pockets casually. "Getting into Ithora usually isn't usually this strict."
+
+The officer quirks a brow. "Haven't been reading the papers lately? We've become a hotbed of fugitives thanks to the geminai registry."
+
+"Geminai registry?" you ask.
+
+The officer shrugs. "You'll hear more about it soon enough. Now let's get this over with. Show me around your ship." 
+*comment We'll find out what you're hiding on this junker one way or the other."
+
+*if cores_surrender = false
+  *goto reinforcements
+
+*else
+  *comment "This is a forgery," she states. "One of the worst I have seen, I might add. Ithora's insignia is a peacock, not a seagull." You cringe as the old woman puffs herself up, looking indignant. She probably wouldn't have even explained the error if she wasn't so insulted by the ignorance of it. "Now stand aside. Time to find out what you're hiding on this junker."
+  "I'll be honest. Our most recent client had us transporting illegal goods," you say, escorting the officer towards the crates. "We came to Ithora because we wanted to submit the cargo to authorities."
+
+  "Oh?" The officer purses her lips.
+
+  "Geminai cores. We found them hidden in the cabbages when our shipment overturned." You open a crate and toss her one of the cabbages. "See for yourself." 
+
+  "If this is a joke..." The officer tears the cabbage apart impatiently then stares in disbelief at the geminai core pulsing in her hand. 
+
+  "We're not interested in doing business with murderers," you explain carefully. "We only ask to be compensated in some way so we can purchase supplies to survive our next run."
+
+  "Compensated? You're lucky I don't clap you in irons," the officer snorts. "I'll give you entrance documents so you can go ahead and purchase your supplies, but don't expect a pat on the head."
+
+  "What if I said that I had information on the client? Sensitive information. Enough to get you a promotion, if you have the stones to bust their undercity operation."
+
+  "I'll give you seven thousand tethlas for the lot. And that's a full shipment we're talking about," the officer states. Not as much as your client was paying, but an acceptable amount given your conscience feels clear. "What can you tell me about your client?"
+  *choice
+    #"That depends on how much protection you can offer my crew."
+      *set responsible %+10
+      "I could put your crew in protective custody," she replies briskly. 
+
+      "That's not going to work for us," you admit.
+
+      "In that case there's not a whole lot I can do for you. How about I give you a few tethlas in addition to what we discussed and you can go buy a knife?"
+
+      You need to convince her the information is more valuable than she believes...
+      *goto bartering
+
+    #"Everything, if you can stop them from killing more geminai."
+      *set altruistic %+10
+      "Of course I will. It's against the law," she replies briskly. 
+
+      "But will you make it a priority and not rest until the group is locked behind bars?" you ask.
+
+      The officer purses her lips. "I'll see what I can do. Convince me the information is valuable and I might even offer a reward."
+      *goto bartering
+
+    #"Sweeten the deal and I'll sing like a canary."
+      *set altruistic %-10
+      The woman sighs impatiently. "Convince me the information is valuable and I'll consider it."
+      *goto bartering
+
+
+*label bartering
+*choice
+  #I'll just convince her that the tethlas will be put to good use. 
+    *if diplomacy > 50
+      "We'll be purchasing supplies in Ithora, stimulating your economy and returning the tethlas to your citizens," you say.
+      *label payment_doubled  
+      *set wealth + ((cargo / 100) * 14000)
+
+      "Well I suppose I could double it..."
+
+      "I accept." You hand her a data sheet containing detailed information about the location of your client's headquarters in Ithora. 
+
+      Since you're not taking the geminai cores to your client, you'll head straight to the market for supplies. You search for the nearest markets while waiting for the officer to disembark. It appears you have two choices: the prestigious Diamond Causeway market, with thousands of high-end shops, or some rundown place called Helmsport.
+      *set cargo 0 
+      *goto market_choice
+
+    *else
+      "What if I said we'd use the tethlas to improve our security?" you say. "You know... so this doesn't happen again."
+  
+      The  woman puffs herself up, looking indignant. "More likely you'll use it to get drunk at the local tavern. I suggest you cut the act and hand over that information before I refuse you entry."
+      *label failed_bully
+      *set wealth + ((cargo / 100) * 7000)
+
+      "Fine," you say begrudgingly. You don't really have a choice at this point so you hand the officer a data sheet containing detailed information about the location of your client's headquarters in Ithora and wait impatiently as she scrutinizes it. 
+
+      Since you're not taking the geminai cores to your client, you'll head straight to the market for supplies. You search for the nearest markets while waiting for the officer to disembark. It appears you have two choices: the prestigious Diamond Causeway market, with thousands of high-end shops, or some rundown place called Helmsport.
+      *set cargo 0 
+      *goto market_choice
+
+  #I'll play hardball and threaten to delete the information from my database.
+    *if barbarism > 50
+      "I run a business here, not a charity. If you want the information then I suggest you pay for it before someone accidently deletes it." You nod to Ruby, who rushes over to the console panel to await further orders.
+      *goto payment_doubled
+
+    *else
+      "Test my patience further and I'll simply delete the information from my database," you say. "How would you like that?" 
+  
+      "Is this a game of chicken?" The officer presses a button on her radio and screams into it. "Prepare to fire on the junker!"
+      *goto failed_bully
+
+  #Mention other unresolved but possibly relevant cases to gain her interest.
+    *if guile > 50
+      "I've heard rumors about geminai jewelry sneaking into the high-end Ithoran markets lately," you say. "Could be related..."
+      *goto payment_doubled
+
+    *else
+      "I've heard rumors about lower class citizens disappearing in Ithora lately," you say. "Could be related..."
+
+      The officer gives you a dubious look. "Unlikely. That case was resolved months ago. Check the date on your so-called rumors and hand over that information before I revoke you entry."
+
+      Apparently the old prune has a sharp memory.
+      *goto failed_bully
+
+  #I don't want to push my luck. I'll just give her the client's information to establish its value and credibility.
+    *set wealth + ((cargo / 100) * 10000)
+    "Here," you say, handing the officer a data sheet containing detailed information about the location of your client's headquarters in Ithora. 
+
+    The officer pauses a moment to scrutinize it. "Looks legitimate enough. Hmm... it even matches up with some other information we have. With any luck, we'll have the culprit locked up before long." She hands you a credit pack. "Here, I even threw in a little extra for your cooperation in this matter."
+
+    "Thank you."
+
+    Since you're not taking the geminai cores to your client, you'll head straight to the market for supplies. You search for the nearest markets while waiting for the officer to disembark. It appears you have two choices: the prestigious Diamond Causeway market, with thousands of shops and an entertainment center, or some rundown place called Helmsport.
+    *goto market_choice
+
+  
+*label reinforcements
+
+The old woman clicks a button on her belt. Several officers wearing Ithoran uniforms exit the shuttle and board your airship, their polished black boots clattering across the metallic gangplank.
+*choice
+  #I'd best play along and avoid the cargo hold using distractions of some sort.
+    *set honest %-10
+    *if guile > 60
+      Shooting a warning glance at the crew, you smile pleasantly and escort the officer forward. "Right this way. I'm sure you'll find nothing to warrant trouble."
+
+      "What's inside the crates?" the officer asks.
+
+      You don't stop her from lifting a lid and inspecting one of the cabbages. "Food rations mostly. Almost everything's gone rotten though. Didn't think it would take so long to cross the Blackreef channel." You take the cabbage from her and fiddle with one of the leaves. "Keeps everyone in good health. All the right vitamins." You place the cabbage back inside the crate and close the lid. "Want a look inside the hold?" 
+
+      Despite the officer being very nosy, you find different ways of diverting her attention from the hidden cargo stashes while torturing her with tedious explanations of how you decided to pursue your fortune in the big city. By the time you finish touring her around, she's so exhausted from listening to your waffle that she actually hurries to re-board her shuttle. 
+      *goto shuttle_exit
+
+    *elseif guile > 50
+      *set cargo %-25
+      *set wealth -100
+      *set notoriety %+10
+      Shooting a warning glance at the crew, you escort the officer forward. "Right this way. I'm sure you'll find nothing on board to warrant trouble."
+
+      "What's inside the crates?" the officer asks.
+
+      You don't stop her from lifting a lid, but you get visibly nervous when she starts inspecting one of the cabbages. The officer notices your expression at once and tears the cabbage apart, finding a geminai core inside. "Trafficking geminai cores into Ithora is a serious offense."
+
+      You run a hand through your hair, muttering under your breath, somehow prolonging your little act despite the mounting pressure. "Geminai cores? You're joking... I had a bad feeling about the job, but we were desperate. I figured, you know... just this once I could look the other way. And my deckhands actually trusted me. But can you blame them? They're starving. And it's my fault..."
+
+      The officer glances at your emaciated deckhands suspiciously. "Times are rough, yes. But that doesn't excuse your behavior." 
+
+      The officer checks your record on her database again. "This appears to be a first offense. Obviously the cores will be confiscated, but I'll let you off with a warning. Have your deckhands carry the crates over to my shuttle." 
+		
+      You haul one of crates over to the Ithoran shuttle while attempting to look remorseful rather than annoyed. Fortunately, the officer didn't think to check the hold because you seemed so forthcoming. 
+		
+      "We'll be keeping an eye on you from now on so stay out of trouble while you're in Ithora," says the officer. Once the crates have been loaded into her shuttle, she turns to leave. "Oh. And I'll be extracting a small fine from your account for breaking trade rules."
+
+      You watch helplessly as one hundred tethlas are swiped from your account. It could be worse though. Somehow you managed to keep the old crone away from the hold. Surely delivering some of the cargo is better than delivering nothing, right...?
+      *goto shuttle_exit
+		
+    *else 
+      Shooting a warning glance at the crew, you escort the officer forward. 
+
+      "What's inside the crates?" the officer asks. 
+
+      You don't stop her from lifting a lid, but you get visibly nervous when she starts inspecting one of the cabbages. "Er..."
+
+      The officer notices your expression at once and tears the cabbage apart, finding a geminai core inside. "Trafficking geminai cores into Ithora is a serious offense."
+      *label inspection_failed
+      *set cargo %-50
+      *set notoriety %+10
+      *set wealth -500   
+
+      "I didn't know there was anything other than cabbages in those crates, I swear!" The words jumble out of your mouth before you can stop them.
+
+      "Give me a break. Those cabbages are expired by several days. You knew those cores were in there." The officer pulls out her database. "Well, we certainly can't have this happening again..." The officer then turns to her officers. "I want a full sweep of this ship! Check every nook and cranny!" 
+
+      Before long, the crates stashed inside the hold lie exposed on deck. 
+
+      "Obviously the cores will be confiscated," the officer explains while withdrawing an electronic database. "You're lucky this is a first offense or you'd be spending a few months behind bars." She adds a few additional notes to your record before turning to leave. "Oh. And I'll be extracting a small fine from your account for breaking trade rules intentionally."
+
+      You watch helplessly as five hundred tethlas are swiped from your account. Your first smuggling operation isn't even over yet and you've hit rock-bottom. There's no cargo left and you've lost a good chunk of your savings. It's probably in your best interest to high-tail it from the city before your client gets wind of what just happened.
+
+      Face burning with humiliation, you give the helmsmen their orders. "Just get us out of here. Anywhere," you say, before hurrying to your cabin. You need to be alone. To think. But Malikye follows you into the room before you can slam the door shut. 
+
+      You reach for your pen, crushing it angrily in hand. If he doesn't get out in the next five seconds you might actually stab him with it.  
+
+      Malikye sighs and leans against the door. "While you were destroying any chance we had to get the cargo through the inspection, I moved the cores. Some of them anyway."
+
+      "Wait... you mean they didn't get everything?" You stand taller. "We still have cargo?"
+
+      "Correct. Now you owe me. So pull your pathetic self together and get those cores to a buyer so I can get paid." Malikye shows himself out, slamming the door behind him.
+
+      *goto shuttle_exit
+
+  #I'll fry her ship's engine using an illegal surge breaker. Just gotta aim carefully.
+    Shooting a warning glance at the crew, you escort the officer forward. "Right this way. I'm sure you'll find nothing on board to warrant trouble."
+
+    You draw a surge breaker from your coat and conceal it in the palm of your hand. The palm-sized devices are illegal in Tethyr but some shady salesman gave it to you months ago along with his card in case you needed more. 
+
+    "What's inside the crates?" the officer asks.
+
+    You don't stop her from lifting a lid and inspecting one of the cabbages. "Food rations mostly. Almost everything's gone rotten though."
+
+    You edge toward the rail while no one's looking. Tensing your muscles, you aim the surge breaker carefully.
+    *choice 
+      #Nobody will get hurt if there's only a hiccup in the engine's performance.
+        *set merciful %+10
+        *goto distraction_continued
+
+      #I'll overheat the engine just long enough to get my crew through safely. 
+        *set responsible %+10
+        *goto distraction_continued
+
+      #Sink the blasted shuttle for all I care! They knew the job was hazardous when they signed up for it. 
+        *set merciful %-10
+        *label distraction_continued
+        *if agility > 60
+          You hurl the surge breaker with enough force to hit your intended mark. The surge breaker clamps down onto the hull and glows red. There's an electrical sizzle. Suddenly the lights in the Ithoran shuttle flicker and die. 
+
+          "What in Tethyr...?" The officer swivels on her polished heels, shoves the cabbage back into your hands, and races to her shuttle. 
+
+          "Correct me if I'm wrong, but that felt like permission to be on our way," you say invitingly to your crew. With the officer out of earshot, franticly searching her shuttle for the source of trouble, nobody argues your point. 
+          *goto shuttle_exit
+
+        *if agility > 50
+          *set notoriety %+10
+          *set cargo %-25
+          You hurl the surge breaker, but not far enough to hit your intended mark. The surge breaker clamps down onto the hull and glows red. But it's in the wrong spot. You're not sure if it will work. There's an electrical sizzle. Suddenly the lights in the Ithoran shuttle flicker. 
+
+          "What in Tethyr...?" The officer swivels on her polished heels and narrows her eyes. When the flickering stops, she shrugs and continues to examine the cabbage. The breath catches in your chest when a sparkling core peaks from the leaves, glinting in the sunlight, making her squint. "Is this...? No, it couldn't be..."
+
+          The propellers on the Ithoran shuttle choke unexpectedly. An alarmed look appears on the officer's face as she waves her fellow officers forward impatiently. "Seize the cargo and return to the shuttle immediately. Something's wrong with the ship."  
+
+          "Wait! That's not fair," you say. "You can't just leave in the middle of an inspection and take our property with you."
+
+          "I can if our ship is malfunctioning," the officer says. "You can retrieve it from the station once we've had time to analyze it." 
+
+          You frown and take your last look at the cargo as the officers cross to their shuttle. The moment they find the trafficked geminai cores, your name would soar to the top of Ithora's wanted list. At least they didn't have time to check the hull. You need to get what's left of the cargo off your ship fast.
+
+          "Correct me if I'm wrong, but that felt like permission to be on our way," you say to your crew. With the officer out of earshot, franticly searching her shuttle for the source of trouble, nobody argues your point. 
+          *goto shuttle_exit
+
+        *else 
+          You hurl the surge breaker, but not far enough to reach the hull. Instead you helplessly watch the device plummet toward the city below. 
+
+          The officer notices you acting strangely and tears the cabbage apart, finding a geminai core inside. "Trafficking geminai cores into Ithora is a serious offense."
+          *goto inspection_failed
+
+  #I'll start a brawl and send these puffed-up cowards packing before they find anything.
+    You approach the old woman as if you're about to address her. Instead, you smash your fist into her face. She sinks to the ground unconscious, blood spurting from her fractured nasal bone. Deckhands and officers draw their blades in unison. 
+
+    You retreat to the quarter deck, cocking your pistol. With only two loaded pistols at hand you'll have to make each shot count. You kneel beside the control panel and position the barrel between two rails, angling for a clear shot. Below you, on the main deck, the battle rages on while you wait patiently for the right moment to strike. Then it happens. One of the officers edges away from the battle and races for the shuttle door to signal for help. 
+
+    *if barbarism > 60
+      You fire your first shot, easily handling the recoil as the gun powder explodes, sending a plume of smoke into the air. Right on target, the bullet pierces the man's leg. He tumbles over. You holster the used pistol and cock the second pistol. This time you notice one of your deckhands struggling to overpower an officer's blade. The blade is just about to slice into her neck when you successfully fire the second shot into the officer's shoulder. The deckhand seizes the moment to disarm her opponent. 
+
+      With the fight won, you destroy any information they have on record of you and leave the survivors bound and gagged inside their own shuttle.
+      *choice
+        #Set sail into town immediately after removing the grappling hooks from the rail. 
+          *set cautious %+10
+          You manage to get your airship moving before the anti-aircraft notice anything amiss. Seems like your stay in Ithora will be quite pleasant after all.
+
+          No point taking chances though.
+          *goto shuttle_exit
+			
+        #Shoot signal flares into the sky in a display of bravado, while making a flashy getaway.
+          *set cautious %-10
+          Red and blue sparks burst in the air, blossoming like flowers, as their flaming petals shower down on the city below. Although the anti-aircraft lights begin to flicker on below, you're well on your way before anyone can stop you. Seems like your stay in Ithora will be quite pleasant after all.
+
+          No point taking chances though.
+          *goto shuttle_exit
+
+        #Trigger their alarm system so they don't have to wait long for help.
+          *set altruistic %+10
+          You trigger their alarm system and manage to get your airship moving before the anti-aircraft notice anything amiss. Seems like your stay in Ithora will be quite pleasant after all.
+
+          No point taking chances though. 
+          *goto shuttle_exit
+			
+    *elseif barbarism > 50
+      *set notoriety %+20
+      *set ship_health -20
+      *set cargo %-25
+      You fire your first shot but can't handle the recoil as the gun powder explodes. A plume of smoke rises into the air. Once it dissipates you see that the bullet has grazed the man's leg, but only enough to make him stagger. Before you can cock the second pistol, your target limps inside the shuttle. An alarm screeches from the speakers. You need to escape and fast but you have one bullet to spare. This time you notice one of your deckhands struggling to overpower an officer's blade. The blade is just about to bite into her neck when you successfully fire your second bullet into the officer's shoulder blade. The deckhand seizes the moment to disarm her opponent. 
+
+      But it's not enough. The Ithoran officers overpower your starving deckhands and hold them at sword point. "Bind their hands with rope, seize all cargo on deck, and get that man's leg in a tourniquet!" 
+      *label punchitchewy
+
+      You lean forward as the commanding officer ties your hands behind your back with a rope while her officers rush across the deck, dragging the cargo you worked so hard to protect into the shuttle. You have a feeling you're not getting those crates back anytime soon. The accusatory looks of your deckhands tell you as much. Even if you get out of this alive, there'll be mutiny, unless you can escape before they check the cargo hold... 
+
+      "Commander! These crates are filled with geminai cores!" one of the officers shouts.
+
+      "Good grief... yesterday euphoria, today geminai cores..." the woman mutters. "Let me have a look." 
+
+      As the commanding officer crosses the plank to inspect the cores, you begin wriggling your hands back and forth until a metallic file drops into your palm. You desperately cut through the thick rope strand by strand. By the time the officers finish gawking at the cores, you're free. You race for the control panel and force the airship to accelerate away from the metallic plank. The grappling hooks pull taut. You force the ship forward, watching the hooks splinter the planks apart, leaving extensive damage all over your hull.  
+
+      "Back to the shuttle!" the commanding officer screams. "Signal the knights!"
+
+      The few officers still aboard your airship leap across the gap before it's too late. You didn't want hostages anyway. But you still have business in the city.
+      *goto shuttle_exit
+		
+    *else
+      *set cargo %-50
+      *set notoriety %+20
+      *set ship_health -20
+      You fire your first shot but can't handle the recoil as the gun powder explodes, sending plume of smoke into the air. The bullet misses completely, ricocheting off the Ithoran shuttle. Before you can cock the second pistol, your target runs inside the shuttle. An alarm screeches from the speakers. You need to escape and fast and you only have one bullet to spare. This time you notice one of your deckhands struggling to overpower an officer's blade. Again, you fire a bullet and miss completely.
+
+      With no injuries to speak of, the Ithoran officers easily overpower your starving deckhands and hold them at sword point. "Bind their hands with rope. I want a full sweep of the ship! Check every nook and cranny!" 
+
+      Before long, all the remaining crates lay exposed on deck. 
+      *goto punchitchewy
+	
+  #There's no choice but to fly away with the officers still on board. 
+    "Wait for my signal then make a break for it," you whisper to the helmsmen before escorting the officer forward. "Right this way. I'm sure you'll find nothing on board to warrant trouble."
+
+    "What's inside the crates?" the officer asks.
+
+    You don't stop her from lifting a lid and inspecting one of the cabbages. "Food rations mostly. Almost everything's gone rotten though. Didn't think it would take so long to cross the Blackreef channel."
+
+    With the Ithoran officers distracted, it's time to make your move. Nodding to your co-pilots, you signal them to pull your airship out of the loop. Even if their sensors detect you, it'll be too late to stop you.
+
+    An alarm screeches the moment you alter course. The Ithoran shuttle swivels quickly to face you while the cannons in the hatches parallel to your deck prepare to fire. Whatever ammunition they carry, it's probably enough to sink your storm-beaten airship for good.
+    *choice 
+      #The shuttle won't dare fire on us if we fly toward the crowded market below!
+        *set altruistic %-10
+        *goto avoid_continued
+
+      #I'll threaten to drop the Ithoran officers overboard.
+        *set merciful %-10
+        *goto avoid_continued
+	
+      #I'll head back to sea so it looks like we're not interested in entering Ithora after all. 
+        *set cautious %+10
+        *label avoid_continued
+        Before you can execute your plan several grappling hooks fire from the shuttle's hatches. 
+
+        *if aeronautics > 60 
+          You seize the controls, forcing the ancient airship into a nosedive. The grappling hooks pierce the empty air ten yards away from your airship. Without anything to latch on to, the hooks drop harmlessly and swing like limp vines beneath the shuttle. 
+          *goto shuttle_exit
+
+        *elseif aeronautics > 50
+          *goto aero_atk
+  
+        *else 
+          *label aero_atk
+          You seize the controls and attempt to dodge the hooks but your reflexes are too slow. Two metal chains wrap around the rail of your airship, locking in place. 
+
+          You gun the engines. The ship strains against the chains. You force the propellers to work harder, until the entire ship tilts toward the shuttle. The cargo on deck slides over board, raining down on the under-streets below. 
+ 
+          Finally the wood holding the chains in place shatters, taking with it an entire length of the rail. Without anything to latch on to, the hooks drop harmlessly and swing like limp vines beneath the shuttle. You fly to freedom, painfully aware that you've probably landed yourself the top spot on Ithora's wanted list.
+          *goto shuttle_exit
+
+	  
+*label shuttle_exit
+
+*if cores_keep = true
+  Since you're not taking the geminai cores to your client, you'll head straight to the market to fence them. Unfortunately, there's only one person in the city greedy enough to accept solicitors.
+  *page_break
+  The tower glitters in the sunlight, covered in jewels. You head for the drop-off door at the back, balancing on the narrow platform while your ship flies circles around the dome. You rap on the faded door anxiously, getting jitters whenever a strong breeze threatens to push you over the edge.
+
+  Just when you're about to give up, the door opens. A wizened man with long ears, a long face, and skin like melted wax peers from the shadows. "Usually people use the front door when they want something."
+
+  "I've got some unique items for sale. Heard you're the man to talk to," you say.
+
+  The sunlight reflects off the jeweler's silver tresses as he considers you. "Let's make this quick."
+
+  You start unloading the crates the moment the gap to your ship is close enough to cross. "These are fresh!" The jeweler's eyes widen as he holds one of the cores up to the light. "And young! Hargreaves's monopoly on quality cores is finally at an end!"
+
+  "Hargreaves? The Alabaster Hargreaves? Head of research at Volodeus? What's he got to do with this?" Everyone knew the man to some degree; completely devoid of emotion, with hundreds of scandals involving his research and human rights abuse that always got hushed up in suspicious ways. If he's involved, that means it isn't just the black market you're dealing with. Somehow, you're not even the slightest bit surprised.
+
+  The jeweler ignores you completely, still fawning over the sparkling cores. "When can you bring another shipment of this quality?"  
+  *choice
+    #I'll lie and promise to make him my exclusive client if he sweetens the deal.
+      *if guile > 60
+        *set wealth + ((cargo / 100) * 42600)
+        "Same quality? Might be hard..." you say uncertainly.
+
+        "Whatever your other clients are offering, I'll double it," the jeweler insists.
+
+        "Well... my clients won't like getting shafted like that. Suppose I'll see how well we do from this transaction before making any promises," you say.
+
+        The jeweler unloads a heaping pack of credits into your arms. It's more tethlas than you've ever seen. He keeps drawing them from his robe until you're at risk of dropping them.
+
+        "This is... more than fair. You'll certainly be seeing more of me." Whether that's the truth remains to be seen.
+        *page_break
+        *set cargo 0
+        With the geminai cores out of the way, you'll head straight to the market for supplies. It appears you have two choices: the prestigious Diamond Causeway market with thousands of high-end shops or some rundown place called Helmsport.
+        *goto market_choice
+
+      *else
+        *set wealth + ((cargo / 100) * 33600)
+        "Sweeten the deal and I'll make you my exclusive client," you say.
+
+        The jeweler scowls suspiciously. "You'll have to offer more than words to convince me of your loyalty."
+
+        You decide not to push the matter further. "Let's just square up then, shall we?" 
+
+        The jeweler unloads a heaping pack of credits into your arms that contain more tethlas than you've ever seen. Yet you get the impression it's less than he intended to give you in the first place. He doesn't make any further attempt to make deals with you, but closes the door the moment you exit the tower.
+        *page_break
+        *set cargo 0
+        With the geminai cores out of the way, you'll head straight to the market for supplies. It appears you have two choices: the prestigious Diamond Causeway market with thousands of high-end shops or some rundown place called Helmsport.
+        *goto market_choice
+
+    #I'll trade my client's address for more tethlas and just hope he doesn't find out.
+      *set notoriety %+20
+      *set wealth + ((cargo / 100) * 42600)
+      "Well, I'm not planning on sticking around, but I can tell you where my client's hideout is. Floor 67. 'The Hive.' It's in a secret section of lower Ithora, hidden in the depths of a refuse factory," you say.
+
+      Eyes glinting greedily, the jeweler unloads a heaping pack of credits into your arms that contain more tethlas than you've ever seen. "Fair?"
+
+      "Very fair," you say, returning to your ship. "Good luck with your endeavors."
+
+      "Indeed. You know where to find me if you change your mind about the cores."
+      *page_break
+      *set cargo 0
+      With the geminai cores out of the way, you'll head straight to the market for supplies. It appears you have two choices: the prestigious Diamond Causeway market with thousands of high-end shops or some rundown place called Helmsport.
+      *goto market_choice
+
+    #Best evade the question and leave. I'm getting in over my head here.
+      *set wealth + ((cargo / 100) * 36600)
+      "I'm... not sure," you lie. "These are strange times."
+
+      The jeweler unloads a heaping pack of credits into your arms that contain more tethlas than you've ever seen. "Well you know where to find me."
+      *page_break
+      *set cargo 0
+      With the geminai cores out of the way, you'll head straight to the market for supplies. It appears you have two choices: the prestigious Diamond Causeway market with thousands of high-end shops or some rundown place called Helmsport.
+      *goto market_choice
+
+
+*else
+  You enter the coordinates of your meeting point and accelerate as fast as your airship will carry you, dodging air taxis and maneuvering around lowered drawbridges, steering deeper and deeper into the dark shadows of the under-city. 
+
+  *goto docking	
+
+
+			  
+*label docking
+*page_break A Few Hours Later...
+*set visited_client true
+The under-city gives off a reprehensible first impression. Floor 67, or 'the Hive,' as it is referred to by your client, is a section of lower Ithora, hidden in the depths of a refuse factory where unsightly sorts, like smugglers, meet to exchange goods. 
+
+"Captain $!{surname}?" The speaker, a young woman with auburn hair, greets you calmly as the tower door slides open to grant you access. There's a vacant look in her eyes and her stony expression seems unnatural and unbreakable.
+ 
+"That's correct," you say as you wipe sweat from your brow. The unbearable heat and violent stream of humid air ceaselessly drives between the narrow walls from ventilation pipes protruding haphazardly from the ceiling. Each pipe expels a sickening smell, presumably the smell of dozens of dead rats decaying in the labyrinth of pipes required to service a city so grand. 
+
+"Rough journey? I was starting to wonder if you got shipwrecked by the storm," the woman says, her eyes following your every movement.
+
+"Nearly did," you admit, coughing violently as ash drifts down from the ceiling like black snow. "Never thought I'd say this, but your job makes mine seem pleasant. How do you breathe in here?"
+
+"Not every retrieval location is this bad, but you get used to it. The city pays for the exterior upkeep, giving the city the illusion of being a supreme and endless palace. But the people who live on the lower floors are a little more down-to-earth." The woman gestures at a small cart. "Could you ask your crew to unload the cargo next to my cart?" 
+
+"Of course." You signal your crew to begin unloading the cargo. "Some of the crates got damaged... Hope you don't mind."
+
+The young woman runs a hand over one of the damaged crates. "So you know what's inside? Guess there's no point trying to hide it." The young woman hefts the lid off and starts picking the cabbages apart carefully, lowering the geminai cores into the cart while taking care to count each one. "Assuming most of the cores made it through, our employer likely will reach out to you again to offer another contract. If you're interested."
+*choice
+  #I'm not interested, but I'll try to find out who's behind this. Maybe I can report them. I just need to be careful not to seem nosey.
+    *if cautious > 50
+      *set research %+10
+      "Hmm... between the high-risk cargo and dangerous route I'm not sure it would be a good idea to take another contract," you say. "What would you advise?"
+
+      The young woman hesitates and folds her arms uncomfortably before answering. "Our client is dangerous and better off avoided in my opinion. It wouldn't be the first time someone who was working for him went missing. It's why I'm reluctant to resign myself. But you're not in the same position yet. I won't mention you saw the cargo." 
+
+      "Surely he could be reported for this," you say. "If he got arrested you wouldn't be trapped here anymore."
+
+      The young woman smiles sadly. "I appreciate your concern, but plenty of good people have tried to take Hargreaves down. It never works."
+
+      "Wait... Hargreaves? The Alabaster Hargreaves? Head of research at Volodeus? What's he got to do with this?" Everyone knew the man to some degree; completely devoid of emotion, with hundreds of scandals involving his research and human rights abuse that always got hushed up in suspicious ways. If he's involved, that means it isn't just the black market you're dealing with. Somehow, you're not even the slightest bit surprised.
+
+      "Er... yes. It's just a suspicion. But from the evidence I've seen, there's a good chance he's behind this particular operation. Please don't tell anyone I told you. If they find out... well, I don't like to think what might happen," the young woman says pleadingly. 
+
+      "You have my word," you say. The lead isn't certain, but it's a start. "So about the payment... does everything seem in order?"
+      *goto payment_wait
+
+    *else
+      "Have you ever met our client?" you ask.
+
+      "No," the young woman replies hurriedly, glancing away. "I mean I have my suspicions... but they're just suspicions, you know?"
+
+      "Sure," you say. It's clear she's hiding something but you don't want to push it too far. "So about the payment... does everything seem in order?"
+      *goto payment_wait
+
+  #There's no way I would ever work for such a depraved client again. I'll encourage this young woman to search for a better job too. 
+    *if pragmatic < 50
+      *set relations %+10
+      "No thanks. Wouldn't feel right now that I know what the cargo is," you say. 
+
+      "Understandable. I wouldn't be working here either if there were other options available." The young woman sighs. "But every other job paid a pittance. Hardly enough to keep a roof over my head." 
+
+      "Airship captains are always looking for crew," you suggest.
+
+      "Are you making an offer?" The young woman shakes her head. "I couldn't afford to be away from the city for too long. My grandmother needs me. That's another thing. She needs someone around to look after her. And her medicine is expensive."
+
+      "That would make it difficult to quit," you admit. "Though there's no harm in searching for other opportunities when you can. Eventually something better is bound to come your way."
+
+      "You're right. I'll keep an eye on the papers and try for something else," the young woman says. "Even if the pay isn't quite as good."
+
+      "Sounds like a reasonable plan to me," you say. "So about the payment... does everything seem in order?"
+      *goto payment_wait
+
+    *else
+      "No thanks. Wouldn't feel right now that I know what the cargo is," you say. "Don't you feel guilty about transporting geminai cores?"
+
+      "I do feel guilty. All the time. But every other job I found barely paid enough to keep a leaky roof over my head." The young woman lowers her eyes. "I want a better life for myself, you know?"
+
+      "Well of course. That's what everyone wants," you say.
+
+      "Just like you brought the cores here instead of turning them in. You're just trying to look out for your crew," the young woman says. 
+
+      "Sorry, I didn't mean to sound hypocritical," you say, itching the back of your neck. "So about the payment... does everything seem in order?"
+      *goto payment_wait
+
+  #We definitely could use another contract. I'll see if she knows anyone less sketchy and ask her to put a good word in for us.
+    "Of course we'd be interested in another contract. The payment is well worth the risk," you say. "But I wonder if there's another job available that's a little less morally bankrupt?"
+
+    "Is that really something a smuggler would ask? I thought transporting illicit goods was your job," the young woman says.
+
+    *if responsible > 50
+      *set authority %+10
+      "Hey, even smugglers have standards," you say.
+
+      The young woman smiles slightly. "I wish more people were like you. Well then," she says, putting her hands on her hips. "I'll see about putting a good word in for you."
+
+      "Thanks. I really appreciate it," you say. "So about the payment... does everything seem in order?"
+      *goto payment_wait
+
+    *else
+      "Just doesn't feel right," you shrug.
+
+      The young woman frowns slightly. "Then I suggest you look somewhere else. It's not like I want to be doing this either."
+
+      "Ah, sorry, I didn't realize..." you say. "So about the payment... does everything seem in order?"
+      *goto payment_wait
+
+
+*label payment_wait
+
+*if cargo > 99
+  "Certainly seems so. Wait..." Suddenly the young woman frowns at the cores, counting them once more under her breath. "Actually, one core is missing. You didn't take it on purpose did you? I could get in serious trouble for that. I'd have to cover it from my own pocket." 
+  *goto fff
+
+*else
+  "Looks like some of the crates were lost. There will be deductions for each of the missing cores, but the remainder of the profit is yours to keep," the young woman explains. 
+
+  "Fair enough," you say.
+
+  "Wait..." The young woman frowns as she counts the cores in the final crate. "That's odd... This crate is missing a core."
+
+  "Just one?" you say, frowning. The crate hasn't been damaged at all, so how could the core have escaped?
+  *goto fff
+
+*label fff
+
+You freeze in fear, wondering - for one fleeting moment - if this is her idea of a joke. But it can't be. The woman seems to takes her job very seriously. Surely the deckhands wouldn't betray you? You suddenly find it hard to swallow. 
+*fake_choice 
+  #"Perhaps it was lost during the storm."
+    "These cores were securely packed. More likely there's a thief in your crew. I would suggest finding the culprit before they cause irreparable damage," the young woman advises. 
+
+  #"Maybe your people made a mistake when loading the crates."
+    *label find
+    "More likely there's a thief in your crew. I would suggest finding the culprit before they cause irreparable damage," the young woman advises.  
+
+  #"Surely you've miscounted. Look how many there are."
+    *goto find  
+
+  #"I wouldn't risk stealing from my own client. There's clearly a thief in my crew."
+    "Then I would suggest finding the culprit before they cause irreparable damage," the young woman advises. 
+*if cargo > 99
+  *set morale %+10
+  *set wealth +29700
+  *achieve delivered_cargo
+  "Fortunately, aside from the missing core, you managed to transport the entire cargo safely. With one core deducted from your total, I owe you twenty nine thousand, seven hundred tethlas."
+
+  "Thank you." You accept the credit packs from the young woman's extended hand. It seems like a fortune, but by the time you finish paying your crew and repairing the ship you wonder how much you'll have left. It's also upsetting to see the missing core deducted from the payment. It's not just a matter of pride or customer satisfaction anymore. No... whoever did this is putting your crew at risk. 
+  *goto settled_now
+*else
+  *set wealth + ((cargo / 100) * 30600)
+  "It's a shame some of the crates were lost, but the rest of the payment is yours."
+
+  "Thank you." You accept the credit packs from the young woman's extended hand. The operation still turned a profit, but it upsets you to see the missing core deducted from the payment. It's not just a matter of pride or customer satisfaction anymore. No... whoever did this is putting your entire crew at risk. 
+  *goto settled_now
+
+*label settled_now
+
+*set cargo 0
+"With that settled, I expect you'll need to purchase supplies for your next journey?" the young woman asks. "Ithora is plentiful in markets but, given your lack of proper documentation, you've got two choices really. First, there's the Diamond Causeway market. Plenty of selection and cheap prices, but it's crowded and the knights tend to notice people who stick out. There's also the fair trade market Helmsport on the Ithoran outskirts. Some people prefer to purchase straight from the farmers, but their produce is expensive and poor quality. Not many gardens grow on towers so the merchants are forced to bring in produce from the surrounding settlements." 
+*label market_choice
+
+"Personally I think we should keep our heads down," says Ruby. "Someone might notice us at the Diamond Causeway market. The last thing we need right now is unwanted attention."
+
+"But I could find lucrative job contracts there," Malikye says.
+
+Flint frowns. He absolutely detests crowded places but clearly doesn't want to make your decision any harder. 
+
+After carefully weighing your options you decide to chart a course for...
+*choice
+  #Helmsport, to support local farmers and keep the market competitive.
+    *set chose_helmsport true
+    *set altruistic %+10
+    *set Malikye %-10
+    *set Ruby %+5
+    *set Flint %+5
+    *if met_liam = true
+      When finally the airship is unloaded, and the small gate lifted, you make your escape, flying as fast as possible, from the somber factory, back into the freedom of the skies. Fresh sweet air tousles your hair, perfumed with the scent of roses on some hanging window garden nearby. 
+      *goto helmsport
+
+    *else
+      *goto stowaways_located
+
+  #Helmsport, so we can keep a low profile.
+    *set chose_helmsport true
+    *set cautious %+10
+    *set Malikye %-10
+    *set Ruby %+5
+    *set Flint %+5
+    *if met_liam = true
+      When finally the airship is unloaded, and the small gate lifted, you make your escape, flying as fast as possible, from the somber factory, back into the freedom of the skies. Fresh sweet air tousles your hair, perfumed with the scent of roses on some hanging window garden nearby. 
+      *goto helmsport
+
+    *else
+      *goto stowaways_located
+
+  #The Diamond Causeway. The crew needs a healthy diet with a variety of foods.
+    *set chose_altesa true
+    *set responsible %+10
+    *set Malikye %+10
+    *set Ruby %-5
+    *set Flint %-5
+    *if met_liam = true
+      When finally the airship is unloaded, and the small gate lifted, you make your escape, flying as fast as possible, from the somber factory, back into the freedom of the skies. Fresh sweet air tousles your hair, perfumed with the scent of roses on some hanging window garden nearby. 
+      *goto altesa
+
+    *else
+      *goto stowaways_located
+
+  #The Diamond Causeway. The produce is cheaper and the jobs are more profitable.
+    *set chose_altesa true
+    *set pragmatic %+10
+    *set Malikye %+10
+    *set Ruby %-5
+    *set Flint %-5
+    *if met_liam = true
+      When finally the airship is unloaded, and the small gate lifted, you make your escape, flying as fast as possible, from the somber factory, back into the freedom of the skies. Fresh sweet air tousles your hair, perfumed with the scent of roses on some hanging window garden nearby. 
+      *goto altesa
+
+    *else
+      *goto stowaways_located
+
+
+
+*label stowaways_located
+*set stowaways 3 
+But just as you step back onto the main deck, Ruby, Malikye, and Kaolin run up, panting and out of breath. "Trouble, cap'n! Stowaways in the store room! They must have snuck aboard when we stopped in at Westlok harbor. They demand to speak with you."
+
+"The three of you couldn't figure out how to apprehend them?" you say, exasperated. You don't have time for this. Feet thundering across the floorboards — because you want them to hear doom approaching — you storm below deck and hurl the store room open. Ruby waits at the door, blocking the only escape route.
+
+The store room is dark when you enter, most of the crates still squished together, side by side. Why did this have to happen to you, now of all times? You can only hope the stowaways don't jeopardize your operation further.
+*choice
+  #I'll convince the stowaways that we won't hurt them if they show themselves.
+    "I'm here," you say. "What do you want to discuss?" 
+
+    You hear hurried whispers issuing from behind one of the crates. There's a bit of a scuffle then a man dressed in a luxurious velvet coat rises to his feet stiffly, hands clasped before him, fingers fidgeting nervously. "Good captain... my comrade and I wish only for a chance to p-parley!"
+
+    *if diplomacy > 45
+      *set morale %+5
+      You sigh. "I take it you're under the impression you're aboard a pirate ship? Well come out, we're not so savage as that. But we'll discuss payment before releasing you. It's not right to expect free passage aboard my ship — even if you had legitimate reasons for keeping your presence unknown."
+
+      The stowaway glances down nervously and signals his comrade to come out. 
+      *goto stowaways
+	  
+    *else  
+      *set morale %-5
+      *set health %-10
+      "We're not going to hurt you, but you have no right to be hiding aboard my ship. Come out so I can see you." 
+
+      The stowaway twitches nervously and breaks for the door. When you get in the way, the stowaway desperately flicks open a switchblade and slashes you across your thigh. Roaring furiously, you catch him in an arm lock and force him to the ground. Ruby drags the other stowaway out from his hiding spot seconds later.
+     *goto stowaways
+
+  #These stowaways made a fool of me already. I'll subdue them with force if necessary.
+    You charge into the cargo hold, shoving crates aside as you plow toward the back wall. There, you find a stack of crates suspiciously shaped like a fortress. You're impatiently trying to dislodge the top-most crate from the makeshift fortress when two men leap out, clutching giant suitcases and screaming in terror.
+
+    As the nearest stowaway angles for the door, you snag the collar of his ruffled shirt.
+
+    "Help!" he cries. 
+
+    His friend turns at once to hit you with the suitcase.
+
+    *if barbarism > 45
+      *set morale %+5
+      Reacting quickly, you leap sideways to avoid being hit in the head. You retaliate by shoving the assailant off-balance as he attempts to recover from his own weighted attack. Before he can, you then hurl him, suitcase and all, into his friend. The two men collide and topple over. Rather than make a second attempt, they hunch helplessly side by side, looking defeated, exhausted, and malnourished.
+      *goto stowaways
+
+    *else 
+      *set morale %-5
+      *set health %-5
+      The heavy suitcase slams into your head and you crumple under the concussive blow. As you stagger left and right, the assailant runs past you. You manage to latch onto his arm.
+
+      The stowaway desperately flicks open a switchblade and slashes you across your shoulder. Roaring furiously, you catch him in an arm lock and force him to the ground. Ruby drags the other stowaway out from his hiding spot seconds later.
+      *goto stowaways
+
+  #I'll lay a trap, leaving the door open a crack and waiting for them to sneak out.
+    You step into the room, make a show of retrieving one of the crates, then retreat back into the hallway, taking care to leave the door open a crack so that a single sliver of light cuts across the cargo hold like an enticing invitation to escape. Then, careful not to make a sound, you creep behind the door and wait.
+
+    A few seconds later you hear movements at the back of the room: crates shifting aside, the patter of footsteps and creaking floorboards. Next thing you know, two stowaways are scrambling for the door at once.
+
+    *if guile > 45
+      *set morale %+5
+      You stick out your foot and trip the first stowaway to exit the room, causing a domino effect where his friend staggers in confusion and tumbles over his fallen body. The pair become a tangle of appendages. Rather than make a second attempt, they hunch helplessly side by side, looking defeated, exhausted, and malnourished.
+      *goto stowaways
+
+    *else 
+      *set morale %-5
+      *set Ruby %-3
+      You stick your foot out to trip the stowaways just a little too early. They both easily skip over your foot and enter the hallway.
+
+      When Ruby blocks the hallway exit, one of the stowaways turns on you, desperately flicking open a switchblade and slashing you across your shoulder. Roaring furiously, you catch him in an arm lock and force him to the ground. Ruby slams the other stowaway into the ground seconds later.
+      *goto stowaways
+  
+*label stowaways
+
+The two middle-aged noblemen sink to their knees before you. You draw your hair back — well away from your eyes — the better to view them. Tears stream down their pale, gaunt faces. Their large hands tremble in pristine white gloves and their spindly fingers dig into the soft silks of their colorful pantaloons. Both men boast well-trimmed mustaches, once artistically contoured but which now dangle limply over their mouths, attached to some thread of skin beneath their noses. 
+
+At once you realize that neither of the men have known a day of hard labor. Your left eye twitches as you slowly draw your sword from its scabbard, thrusting the recently polished tip straight at them. "You sneak aboard like rats and expect me not to throw you overboard?"
+
+"Please, we can pay!"
+*choice
+  #"Aboard my ship you pay with your lives."
+    *set merciful %-10
+    You want to tear them apart. And if they soil their pants, it'll be harder for them to run.
+    *goto esper_stowaways
+
+  #"Most passenger cruisers charge their passengers prior to boarding."
+    *set cautious %+10
+    *goto esper_stowaways
+
+  #"I'll hear you out, so you better make me a damn good offer."
+    *set pragmatic %+10
+    *goto esper_stowaways
+
+
+*label esper_stowaways
+
+"When we h-heard they were detaining geminai we had no choice," the stowaway whimpers.
+
+"You're geminai?" you ask.
+
+"I-Indeed we are. We didn't mean to p-place you at risk but we had no other choice," the noble says. 
+*choice
+  #Sympathize with him. I just want to get to the bottom of this.
+    *if (diplomacy > 60) or (altruistic > 50)
+      *set relations %+10
+      "As captain, it's my responsibility to look after my crew," you say. "You snuck aboard my ship without permission hoping for a free ride while putting everyone at risk."
+
+      The geminai lowers his head. "I admit it wasn't fair, but we were terrified of approaching you even though we knew about your code. And with our tethlas running short... well... we're more than willing to pay for safe passage if you'll let us."
+      *goto teth_talking
+
+    *else
+      *set relations %-5
+      "Look, life's not easy for anybody. We happen to be struggling as well," you say more waspishly than intended. "You snuck aboard hoping for a free ride."
+
+      "What else were we supposed to do?" the geminai responds angrily. "We were terrified of approaching you even though we knew about your code. And with our tethlas running short we had little choice. We're willing to pay for safe passage if that's what you want."
+      *goto teth_talking
+
+  #Remain neutral. I just want to know why he snuck aboard my ship.
+    "Look," you say. "I just want to know why you snuck aboard my ship rather than somebody else's."
+
+    "Because we heard about your code," the geminai says, searching for his coin purse. "Either way, we're more than willing to pay for safe passage if you'll let us."
+    *goto teth_talking
+
+  #Intimidate him so he doesn't try to lie or manipulate me.
+    *if (barbarism > 60) or (merciful < 50)
+      *set authority %+10
+      "Except that if I plunge my blade into your chest, I'll find a rather valuable gem inside. Right there, where your heart should be." Your sword presses toward the noble's heart momentarily, then rises slightly, jabbing cruelly at his Adam's apple. "Tell me... [i]geminai[/i]... do you have something to offer my crew in return for safe passage? Something more valuable than that gem inside you? Surely you don't expect to sail out with me and arrive at your destination alive." 
+
+      "Our tethlas; your code. T-That's why we risked our lives..." the stowaway stammers.
+      *goto teth_talking
+
+    *else
+      *set authority %-5
+      "Except that you have a rather valuable gem inside. Right there, where your heart should be." You jab a finger toward the noble's heart.
+
+      Rather than looking intimidated, the geminai gives an exasperated sigh. "It's not worth the trouble you'll be in if the authorities find out. We know about your code and we're prepared to pay for safe passage."
+      *goto teth_talking
+
+*label teth_talking
+
+"How many tethlas are we talking? And what's this about a code?"
+
+"We heard that you never take an innocent life..."
+*choice
+  #"You heard right. It's not my policy to kill anyone and I won't start now."
+    *set altruistic %+10
+    *set merciful %+10
+    *label trust	
+    The two noblemen sigh with relief. "Of course we realize it was wrong to sneak aboard..."
+
+    "But we can afford five hundred tethlas each for safe passage."
+
+    "That's not much," you say shrewdly. "Exactly what are you fleeing from anyway? The Ithoran inspector mentioned some sort of registry. That's all."
+    *goto eastern
+
+  #"I would never take an innocent life," you lie. "The very thought is abhorrent to me!"
+    *set honest %-10
+    *set cautious %+10
+    *goto trust
+
+  #"There's a first time for everything. Where's the benefit for me?" 
+    *set pragmatic %+10
+    *set altruistic %-10
+    *goto cruel
+
+  #"You bet your lives on a rumor? Hopefully you didn't pay for that information, because you've been fooled."
+    *set merciful %-10
+    *set cautious %-10
+    *label cruel
+    The two noblemen exchange terrified looks. "Look, we can offer you a sum of five hundred tethlas each. But t-that's all we have."
+
+    "Tell me why I shouldn't just kill you and take the tethlas off your corpse."
+
+    "B-Because we'll repay you tenfold once we're back on our feet again, somewhere safe!"
+
+    You pace the deck in thought. "Exactly what are you fleeing from? The Ithoran inspector mentioned some sort of registry. That's all."
+    *goto eastern
+
+
+*label eastern
+
+"The registry's just a diversion," the geminai explains. "It's been going on for some time now near the border. First they encouraged us to register with Volodeus for tests. Next thing you know they're trying to get us convicted of any crimes they could think of just so they could lock us up in some sort of detention center." 
+
+"It's like they were looking for reasons," his companion agrees.
+
+"Reasons for what?" you ask.
+
+"Well... they suddenly started rambling on about some sort of radiation poisoning. Said geminai had to be quarantined. We only escaped because we were warned." The geminai's complexion grows paler. "You don't really think it's true, do you?"
+
+"There's no way," his companion says, stepping forward. "How does it even make sense? We've been living in harmony for years. They want our cores!" 
+
+"Why would they want the cores if they're giving off radiation?" you ask.
+
+"They're not blaming the cores. They're saying it's our bodies giving it off. Like we're some sort of incubators," the stowaway explains.
+*comment could switch this so its cores not bodies? but then how could they explain wanting the cores if they are so dangerous? 
+*fake_choice
+  #I'll be as supportive as possible. They just want help getting to safety.
+    *set pragmatic %-10
+    "Sounds like you've been through a lot, so I'll try to do everything I can for you. Unfortunately it's not just my opinion that counts here." You sigh heavily, adjusting your jacket as you try to get your thoughts in line. "Moving along... Who told you about my ship?"
+
+  #I'll be supportive, but remind them that they put my crew at risk, which wasn't acceptable.
+    *set responsible %+10
+    "Sounds like you've been through a lot, so I'd like to help out. But I don't appreciate you putting my crew at risk. That was completely unacceptable. If the guards found you during the inspection we would have been in serious trouble." You sigh heavily, adjusting your jacket as you try to get your thoughts in line. "Moving along... Who told you about my ship?"
+
+  #Having them here is dangerous for everyone on board. I'll try to drop them off as quickly as possible. 
+    *set pragmatic %+10
+    "Sounds like a dangerous situation we're in. It would probably be best to part ways as quickly as possible." You sigh heavily, adjusting your jacket as you try to get your thoughts in line. "Moving along... Who told you about my ship?"
+
+"Some questionable fellow at Westlok harbor. If you mean to ask about his identity, I haven't a clue. Only that he approached us and said he would tell us which of the airships were safest to travel on... for a price. Pointed at yours. Said you were reputable, merciful, and a fine captain. I must say though, your ballast board could use some fine-tuning. We were nearly killed by tumbling crates three or four times."
+
+"Hmm... all right, that's enough to get by on for now," you say. "Let me discuss this with my crew before making a decision."
+
+*label hhh
+Minutes later, you've assembled the key members of your crew. Ruby leans against the forecastle wall with her arms folded over her chest. Kaolin rubs her eyes sleepily. Malikye paces restlessly, running fingers through his tormented hair. And Flint ruffles Kiwi's feathers with a bored look on his face. 
+
+"It's very clear these people need help," Ruby says. "We should take them with us to a quieter location and let them disembark safely."
+*label stowaway_choice
+
+"We're not a charity last I checked," Malikye growls. "We should charge them for safe passage. How are we supposed to survive if we let every chance to get ahead fly out the blasted porthole?"
+
+"Give Cap'n ${surname} a few days to get crew affairs in order and we'll be back on our feet in no time," Ruby says.
+
+"Ah, how could I forget... The one thing Ruby hates more than reality is pessimism," Malikye sneers.
+
+"I don't trust them. They put the crew at risk," says Kaolin. "The authorities are offering a substantial reward. Why not drop them off, dust off our hands, and call it a day?"
+
+"Do that and the geminai will reveal information about our smuggling operation in retaliation. It's what I'd do," says Malikye. "And I wouldn't be surprised if these so-called lawful authorities just gut them the moment we step out the door anyway."
+
+That takes Kaolin by surprise. She traces a finger along her dragon tattoo thoughtfully. "Well... these geminai were influential members of society at some point. Having them in your debt might not be a bad thing. Then again, they might just be dishonest, self-interested aristocrats. And who could really blame them if they were?"
+
+You consider the trembling geminai stowaways and prepare to make your decision.
+*label no_liam
+*choice
+  #"Okay geminai, you have yourself a deal. I'll accept the tethlas you offered in exchange for safe passage."
+    *set stow_wait true
+    *set stowaways 3
+    *set wealth +2500
+    *set authority %+10
+    *set relations %+10
+    *set Ruby %+10
+    *set merciful %+10
+    *set pragmatic %+10
+    "Thank you Captain!" The stowaway shakes your hand fiercely while wiping his face with a lace handkerchief. Once he recovers his senses, he unlatches a large jingling purse from his belt and places it on your outstretched hand. "Twenty-five hundred tethlas. True to our word."
+
+    You sheath your sword and count each tethla. "Looks like it's all here. Very well, you can travel with us until we reach the market, then it would be ideal for you to be on your way." 
+
+    "Of course." The stowaways excuse themselves with a bow and follow Ruby through the forecastle door.
+
+    "It's less than I hoped... but we might be able to purchase healthier food now," Malikye says, rubbing his chin in thought. 
+
+    Kaolin frowns with her hands on her hips. "I'm still angry at them for endangering the crew."
+    *choice
+      #"Getting them to safety is the right thing to do and so is demanding a fee for our services."
+        *label Kaolin_cowardice
+        "Well of course. It would have been cowardice to bring them to the authorities," Kaolin agrees. "But I still think they got off too easily."
+
+        *if responsible > 60
+          *label thetruth
+          *set Kaolin %+8
+          "The only way we're going to get more clients is by letting people spread the word. We need every bit of recognition we can get," you say, moving behind the helm.
+
+          "You really think they'll spread the word?" Kaolin asks, her eyes widening hopefully.
+
+          "Of course. Especially if we ask them to," you say. "Lots of geminai could use our help right now."
+
+          "It would be great to get more business out of it. Maybe you were right after all. Sorry for doubting you, Captain," Kaolin says.
+          *label chosen_market
+
+          *if chose_helmsport = true
+            "Anyway... I believe we were headed for the market in Helmsport."
+            *goto helmsport
+          *else
+            "Anyway... I believe we were headed for the Diamond Causeway."
+            *goto altesa
+
+        *else
+          *label eyeroll
+          *set Kaolin %-8    
+          "Look, I just did what I thought was right," you say, moving behind the helm. 
+
+          "Well I don't think you're taking the crew's safety seriously enough," Kaolin says. "Just want you to know."
+          *goto chosen_market
+
+      #"We should have pity for the less fortunate. It could be us someday."
+        *label gio_bitter
+        Malikye laughs bitterly. "You consider us fortunate?"
+
+        *if pragmatic < 40
+          *set Kaolin %+5
+          *set Ruby %+5
+          *set Malikye %+5
+          "We have a ship to call home, a crew to watch our back, and food on our table. That's more than they've got," you say, moving behind the helm.
+
+          Malikye sighs begrudgingly. "I suppose you've got a point..."
+          *goto chosen_market
+
+        *else
+          *set Kaolin %-5  
+          *set Malikye %-10 
+          "Look, I just did what I thought was right," you say, moving behind the helm. 
+
+          "For who?" Malikye growls. 
+
+          You ignore him.
+          *goto chosen_market
+
+      #"Having them in our debt will be a good thing."
+        *label giov_skeptic
+        *if altruistic < 40
+          *label gio_convinced
+          *set Kaolin %+7
+          *set Malikye %+7
+          "You actually think you're going to see them again once they get somewhere safe?" Malikye snorts. "You're delusional." 
+
+          "Think whatever you like. I have a knack for finding people who owe me. They're not getting away scot-free. Mark my words, we'll get the better side of this deal in the end," you say, taking the helm.
+
+          Malikye quirks an amused brow. "I'll give you the benefit of the doubt for now."
+          *goto chosen_market
+
+        *else
+          *label gio_skeptical
+          *set Kaolin %-5  
+          *set Malikye %-10 
+          "You actually think you're going to see them again once they get somewhere safe?" Malikye snorts. "You're delusional." 
+ 
+          You ignore him.
+          *goto chosen_market
+          
+  #"I'm feeling merciful, so keep your tethlas and remember what I've done for you." 
+    *set stow_wait true
+    *set stowaways 4
+    *set humanity %+10
+    *set relations %+10
+    *set Malikye %-20
+    *set Ruby %+20
+    *set Kaolin %-10
+    *set merciful %+20
+    *set pragmatic %-20
+    "Oh Captain, thank you!" The stowaway shakes your hand fiercely while wiping his face with a lace handkerchief. "You won't regret it. The Jinka brothers shall repay you someday, I swear." 
+
+    You sheath your sword. "You can travel with us until we reach the market, then it would be ideal for you to be on your way." 
+
+    "Of course." The stowaways excuse themselves with a bow and follow Ruby obediently through the forecastle door.
+
+    Malikye's dark brows form a V-shape on his forehead as he jabs a threatening finger at you. "You better be prepared to pay our wages this month or you won't be captain for long." 
+
+    Kaolin frowns, apparently worried about her pay as well. "After they put us at risk, you let them go for free? We can hardly afford food, while they're running around in silk pantaloons."
+
+    You glance at Flint, who shrugs indifferently. "As captain, sometimes it's your job to make unpopular decisions."
+    *choice
+      #"I want them to owe me a favor. After all, every debt goes hand-in-hand with interest."
+        *if altruistic < 40
+          *goto gio_convinced
+
+        *else
+          *goto gio_skeptical
+        
+      #"This whole smuggling business is temporary. I don't want it to corrupt me morally."
+        Malikye laughs. "Temporary? We're criminals. You can't go back from that. You can't ever go back once you've fallen." 
+
+        *if altruistic > 60
+          *set Kaolin %+5
+          *set Malikye %+5
+          *set Ruby %+5
+          "There's always a way to redeem yourself. Maybe you're just too bitter to accept the hard work that comes with it," you say, moving behind the helm.
+
+          Malikye ruffles his hair irritably and glances away in thought.
+          *goto chosen_market
+
+        *else
+          *set Kaolin %+5
+          *set Ruby %+5
+          *set Malikye %+5
+          "Look, I'm doing the best I can with the little I've got. It's not like I enjoy smuggling for a living," you reply. 
+
+          "You think anyone's going to care about your circumstances when you're begging for forgiveness?" Malikye asks. 
+
+          You ignore him and move behind the helm. 
+          *goto chosen_market
+
+      #"I've committed worse crimes to survive, so I understand where they're coming from."
+        "Then they should suffer the consequences of their actions, just as we do," Malikye argues.
+
+        *if pragmatic < 40
+          *set Kaolin %+5
+          *set Ruby %+5
+          *set Malikye %+5
+          "Wouldn't you appreciate being shown mercy occasionally? Hasn't anyone ever done that for you?" you ask.
+
+          Malikye sighs begrudgingly. "Once or twice I suppose."
+          *goto chosen_market
+
+        *else
+          *set Kaolin %-5  
+          *set Malikye %-10 
+          "We're not running for our lives like they are," you say, moving behind the helm.
+
+          "We won't have to, because we'll starve to death first," Malikye grumps.  
+          *goto chosen_market
+
+  #"I'll take you to safety after searching you for valuables and taking everything I find as payment."
+    *set stow_wait true
+    *set stowaways 3
+    *set wealth +5000
+    *set Kaolin %+10
+    *set Malikye %+10
+    *set Ruby %-20
+    *set merciful %-10
+    *set altruistic %-10
+    *set pragmatic %+10
+    "But how will we survive if you take everything we have left? We need something to get by on!" The stowaway clutches an expensive amulet around his neck protectively. "Some of these are family heirlooms!"
+
+    "Consider it the price of jumping on board without asking the cost," you say. "You put my crew at risk. We deserve compensation."
+
+    You sheath your sword and search the stowaways for valuables, counting every tethla and examining each piece of jewelry before handing the goods to Ruby in a pouch. "The haul's is worth a good five thousand tethlas or so."
+
+    Ruby frowns disapprovingly. "So you'll keep your promise? We're taking them to safety at least?"
+
+    "Of course," you say. "They can travel with us until we reach the market, then it would be ideal for them to be on their way." 
+
+    The stowaways cast one last look at their belongings before following Ruby with a sniffle through the forecastle door.
+
+    "We might finally be able to purchase some proper upgrades for the ship with this," Malikye says hopefully. 
+
+    Kaolin frowns, her hands on her hips. "I'm still angry at them for endangering the crew."
+    *choice
+      #"Getting them to safety is the right thing to do and so is demanding a fee for our services."
+        *goto Kaolin_cowardice
+
+      #"We should have pity for the less fortunate. It could be us someday."
+        *goto gio_bitter
+
+      #"Having them in our debt will be a good thing."
+        *goto giov_skeptic
+
+
+
+*label altesa
+*page_break
+The Diamond Causeway's landing platform is already crowded with impressive airships and vessels when you arrive and there's practically a stampede to get off the airship. 
+
+*if stow_wait = true 
+  The stowaways hesitate. "If you ever need help, seek the Jhinka brothers. We will do all for you that we can." With a bow, the stowaways excuse themselves, scurrying down the gangplank like mice in a cat's lair. You briefly wonder if you'll ever see them again.
+
+Malikye hurries past, looking frantic, mumbling something about finding another job for the crew. Somehow he's managed to tame his lustrous locks and button his shirt properly for once. It's a rather costly ensemble he's wearing though. Some sort of three piece designer suit with actual crocodile loafers. No wonder he's always so desperate for money if that's how he dresses off duty. 
+
+Though you have to admit, he fits right in...
+
+Gentlemen with gray-streaked hair lounge outside their luxury cruisers, leaning casually against the polished hulls while their hands glitter with gold rings and diamond cuff-links. It's frustrating considering some of you are actually here for business, and these narcissistic space wasters are taking up valuable space to flaunt their wealth in each other's faces.
+
+You shove your way through the crowd and exit the glamorous airlock. The market isn't far away, just a brisk jaunt across a glass-bottom bridge teeming with exotic fish and colorful coral. You stride forward, eager to get the shopping out of the way because you're earning a lot of repugnant looks. 
+
+You certainly didn't think your presence would cause any sort of problem - until you start making your away across the ocean-themed promenade. People pause to stare, their unflinching gazes dissecting every visible layer of your clothing. Immediately, you get the feeling that you and your threadbare uniform are not welcome here. You honestly thought you'd be safe enough in the middle of a crowded street, until someone seizes you from behind.  
+*choice
+  #Fight back before they drag me out of sight!
+    *set cautious %-10
+    Within seconds of struggling you realize that your captor is on some sort of steroids because you're completely overpowered in every way. Your toes aren't even touching the ground anymore. Seconds later, you find yourself pinned against a cold marble wall in one of the docking bay's dark recesses. When you finally get a look at your captors for the first time, you're surprised to see two Ithoran officers behaving in such a way. 
+    *goto bullies
+
+  #I guess I'll just go along with them and see what they want.
+    *set pragmatic %+10
+    You go limp and let your captor do all the work, carrying you along like royalty, until eventually you find yourself pinned against a cold marble wall in one of the docking bay's dark recesses. When you finally get a look at your captors for the first time, you're surprised to see two Ithoran officers behaving in such a way. 
+    *goto bullies
+
+  #I'll cry for help to attract attention and make this whole thing awkward. 
+    *set pragmatic %-10
+    You holler for help at the top of your lungs but everyone starts acting like things are back to normal, chatting amicably to one another while strutting across the promenade as if there was nothing to see. Bloody cowards would do anything to keep their luxurious market exclusive to the rich! Meanwhile, you find yourself dragged back into one of the docking bay's dark recesses, pinned against a cold marble wall. When you finally get a look at your captors for the first time, you're surprised to see two Ithoran officers behaving in such a way. 
+    *goto bullies
+
+*label bullies
+
+"Well, well. What have we here? Looks like some sort of vagrant sneaking inside to panhandle. Tut tut... Can't be having that." The officer pinning you to the wall grins. He doesn't look very old. Probably new to the force, testing his newfound power. His grip on you is deadlock. Even if you fought back you'd need to put up an impressive fight to overpower muscles like his.
+
+"If ${MC_heshe} tries to escape I'll tase ${MC_himher}." The second officer towers over you with a dead-pan face, flicking the switch on his little handheld device on and off so you can hear the fizzle of electricity.
+
+"Wonder if ${MC_heshe}'ll try to put up a fight... Doesn't look like much of a fighter to me." 
+
+With every advantage in their favor, these muscle-heads are definitely looking for a fight. It might be better to do something unexpected. They don't look very agile, but it would probably be easiest to just talk them down. 
+*choice
+  #To hell with the odds. These bastards are going down even if I have to fight tooth and nail!
+    *set cautious %-10
+    *if barbarism > 60
+      *set authority %+5
+      This isn't the time to fight fair. You bite the officer in the jugular then knee him in the balls. The officer screams in agony as he drops to the floor, cradling his groin. 
+
+      "Should've worn a cup," you say conversationally as his friend moves forward to tase you. He lashes out to strike but you're faster. You seize his wrist and twist him into an awkward headlock. When he finally drops the taser, you pick it up and hit him with it two or three times until his eyes roll back into his head and he foams at the mouth. You hope he's not dead, but you had to be thorough. You still need to pick up groceries. 
+
+      You turn to the first officer, now struggling to his feet, and tase him too. With your assailants temporarily knocked out you should be able to finish your shopping trip in peace.
+
+      *label shopping
+      *page_break
+      *set wealth -6700
+      With the sun setting and the shops about to close, the shop keeper gives you a pained look when you enter and you realize that you're keeping him from his dinner. 
+
+      "So what'll it be?" he says with a forced smile. 
+
+      He's overly helpful about the shopping, clearly intending to shorten your stay, which is just as well. Unfortunately it comes to a staggering sixty-seven hundred tethlas for groceries enough to feed the entire crew. After being detained yourself, you have no choice but to head straight back to your airship once the supplies are purchased.
+      *goto device
+
+    *else
+      *set notoriety %+10
+      *set health %-10
+      This isn't the time to fight fair. You bite the officer in the jugular then knee him in the balls. The officer screams in agony as he drops to the floor, cradling his groin.
+
+      "Should've worn a cup," you say conversationally as his friend moves forward to tase you. He lashes out to strike and he's much faster than you are. You manage to seize his wrist but he twists free and hits you in the chest with the taser. Your entire body convulses as you drop to the ground. Pain surges through your body, leaving your limbs tingling as you try to regain consciousness. 
+      *label details_taken
+
+      When you finally manage to sit back up, the officers have already entered the information on your identification card into their system. A moment later, they toss the card at your feet carelessly. "Best watch yourself from now on, ${name} ${surname}. You're making quite a name for yourself. We catch you wandering around here again and we won't let you off with just a warning." 
+
+      Your eyes are so out of focus that you can't tell which officer is talking to you. You wait a few minutes until your vision stabilizes then stagger to your feet and make your way to the market, feeling a little helpless. Nobody would take your word if you claimed that the officers abducted you. Now you've got a blemish on your record that's not going away any time soon...
+      *goto shopping
+
+  #I'll defuse the situation with a bit of self-deprecating humor.
+    *set cautious %+10
+    *if diplomacy > 55
+      *set authority %+5
+      "Look at you! You're way bigger than me. It's like your biceps were carved by the gods. What chance do I have against you?" You sigh and go limp, surrendering to his superior might. "If we must fight, I'll need a proxy to fight on my behalf. How about the threatening gentleman standing beside you?"  
+
+      When the officer realizes you're referring to his friend, he cracks a grin and relinquishes his grip on you. "Who in Tethyr are you exactly?"
+
+      "Naught but a feeble deckhand my good sir." You show him your identification card.
+
+      "$!{name}, huh? Well watch yourself around here. We don't normally let... uh... scruffy types just walk around wherever they please - in these parts, at least. Frightens the fancy-pants off the fancy folk. I don't really mind, but orders, y'know?"
+
+      "Just doing your job." You nod as if you actually believe him — which you don't. One second ago this muscle-head was ready to rip you apart, now he's practically asking you out on a date. Some people are so insecure. "Well thanks for letting me know. I'll be sure to put on my fancy britches next time I stop in for groceries."
+
+      "See you around." With that the officer and his intimidating friend strut away through the crowd, leaving you to finish your shopping trip in peace.
+      *goto shopping
+
+    *else
+      *set notoriety %+10
+      *set health -10
+      You want to say something self-depreciating, you really do, but when the time comes to talk you can't quell your hostility toward these power-tripping muscle-heads. "Is there a spine somewhere under all those bloated muscles or do you just enjoy picking on people smaller than you?"
+
+      "That's not how you talk to someone who's more important than you," the officer replies casually. "Let's teach ${MC_himher} some manners, shall we?"
+
+      The second officer steps forward and hits you in the chest with a taser while you're still helplessly pinned to the wall. Your entire body convulses as you drop to the ground. Pain surges through your body, leaving your limbs tingling as you try to regain consciousness. 
+      *goto details_taken
+
+  #Tch, I don't have time for this. I'll just distract them and make a run for it.
+    *set honest %-10
+    "Whoha whoha, gentlemen! I'm just checking to see if you lads are doing your jobs and all that."
+
+    "An undercover agent? Again?" The officer groans and lets you drop to the floor like a rotten tomato. "Look, I'm really sorry about roughing you up... I know we're taking the whole protocol thing a little far."
+
+    "Unfortunately it's my duty to report such abuses of power." You dust yourself off with dignity. Just maybe you won't have to run away. But then the officer with the deadpan face steps forward and thrusts his hand toward you in a demanding way. 
+
+    "Identification card!"
+
+    *if agility > 50
+      "Identification card...? Oh! Right. Now where'd I leave it?" you mumble as you pretend to search your pockets before abruptly whirling on your heels and diving into the crowd. You can hear the officers screaming threats behind you as you race across the bridge and leap behind a carpet display. When it seems like you've lost them, you scramble to your feet and get back to shopping, taking care to keep an eye out for the officers.
+      *goto shopping
+
+    *else
+      *set notoriety %+10
+      *set health -10
+      "Identification card...? Oh! Right. Now where'd I leave it?" you mumble as you pretend to search your pockets before abruptly whirling on your heels. With lightning speed, the intimidating officer tasers you in the back. Your entire body convulses as you drop to the ground. Pain surges through your body, leaving your limbs tingling as you try to regain consciousness. 
+      *goto details_taken
+
+
+
+*label helmsport
+*page_break
+The landing platform is deserted when you arrive and the deckhands don't seem too enthusiastic to disembark once you land. Malikye hurries past, looking frantic, mumbling something about finding another job for the crew. Somehow he's managed to tame his lustrous locks and button his shirt properly for once. Meanwhile, Ruby strides along beside you, intent on getting the shopping out of the way as quickly as possible.
+
+*if stow_wait = true 
+  The stowaways hesitate. "If you ever need help, seek the Jhinka brothers. We will do all for you that we can." With a bow, the stowaways excuse themselves then scurry down the gangplank like mice in a cat's lair. You briefly wonder if you'll ever see them again.
+
+The market itself is in shambles, run out of business by the monopolies in Ithora - at least according to the retired fishmonger who's busily picking grit from his rotting teeth with a toothpick. Of the ten buildings that surround the market square, nine are boarded up. Their shabby derelict signs dangle from the store fronts with faded letters. A few filthy street urchins peer from shattered windows, staring at you with hungry eyes, sizing you up before disappearing. You could easily handle three or four of them, but not a whole gang if they swarmed you with knives.
+
+Ruby stuffs her hands in her uniform pockets. "Don't suppose we can head over to the Diamond Causeway?" 
+
+"Not risking it. We'll just have to make the best we can of a bad situation." Your eyes skirt the wares. With the sun setting, the shops could close any minute, though the elderly woman, who seems to be overseeing the four remaining kiosks, seems eager for business.
+
+With a sigh, Ruby trains her eyes on the provisions list. "Looks like we have enough tethlas to restock our provisions for once." Ruby hands the list to the elderly woman, who begins rummaging through the wares the kiosks, crossing ingredients and supplies off the list after she finds them and sets them aside. Salted beef and hard-tack, rye and barley flour, the choicest picks from the rotten carrots and scabby potatoes, and a few barrels of pickled herrings. 
+
+"The crew won't be pleased when we bring back expired produce," says Ruby. "Why not try to cut a deal?" 
+
+"[i]Try[/i] to cut a deal?" you say, frowning. "If I were her, I'd be giving this rotten produce away for free."
+*choice
+  #And it's true. Manipulating a situation like this to my favor will be child's play.
+    *set honest %-10
+    *if guile > 55
+      *set Ruby %+5
+      *set wealth -4300
+      "Sure is quiet around here," you say.
+
+      "Sure is. Those fancy upper crust merchants squeezed us like a sponge. Eventually everyone just packed their carts and left. You know how it is. But me?" The woman gives her wrinkled hands a look of disgust. "Ain't got the strength left in me to move on. So here I am."
+
+      "Hard luck. Happens to us all. Those potatoes look a little off." You give her produce a skeptical look before pulling an old map from your pocket. It's not a map of Ithora but you don't think the woman can see very well from where she's sitting. "How far is the Diamond Causeway from here? Surely they'd have some fresh produce."
+
+      The old woman smiles. "How about I just give you the deal you're after? Half price? Say... forty three hundred tethlas? It's less than they'd charge you at the bazaar."
+
+      "At a price that low I'll have to tell everyone they're the best scabby potatoes I've ever eaten." You fold the map back up and smile. Not a bad price, considering it's enough to feed the entire crew. 
+
+      Ruby nods approvingly.
+
+      *label helmsport_continued
+      *goto device
+
+    *else
+      *set Ruby %-5
+      *set wealth -8300
+      "Not a very nice area, is it?" you say.
+
+      The woman scowls and leaps to her feet with more hustle than her age should permit. "Don't talk rubbish about my home! Been living here for forty years now, back when Ithora was just a regular castle town, half the size. Little businesses could flourish. Then those rich fellers came and squeezed us like a sponge. Offered bribes out the wazoo. Eventually everyone just packed their carts and left, the whole spineless lot of them. Wanted to buy up my property too. Even offered me a pretty penny after I refused their offers half a dozen times. But I'm still here, aren't I!" She shakes her fist in the air. "And I'll be here 'til the day I die! So what d'you want?"
+
+      "Er.. those potatoes look a little... off," you say with a wince, reaching for an old map in your pocket. Before you can withdraw it, the old woman slams her wrinkled hands down on the table. 
+
+      "If you don't like my potatoes you can bugger off!" 
+
+      Unfortunately, you don't have much choice so you relent and accept the bill at full price. Ruby certainly doesn't look pleased. 
+      *goto helmsport_continued
+
+  #She's just a fragile old lady. If I threaten her a bit she'll cave into my demands.
+    *set cautious %-10
+    *if barbarism > 55
+      *set Ruby %+5
+      *set wealth -4300
+      "Nobody interested in buying rotten produce these days?" you say, eyeing the potatoes with a look of disgust.
+
+      The old woman scowls. 
+
+      "Can't believe I made the mistake of coming here instead of the Diamond Causeway because I thought you folks could use some business. Lucky for you I don't have time to mess around right now, so I'll offer you a deal. You fill my order at half price and I won't leave what's left of this dump in ruins." You unsheathe your sword before the old woman can react.
+
+      "Half price then," the woman relents. "So long as you never show your face around here again."
+
+      "Wasn't my intention to," you say, relaxing your sword arm and forking over forty three hundred tethlas. Not a bad price, considering it's enough to feed the entire crew. 
+
+      Ruby nods approvingly.
+      *goto helmsport_continued
+
+    *else
+      *set morale %-10
+      *set Ruby %-5
+      *set wealth -8300
+      "Surely you wouldn't charge someone such extortionate prices for produce that's already going bad?" you say, moving your hand over your pistol threateningly.
+
+      "The prices are what they are. If you don't like 'em, you're free to shop elsewhere." To your surprise, the woman pulls a flintlock pistol from under the table and trains it on your face. "We don't respond well to threats round here. You want to get the edge on someone you better not hesitate. Don't mess around with the folks of Helmsport they say."
+
+      "Easy now!" Ruby says, her eyes widening as a few children rush from the shadows of the nearby buildings. They surround you and wave their knives threateningly.
+
+      "Okay, okay. You win. Let's not have bloodshed on the streets," you say, reluctantly forking over eighty three hundred tethlas for the moldy produce. "Full price it is."
+
+      The old woman smiles a toothless smile. "Figured you'd see it my way."
+
+      Ruby certainly doesn't look pleased. 
+      *goto helmsport_continued
+
+  #Maybe she'll give me a discount if I offer to promote her business in some way.
+    *set pragmatic %-10
+    *if diplomacy > 55
+      *set Ruby %+5
+      *set wealth -4300
+      You approach the merchant with a friendly smile on your face. "Name's $!{name} and I'm new in Ithora. I run a shipping company and I'm looking for a place to purchase supplies regularly. I like that it's peaceful around here. Might not be such a good thing for you, but it's ideal for me. Would you be interested in some extra business?"
+
+      The woman puffs her chest out proudly. "If you can offer me regular business then I'll see to getting some fresh produce in stock."
+
+      "Of course," you say. "With Ithora being the capital and all, I figure we'll be in and out of here all the time. Now I'd be happy to buy up your entire stock here... but it needs to last the month."
+
+      The merchant suddenly looks embarrassed. "If I knew you were coming..." She mumbles under her breath while doing some calculations on a scrap of paper. "Haven't had a new shipment in some time now... everything was just so quiet. Didn't see the point."
+
+      You frown in a disappointed sort of way. "That's a shame. I was really hoping to make a purchase."
+
+      "Well how about I give you a discount this time around? Let's say half price? And if you stop by regularly we can work out a regular discount that benefits us both," the woman offers.
+
+      "Couldn't ask for more," you say, shaking her hand and forking over forty three hundred tethlas. Not a bad price, considering it's enough to feed the entire crew. 
+
+      Ruby nods approvingly.
+      *goto helmsport_continued
+
+    *else
+      *set Ruby %-5
+      *set morale %-10
+      *set wealth -8300
+      You approach the merchant hesitantly and force a smile at the last minute. "Er... hello. I'm looking for a place to purchase supplies and this place looked pretty desperate for business so I figure you could give me a discount if I took these rotten potatoes off your hands."
+
+      "How generous of you," the woman says sarcastically. "But no. I'll have to refuse your noble offer. There's plenty of starving children around here willing to help an old woman out for a rotten potato or two."
+
+      "Oh come on," you say pleadingly. "Obviously we're both in a bad spot at the moment. Can't you cut me some sort of deal?"
+
+      "Might've helped if you didn't waltz up and insult me to my face," says the woman, crossing her arms over her chest stubbornly. "The prices are what they are. If you don't like 'em, go elsewhere."  
+
+      Unfortunately, you don't have much choice so you relent and accept the bill at full price. Ruby certainly doesn't look pleased. 
+      *goto helmsport_continued
+
+
+*label device
+*page_break
+You return to your airship to find an Ithoran knight waiting for you at the boarding platform. Your heart skips a beat. If you weren't carrying two baskets filled with supplies, your hand would have flown to the sword at your side.
+
+"Are you the captain of this vessel?" he asks. He looks tired and uncomfortable, as if he's been at this all day.
+*choice
+  #"I am. What seems to be the problem?" 
+    *set honest %+10
+    *set cautious %-10
+    *goto basket
+
+  #"No sir, just the swabby."
+    *set honest %-10
+    *set cautious %+10
+    "How peculiar," the knight says. "Considering the first mate described someone of your exact appearance and stature."
+
+    "It's been a long day. What can I do for you?" you say.
+
+    "Here," the knight pulls something from his pocket.
+    *goto basket
+
+  #"Sorry, you are...?"
+    *set cautious %+10
+    *set pragmatic %+10
+    "A squire of the Ithoran guard," the young man replies, squaring his shoulders. 
+
+    You quirk a brow at him.
+
+    "Don't worry... you're not in trouble," the knight assures you. "I just need to make sure every captain on this docking platform receives a message from the king before I have permission to head home."
+
+    "Let's have a look then. So we can both get some rest," you say.   
+    *goto basket
+
+*label basket
+
+Tucking the basket under one arm nervously, you accept the three-page document which the knight extends to you. To your surprise, it's stamped with the official seal of Tethyr, which can only mean one thing. "An order from the king?" 
+
+"There've been a few adjustments to the law. Geminai are now required to register with Volodeus. And any undocumented geminai are to be captured and given to authorities at soonest convenience in exchange for a reward."
+
+"They're no longer protected under the law?" 
+
+"Honestly, I don't know what's going on anymore. Just read the document." The knight leans against the wall, rubbing the dark circles beneath his eyes. 
+
+You stare down at the document in disbelief and horror. After receiving several reports of geminai stowing away aboard ships in an attempt to cross the Tethyr border, the king decreed that captains and their crews will be punished severely for harboring geminai. Something about radiation poisoning and public safety. The document advises all crews to take extra precautions when preparing for departure because it will be assumed that anyone caught with geminai on board is doing so intentionally. Perpetrators will be subject to treason and all the punishments that go along with it.
+
+You're sharp enough to see that they're using the fear of others combined with the fear of being punished by authority to push a dark agenda forward. But why would they risk doing such a thing? Was it for profit? Or perhaps power? And would the good humans of Tethyr really be apathetic enough to let such an atrocity take place before their eyes? Might they even be complict in it?  
+*comment  better? worse? hmmm..
+*label new_scene
+*choice 
+  #The king is a tyrant! I'll convince the knight to speak to his fellow officers and make a stand against this. 
+    "You shouldn't be handing these decrees out if you don't agree with what they say," you say, raising the parchment.
+
+    "I'll lose my job if I don't," the knight says. "And I don't have anything else lined up. My children would starve."
+
+    "What are you going to do if your children turn out to be geminai?" you ask.
+
+    The knight frowns uncomfortably. "They're not. But I see your point. I guess I'd be trying to sneak them out of the city right now."
+
+    "You shouldn't have to flee from your own home. Nobody should," you say. "That's why this is so wrong."
+
+    "Well what can we do about it?" the knight asks helplessly.
+
+    "Why not speak to your fellow knights? You could convince them to stop handing the decrees out for a start."
+
+    "What good will that do?" the knight asks. "They'll just fire us and hire someone else to do the job."
+
+    *if diplomacy > 55
+      *set relations %+17
+      "It'll slow the process down and give the citizens time to react," you say. 
+      *label its_possible
+
+      "It's possible I suppose..." the knight says. "I'll see what I can do."
+
+      "Really? Thank you." You pat him on the shoulder. "It's great to see a knight standing up for the citizens." 
+
+      "Well I did take an oath," the knight sighs. "Keep in mind you're asking me to put my neck on the line. I hope you're planning to do the same."
+
+      "It would be cowardice not to," you assure him. "Well then. Is there anything else I should know before I head out?"
+      *goto detection
+
+    *else
+      You frown, showing a moment of weakness as you try to form a counter argument. 
+
+      The knight seizes the opportunity to turn the situation on you instead. "Here's an idea. Why don't you do something? Lead by example rather than asking other people to lead the way." 
+      *label failed_officerconvince
+
+      You step back. "Easy there. I am planning to do something. As soon as I figure out what I can do," you say. The knight doesn't seem convinced. It might be best to push the conversation in another direction. "Anyway... is there anything else I should know before I head out?"
+      *goto detection
+
+  #The knight might not want to put his neck on the line, so I'll convince him to at least look the other way if he finds any geminai.
+    "So... do you agree with what the king is doing?" you ask.
+
+    The knight shrugs uncomfortably. "I don't know. I don't know the full story yet."
+
+    "Well it doesn't sit right with me. I can't stand by and watch them put innocent people behind bars. If I did, what right would I have to complain if it happened to me?" you say.
+
+    The knight shirks in his armor. "That's very noble of you, but I have a family to support and bills to pay... so I can't risk my job like that." 
+
+    *if diplomacy > 50
+      *set relations %+12
+      "Why not take small steps to help stop it? If you find a geminai, at least look the other way," you say.
+      *goto its_possible
+
+    *else
+      "Didn't you take an oath to defend the kingdom and its people?" you ask.
+
+      The knight frowns. "It's not your job to tell me how to do mine. Here's an idea. Why don't you lead by example rather than asking other people to lead the way?" 
+      *goto failed_officerconvince
+
+  #It might look suspicious if I asked the knight to do anything. But I can tip him off about my client and the geminai core smuggling operation.
+    *comment Do all players learn that Alabaster may be behind it?
+    *label snitch2
+    "By the way... ever heard of anyone by the name of Alabaster Hargreaves?" you ask.
+
+    "The Alabaster Hargreaves? Head of the Volodeus research department?" the knight replies uncertainly.
+
+    *if diplomacy > 45
+      *set relations %+8
+      "That's the one. One of his agents contacted me recently regarding a shipment of geminai cores," you say, tearing a page from your notebook. "The information's all here. With a bit of effort you might even get a promotion out of it."
+
+      The knight accepts the paper curiously. "I'll certainly look into it, though I can't promise anything." 
+
+      "Thanks," you say. "Well then. Is there anything else I should know before I head off?"
+      *goto detection
+
+    *else
+      "Not sure. That's why I was hoping you could investigate it. One of his agents contacted me recently regarding a shipment of geminai cores," you say, tearing a page from your notebook. "The information's all here. What I gleaned anyway."
+
+      The knight swallows nervously, glancing right and left before accepting the paper. "Uh... Thank you... I'll certainly have someone look into it..." 
+
+      "I sure hope so," you say, detecting his reluctance. "Anyway. Is there anything else I should know before I head out?"
+      *goto detection
+
+
+
+*label detection 
+
+"You'll probably want to check your crew for readings. This device will help you detect geminai at close range." The Ithoran knight hands you a small palm-sized device. "Simply activate the button there, then move the device within a meter of the suspect. The little gem at the top will start glowing if it's a geminai."
+  
+So this is what the authorities were waiting for. Technology that could tell an geminai from a human without ripping the chest cavity open. You close your hand around the device and force yourself to remain calm. "Very well. And if I find geminai in my crew?"
+
+"Undocumented geminai can be turned in at any checkpoint during entry," the knight explains. "If you're concerned about your safety, you can remove the geminai from your ship and file a report regarding their general whereabouts and appearance. Now I don't mean to cut our conversation short but my shift's done and I could use some shut-eye." 
+
+You continue to stand there at the end of the gangplank long after the knight leaves. You're not quite sure how to break the news to your crew. The most concerning aspect of this whole mess, which strikes you instantly, is that anyone aboard your ship could be a geminai. Even Flint. And if Flint did turn out to be a geminai, what would you do?
+*choice
+  #I'll do whatever it takes to save him, even if it means leaving the crew.
+    *set pragmatic %-10
+    You and Flint have been through everything together, you're not about to let him down now. 
+
+    You head back onto the airship, wishing you had sharpened your blade recently. Who knows how the crew would react to the news?
+    *finish Chapter Three: The Detection Device
+
+  #As captain, I can't show favortism. We will decide as a group how to move forward and what risks to take.
+    *set responsible %+10
+    As captain, you have a duty and responsibility to your crew that comes before personal desires. 
+
+    You head back onto the airship, wishing you had sharpened your blade recently. Who knows how the crew would react to the news? 
+    *finish Chapter Three: The Detection Device
+
+  #I can't give up my position as captain. Too many people are depending on me. We may have to go separate ways.
+    *set altruistic %-10
+    You've worked too hard to give up your life for someone else. 
+
+    You head back onto the airship, wishing you had sharpened your blade recently. Who knows how the crew would react to the news? 
+    *finish Chapter Three: The Detection Device
+
+
+

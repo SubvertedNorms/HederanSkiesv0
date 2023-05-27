@@ -1,0 +1,1067 @@
+﻿[b]Chapter One: Thunderstorm[/b] 
+*temp ship_stabilized 0
+*temp checked_perimeter false
+
+Dark clouds billow overhead, black as chimney smoke, blotting out sky and earth as the deck rocks back and forth like a cradle beneath your feet. As captain, it's your job to navigate the airship safely through the storm and deliver your client's cargo intact. Unfortunately, you weren't expecting the wind to hit such speeds while crossing the Blackreef Channel.  
+
+You close the door to the captain's cabin behind you as the airship skirts the rumbling storm clouds, suspended by frayed ropes that strain against the wind to hold the balloon in place. The balloon itself, discolored from years of use, stretches the full length of the hull, enveloping the crew in a forbidding shadow. 
+
+A hulking woman ducks beneath the swaying ropes and advances toward you. Her narrowed eyes and gritted teeth give her an unfriendly look. She keeps the sides and back of her head shaved, although she lets her bangs — which have grown several inches in length — part sideways across her face, partially concealing the dragonship tattoo that curls along her right cheek bone. 
+
+"What's going on out here?" you ask. "I told the crew not to take any shortcuts. We're a thousand feet in the air. If anyone falls overboard right now..." 
+
+"Sorry, Captain. We were blown off course. The storm is far worse than expected," Kaolin Windrider replies. Heavy torrents of rain crash against the weathered hull as she hurriedly adjusts some rigging. "Nobody bothered to secure the cargo while the winds were calm. There's just no procedure in place for times like these." 
+
+*fake_choice
+  #"Times like what? Regularly occurring storms?" 
+    *set pragmatic %+10
+  #"I'm worried someone will fall overboard at this rate."
+    *set pragmatic %-10
+  #"Looks like I better get involved. The paperwork can wait."
+    *set responsible %+10
+
+You suppose you should have remembered how inept the crew is. The former captain, Pyritos, didn't bother to train anyone properly. 
+
+Normally the cargo would be secured well before departure, when the airship was docked safely on firm land or floating steadily in the water of some port, but your client was in a hurry to be rid of the cargo before the inspection patrol came around and he demanded that you take to the skies immediately. 
+
+*fake_choice
+  #I'll lead by example. The deckhands will improve if I address their concerns.
+    *set diplomacy %+10
+    *set responsible %+10
+    *set pragmatic %-10
+    *set kaolin %+5
+    "Stay strong and help me get the ship out of this storm. There'll be plenty of time to train the deckhands later," you say.
+
+    "Aye Captain." 
+    *goto k
+
+  #I'll offer subtle suggestions and manipulate the deckhands into doing my bidding.
+    *set guile %+10
+    *set honest %-10
+    *set cautious %+10
+    "I know the difference between a difficult situation and a hopeless one," you say. "Even with a few crates missing we'll make enough profit to purchase food and repairs, with a bit on the side to send home to family." 
+
+    "Aye Captain." 
+    *goto k
+
+  #I'll run a tight ship and crack down on incompetence. Our livelihood is at risk.
+    *set barbarism %+10
+    *set pragmatic %+10
+    *set cautious %-10
+    *set kaolin %-5
+    "Unlike our former captain, Pyritos, I will not tolerate insubordination or failure," you say as you square your shoulders and narrow your eyes. "The crew will do as I say and do it well, or they can start looking for another place to rest their head at night." 
+
+    "Sorry, Captain." 
+    *goto k
+
+*label k
+Kaolin rubs the back of her neck sheepishly. "We managed to get some of the cargo into the hold but -" Kaolin stumbles forward as a violent gust of wind strikes the hull, knocking you both off your feet.
+
+As your body tumbles through the air in sickening circles, you're reminded of a circus act you once watched in your home town. Your head jerks sideways as you collide with a rail. Sharp pain spreads out from your temple. 
+
+In a crack of thunder, the wind changes direction, jolting the ship violently and transforming the entire deck into a deadly obstacle course. Unsecured crates slide from one side of the deck to the other, knocking unwary deckhands off their feet. You shout to a nearby deckhand but he doesn't heed your call. He can't hear you, and you aren't surprised. With rain pelting your face, you can't even tell who he is. 
+
+You scramble to your feet as several containers hurtle toward you. Every instinct screams at you to leap aside. Get seriously injured and you'll have to relinquish your position as captain, but step aside and your client's valuable crates will slide overboard. 
+*choice
+  #Dive aside and watch the crates slide overboard. It's not worth risking injury. 
+    *set agility %+10
+    *set cautious %+20
+    *set cargo %-25
+    *set kaolin %-5
+    The crates hurtle past you, crashing past the rail and flying into the open air.
+
+    "No!" Kaolin rushes forward too late, spitting curses as the precious cargo vanishes into the dark clouds below. "That's a quarter of our haul down the drain. If the storm doesn't kill us, our client will!"
+
+    "The crates were moving too fast. There was no way to stop them safely," you say. "Besides, we still might be able to deliver the rest of the cargo intact - assuming we can secure the crates before the next gale strikes."
+    *goto secondchoice
+
+  #Brace for impact and block the crates with my body. The cargo is too important. 
+    *comment I race forward and block the crates with my body.
+    *set barbarism %+10
+    *set responsible %+10
+    *set cautious %-10
+    *set agility %-7
+    *set health %-10
+    *set kaolin %+10
+    Your elbows buckle as a crate slams into your outstretched arms. Seconds later, another crate slams into your leg. Screaming in pain, you hold your stance and bring the crates to a halt.
+
+    Kaolin rushes over to help. "You okay?"
+
+    "I'll live." You wince and touch the tender areas where the crates collided with your body. Truth be told, you'll be lucky if your leg fully recovers. 
+
+    Kaolin breathes a sigh of relief. "Color me impressed. I thought any prospect of resupplying our dwindling food supply was gone!" 
+
+    "We're not out of the storm yet," you say warningly. "We need to secure the other crates before the next gale strikes."
+    *goto secondchoice
+
+  #Scream at Kaolin to stop the crates despite knowing that she'll be injured.
+    *set guile %+10
+    *set responsible %-10
+    *set pragmatic %+10
+    *set diplomacy %-7
+    *set kaolin %-10
+    "Kaolin! Stop the crates!" you order.
+
+    Your voice can barely be heard over the howling wind, yet Kaolin springs to action, blocking the gap in the rail with her muscular frame. Her elbows buckle as a crate slams into her outstretched arms. She nearly collapses as another slams into her leg.  
+
+    You quickly run forward and pull the precious crates to safety. "Whew. Didn't think you'd be able to stop them both."
+
+    "Nice of you to stand by and watch," Kaolin grumbles as she rubs her leg with a wince. 
+
+    You certainly didn't gain any favors with Kaolin, but it is thanks to her that you might be able to deliver the cargo intact - assuming you can secure the crates before the next gale strikes. 
+    *goto secondchoice
+
+
+*label secondchoice 
+*page_break
+You try to calm your nerves, but it's not easy. The storage room is empty. Food rations are low. Even the rats don't go near your airship anymore. It might as well be a floating coffin. Deckhands were barging into your cabin since the crack of dawn singing of empty bellies and light pockets. With your clients' valuable cargo now scattered across the deck, threatening to plummet miles through the air into the sea, financial ruin looks inevitable. 
+
+You've dealt with worse situations in the past, but not many.
+
+Nearby, the boatswain finishes dragging a thick rope around another crate. Kaolin hurries over, feet sliding across the slick floorboards, to offer a hand. You move to help just as the ship begins rolling and pitching again. Several deckhands wretch and fall to their knees. Their slippery vomit coats the deck.
+
+Frustrated and queasy, you search for the silver lining in all this mess. Nobody is fatally wounded and most of the crates are still scattered across the deck. You could help gather them together but it might be wiser to stop the ship from drifting further into the storm...
+
+*fake_choice
+  #I need to make sure everyone's okay.
+    *set pragmatic %-10
+  #I need to secure the cargo. 
+    *set pragmatic %+10
+  #I need to take charge and start giving orders.
+    *set responsible %+10
+
+Grasping the airship's railing tightly in one hand, you make your way to the main deck while slivers of wood dig into your iron grip. 
+
+Unlike a seafaring ship, the massive captain's wheel has been replaced with a console. The three officers stationed there work together to operate a complicated assortment of levers and buttons. 
+
+You could try steering the airship back on course by yourself or request assistance from the officers - though they clearly have no idea what they're doing if they're still heading deeper into the storm...
+*choice
+  #I'll be openly supportive and welcome their help. We need to work together.
+    *set altruistic %+10
+    *set diplomacy %+10
+    "Here. Let me help." You settle behind the central console panel and patiently give instructions to the officers as they adjust the gas and ballast boards. "Stabilize the trim. We're heavy in the tail."
+
+    Everyone seems comfortable working with you even though your rank far exceeds theirs. However, the airship refuses to stay on course.
+
+    "The rudder lever won't budge," one of the officers says in a panicked voice. "It's been tempermental all day."
+
+    "Looks like it's rusted. Here. Let me try." Channeling all your strength into one arm, you shove the rusted rudder lever sideways and get the airship back on course. "Oil the joints and it'll be good as new," you say before leaving the control panel in their care. 
+    *goto oncourse 
+
+  #I'll watch for problems and offer subtle suggestions, leading from the shadows. 
+    *set responsible %+10
+    *set guile %+10
+    *comment You settle yourself inconspicuously behind the deckhands and offer helpful suggestions as they work. The officers take extra care when adjusting the gas and ballast boards. 
+    "Hmm... does the trim seem a bit unstable to you?" you ask, settling yourself inconspicuously behind the deckhands.
+
+    Immediately the officer to your left adjusts the ballast board, his fingers dancing quickly across the panel. As the deck levels out, you help the other officers adjust the bearing using the same subtle method. With the airship back on course, you leave the control panel in their care. 
+    *goto oncourse 
+
+  #As if I need help. The officers obey my commands and so will these buttons and levers!
+    *set cautious %-10
+    *set barbarism %+10
+    *comment No physical or mental limitation has ever prevented you from doing what you set out to accomplish before, so you shove
+    You shove all three officers away and settle yourself behind the central console panel. The gas and ballast boards can be adjusted with ease but the rusted rudder lever refuses to budge. You throw your weight against it. 
+
+    When the airship finally turns it's a miracle. Sliding behind the console again, you operate all three control panels with sheer determination, instructing the officers to oil the rusted lever while you navigate toward the eye of the storm. 
+
+    "There. I've corrected our course. Now keep heading straight," you tell them before relinquishing the controls. 
+    *goto oncourse
+
+*label oncourse
+*page_break
+Next, you hear a fight break out nearby, with Quartermaster Ruby Reed trying to convince Jasper Lazulus, the fifty-seven year old ship's surgeon, to remain outside. "As the only active surgeon on board, you should be on deck at all times helping the wounded!"  
+
+"Why? So I can get struck down by the same crate that hit him?" Dr. Lazulus gestures impatiently at a fallen deckhand with a blood-soaked ankle. "Then what?"
+
+"It's as simple as stepping aside," Ruby growls. "Now get to work or –" 
+
+"Or what? You'll throw me overboard? Confound you, woman!" Dr. Lazulus shouts. "Happily I wash my hands of you, your demands, and this enterprise of tomfoolery!" The cow-eyed, curly haired surgeon lunges for the door but Ruby blocks it with her arm. 
+
+"I don't think so," Ruby says warningly, tilting her head higher as a flicker of lightning illuminates her threatening eyes. "You'll at least tend the wounded before I let you back inside."
+
+"What good am I to anyone dead? Now let me by or we'll see how well this disaster-prone crew of half-wits fares without a surgeon of my caliber to piece and patch it back together!" 
+*fake_choice
+  #"Cut it out you two!" 
+  #"Calm down. There's no reason to overact."
+  #"Why are my highest ranking officers behaving like children?"
+
+You're about to step between the surgeon and quartermaster when lightning clips the underbelly of the clouds, causing the airship to wrench like a beached whale. 
+
+Sienna, the eight-year-old cabin girl, crashes over the rail. Her shrill scream is swallowed by a rumble of thunder. Miraculously, she manages to latch on to the rigging but her trembling fingers keep slipping on the wet ropes. If the poor girl loses her grip, her body will plummet for miles. What will eventually break her fall, earth or sea, you can't tell because the sky beneath the airship is shrouded by clouds. 
+
+The emergency sails unfurl seconds later, fanning out like wings. Normally these sails are only released in preparation for sea travel but someone clearly failed to secure them. A few deckhands rush to the quarterdeck and desperately attempt to haul the sails back in. 
+
+Any moment now a strong gust of wind could catch in those fluttering deathtraps and capsize the entire ship. Although the deckhands are trying to tether them down, they're doing it wrong. If you don't help them you'll surely lose some cargo...
+*choice
+  #Convince Dr. Lazulus to stay. He's the only one who can treat serious injuries. 
+    *comment Break up the fight before the ship capsizes. 
+    *set cautious %+10
+    *set pragmatic %+10
+    *set cargo %-25
+    *set Sienna_injured true
+    *goto fight
+
+  #Rescue the cabin girl. She's about to lose her grip and plunge to her death. 
+    *set pragmatic %-10
+    *set altruistic %+10
+    *set lazulus %-20
+    *set cargo %-25
+    *goto Sienna  
+
+  #Secure the sails and cargo. We need to minimize profit losses or the crew will starve. 
+    *set pragmatic %+10
+    *set responsible %+10
+    *set lazulus %-20
+    *set Sienna_injured true
+    *goto secure
+
+
+
+*label fight
+If there's one thing you don't want right now, with so many injured on board, it's your invaluable quartermaster and talented surgeon at each other's throats. So when you see Dr. Lazulus with brow furrowed and medical case raised high overhead, you realize somebody is about to get the worse end of a bloody nose. You dodge past the crates sliding over the edge, ignore Sienna's pleas for help, and take several long strides toward the two top-level deckhands. 
+
+Unsurprisingly, Dr. Lazulus's stance isn't threatening Ruby at all. Instead Ruby swells like a balloon, thrusting her chest forward, peeling her toned shoulders back, and tilting her chin so it juts out defiantly. When you leap between them, Dr. Lazulus starts in surprise and immediately begins spitting words from his lips. "Aha! If it isn't the good captain! Such a pleasure to see you! Unexpected even! What with the, uh, how should we put it? Deadly precipitation of projectile crates?" 
+
+"What's going on here?" you demand as Dr. Lazulus stashes the medical case behind his back while shaping his mouth into a poor attempt at a smile. 
+
+"You've indubitably had the misfortune of overhearing a portion of the disagreement between myself and this prodigious lunatic who so recently ordered me to jeopardize life and limb by remaining on deck. Indeed! Put myself at risk when injured personnel could simply be carried below deck where I could tend to them in the safety of the —"
+
+"Who has time to be dragging people below deck at a time like this?" Ruby demands. She focuses a smoldering glower on Dr. Lazulus that would make an ordinary man wither into the floorboards. "The stinkin' cowardice, am I right?" 
+*choice
+  #Side with Dr. Lazulus. It's too dangerous for our surgeon to be outside during a storm. 
+    *set Lazulus %+10
+    *set cautious %+10
+    *set responsible %+10
+    "I think Dr. Lazulus should tend the wounded inside," you say. "It's safer and we can't afford to lose him right now."
+
+    Dr. Lazulus smirks at Ruby. "There! You see? I was right. Even the captain agrees."
+
+    Ruby slams her fist against the rail. "What's the point of having a surgeon on board if he spends the entire time hiding?"
+
+    *if diplomacy > 40
+      "Look Ruby, he won't be able dodge crates while tending wounds," you say reasonably. 
+
+      "But some of the deckhands are hurt so badly they can't even crawl to safety!" Ruby argues. "Are you saying we should abandon them?"
+
+      "If we don't get the ship under control soon we're going to lose everyone. Just look over there!" you say, pointing urgently at the port-side rigging. "The cabin girl's about to fall to her doom, and I'm stuck here arguing with you two."
+
+      "Wait... Sienna's in trouble?" Ruby's eyes widen as the information sinks in. A moment later, the quartermaster turns on her heels and races to Sienna's rescue. 
+
+      Dr. Lazulus grunts a word of thanks before heading below deck.
+ 
+      By some miracle, you managed to settle the argument favorably. 
+      *goto sienna_injured_transition
+
+    *else
+      *set Ruby %-10
+      "Dr. Lazulus causes more problems than he solves. It's a waste of time to argue with someone like him," you say.
+
+      "So that's your solution? Just let him get away with anything because we don't have anyone better?" Ruby demands.
+      *label honestly
+
+      "Look, we really don't have time for this. The cabin girl's about to slip off the port-side rigging while we're here arguing like children," you say impatiently.
+
+      "Wait... Sienna's in trouble?" Ruby's eyes widen as the information sinks in. A moment later, the quartermaster races toward the port-side rigging, but not before giving you a scowl and a sharp word. "Why bother with us when saving her should have been the priority from the start?" 
+
+      Dr. Lazulus skulks inside without a word of thanks.
+
+      That didn't go as planned.
+      *goto sienna_injured_transition
+
+  #Side with Dr. Lazulus. I want our surgeon to owe me a favor. That way he can't leave.
+    *set Lazulus %+10
+    *set honest %-10 
+    *set altruistic %-10
+    *if guile > 40
+      "Dr. Lazulus should tend the wounded inside," you say. "It's safer and we can't afford to lose him right now. He's too important."
+
+      "About time someone listened to reason," Dr. Lazulus replies, fixing his gloating eyes on Ruby and making no attempt to conceal his widening smirk. "I'll be inside should anyone require treatment." He speaks the words casually over his shoulder while sauntering smugly to the door. 
+
+      Ruby fingers the dagger on her belt, simmering with rage. You don't blame her. 
+
+      "He's insufferable," you admit. "But we don't have much choice until we find someone better. For now, we should try to do something about the cabin girl. She's about to slip off the port-side rigging."
+
+      "Wait... Sienna's in trouble?" Ruby's eyes widen as the information sinks in. A moment later, the quartermaster turns on her heels and races to Sienna's rescue. 
+
+      By some miracle, you managed to settle the argument favorably. 
+      *goto sienna_injured_transition
+
+    *else
+      *set Lazulus %-10
+      "You heard him. Find someone else to help with the dangerous tasks," you say. "He's the surgeon. We can't risk losing him." 
+
+      "So you'd rather risk losing everyone else?" Ruby demands.
+
+      "Look, I'm doing the best I can with the little I've got," you growl. "Like it or not, we're stuck with him for now."
+
+      Dr. Lazulus glares at you. "Stuck with me, are you? Well, if that's how you feel I'll take my leave. Once we get somewhere civilized I'm out."
+
+      You watch the pair storm off in opposite directions. 
+      *goto sienna_injured_transition
+
+  #Side with Ruby. She's right. The injured deckhands need immediate attention.
+    *set Ruby %+10
+    *set responsible %+10
+    *set pragmatic %+10
+    *if diplomacy > 40
+      "You need to get those deckhands back on their feet," you say, giving Dr. Lazulus a disapproving frown.
+
+      "And what if I'm injured out here?" Dr. Lazulus demands. 
+
+      "Either we get this cargo to our client on time or we figure out how to avoid his debt collectors for the rest of our miserable lives," you say.
+
+      Huffing indignantly, Dr. Lazulus moves toward an injured deckhand. The moment he's out of earshot, Ruby grins. "Nice work, Cap'n."
+
+      "I have a job for you too actually. The cabin girl's dangling from the port-side rigging. Can you help her?" 
+
+      "Wait... Sienna's in trouble?" Ruby's eyes widen as the information sinks in. "Leave it to me!" Ruby says, racing for the rail.
+
+      By some miracle, you managed to settle the argument favorably. 
+      *goto sienna_injured_transition
+
+    *else
+      *set Lazulus %-10
+      "Toughen up, Lazulus. Ruby is right. It's called 'all hands on deck' for a reason," you growl.
+
+      "All hands on deck? You'll get us killed spewing mindless platitudes like that," Dr. Lazulus snarls. "Try using your head for once. I happen to be the only surgeon on board. Lose me and you don't stand a chance. Now step aside or I'll take my leave at the next port."
+
+      You grit your teeth as Dr. Lazulus shoves past you. You have half a mind to give him a swift kick in the rear. But if you waste any more time with Lazulus, the cargo will be lost. 
+      *goto sienna_injured_transition
+
+  #Side with Ruby, but use flattery to convince the surgeon to help the deckhands.
+    *set honest %-10
+    *set pragmatic %+10
+    *if guile > 40
+      *set Lazulus %+10
+      *set Ruby %+5
+      "It's a shame," you sigh. "I really thought this mission would be our lucky break."
+
+      "What did you expect?" Dr. Lazulus snaps. "We're surrounded by a load of incompetent nincompoops."
+
+      "Then it falls to us - the competent members of the crew - to see this ship safely to port," you reply. "Surely a talented fellow like yourself wouldn't mind treating the wounded while you're on deck? You're the only one I can count on right now."
+
+      Dr. Lazulus hesitates, his beady eyes darting back and forth as he calculates his response. "Ah... I suppose I could help. I didn't think anyone noticed how much I've put on the line lately. A pay raise certainly wouldn't go amiss. Dangerous work this ship business." 
+
+      "Knew I could count on you," you say, flashing the surgeon a charming smile before turning to Ruby. "Anyway, the cabin girl is dangling from the port-side rigging. Can you help her?" 
+
+      "Sienna slipped overboard?" Ruby's eyes widen as the information sinks in. "Leave it to me!" she says, racing for the rail.
+
+      By some miracle, you managed to settle the argument favorably. 
+      *goto sienna_injured_transition
+
+    *else
+      *set Lazulus %-15
+      "Surely such a talented surgeon wouldn't mind attending some injured deckhands on deck despite the small amount of danger involved?" you ask Dr. Lazulus.
+
+      Dr. Lazulus's expression darkens. "Aha! I see how it is! You're willing to put me at risk to save a handful of expendable deckhands. Well don't expect me to rise to the challenge any more than these useless louts have!" Dr. Lazulus jabs an accusatory finger at the nearby deckhands.
+
+      Your fake smile falters. "Don't start something you'll regret," you say warningly, pushing Dr. Lazulus toward an injured deckand. The surgeon curses you vehemently, swearing you'll pay. You'll have to worry about that later. 
+      *goto sienna_injured_transition
+
+  #Suggest a compromise. I'll convince them to work together for the good of the crew.
+    *set pragmatic %+10
+    *set cautious %-10
+    *if diplomacy > 40
+      *set Lazulus %+5
+      *set Ruby %+10
+      "Ruby, could you find someone to protect Dr. Lazulus while he treats the wounded on deck?" you ask.
+
+      "I suppose it's better than nothing," Dr. Lazulus relents.
+
+      "If it means people can get the help they need, I'm for it. I'll even do the job myself," Ruby agrees.
+
+      "Great. Why not start by helping the cabin girl who fell overboard a moment ago?" you say, pointing to the port-side rail. 
+
+      "Sienna fell overboard?" Ruby's eyes widen. "Leave it to us!" she says, racing for the rail.
+      *goto sienna_injured_transition
+
+    *else
+      *set Lazulus %-10
+      *set Ruby %-5
+      "Why not give Dr. Lazulus his own personal bodyguard while he treats the wounded on deck?" you suggest. "Ruby could do it."
+
+      Dr. Lazulus gives Ruby a mistrustful look. "I don't trust any of you to watch my back. Everyone aboard this ship watches out for themselves." 
+
+      Ruby grits her teeth angrily. "You know I'm not like that. I've been begging for your help!"
+
+      "If you have so much free time on your hands then bring the injured deckands below deck so I can treat them in safety!" Dr. Lazulus retorts.
+
+      For a moment it actually looks like Ruby might draw her dagger on Dr. Lazulus, but then she huffs deeply and whirls on her heels, marching away. Dr. Lazulus seizes the opportunity to march in the opposite direction, leaving you momentarily speechless.
+      *goto sienna_injured_transition
+
+
+
+
+	
+*label Sienna
+You shove past the squabbling deckhaads, leap over the crates that are sliding overboard, and peer over the rail to find Sienna staring up at you in terror. 
+
+Her fingertips are turning pale as she struggles to maintain her grip on the rigging. When you lock eyes with her, Sienna gulps and tries to put on a brave face for your sake.
+
+"Captain!" Sienna's lips tremble. The muscles in her undeveloped arms are straining to carry the weight of her body. They could seize up any moment.
+
+"Hold tight," you tell Sienna. "You're going to be okay." 
+*choice
+  #Risk my life and climb down the rigging to reach her. 
+    *set altruistic %+10
+    You hop over the rail and lower yourself down the rigging until your shoulder brushes against Sienna's. 
+
+    One glance at her ragged clothing brings back memories of your orphanage days, back when you lived on the charity and leftovers of others. She wears a hand-me-down coat that is two sizes too big for her and a pair of worn boots which have almost slipped off her feet. You'd like to know who thought it was a good idea to bring a child aboard a smuggling ship.
+ 
+    You clear your throat so your voice can be heard over the thunder. "Grab on to me!"
+
+    "But I'm scared!" Sienna cries. "What if I fall?"
+    *choice
+      #"Tell you what. I'll reach out first, but you need to let go when I say." 
+        *set responsible %+10
+        *label Siennapanic
+        Sienna gulps. "Okay... I'll try..." 
+
+        You reach out and wrap one arm around Sienna's waist. "I got you. Now it's your turn."
+
+        Sienna eyes you nervously. Her fingers tremble as if she's about to relax her grip.
+
+        "You can do it," you say encouragingly. Instead, Sienna starts to cry. While her eyes are closed, you reach out and attempt to pry her fingers off the rigging but Sienna's fingers clench tighter, refusing to let go.
+
+        Suddenly the airship enters unexpected turbulence. Sienna slips from your grip and slides further down the rigging before coming to an unsteady halt. 
+        *goto fall
+
+      #"Toughen up! You got yourself into this mess. Now get yourself out."
+        *set cautious %-10
+        *goto Siennapanic
+
+      #"What are you worried about? We already left the turbulence behind us," I lie. 
+        *set honest %-10
+        *goto Siennapanic
+
+  #Lower a rope to Sienna and instruct her to climb it while I act as her anchor.
+    *set pragmatic %+10
+    You tightly knot the rope to create a small circular foothold at the end. Once the rope is ready, you lower it over the railing until the tip brushes against Sienna's shoulder. 
+
+    One glance at her ragged clothing brings back memories of your orphanage days, back when you lived on the charity and leftovers of others. She wears a hand-me-down coat that is two sizes too big for her and a pair of worn boots which have almost slipped off her feet. You'd like to know who thought it was a good idea to bring a child aboard a smuggling ship.
+  
+    You clear your throat so your voice can be heard over the thunder. "Sienna! Grab the rope and slide one foot into the loop!"
+
+    "But I'm scared!" Sienna cries. "What if I fall?"
+    *choice
+      #"I'll walk you through it step by step so you won't have trouble." 
+        *set responsible %+10
+        *label Siennapanic2
+        "Okay... I'll try..." says Sienna.
+
+        Sienna eyes the rope nervously. Her fingers tremble as she prepares to relax her grip. Then she starts to cry. While her eyes are closed, you attempt to loop the lasso around Sienna's body. Sienna's fingers clench. She refuses to release her grip. You lean out over the rigging to coax her into taking the rope.
+        *goto fall
+
+      #"Toughen up. You got yourself into this mess; now get yourself out of it."
+        *set cautious %-10
+        *goto Siennapanic2
+
+      #"What are you worried about? We already passed through the turbulence," I lie. 
+        *set honest %-10
+        *goto Siennapanic2
+ 
+  #Encourage Sienna to climb up on her own. She needs to learn. I can reach her if she slips.
+    *set cautious %-10
+    It's important to have deckhands who are both courageous and independent so you give Sienna a chance to prove her mettle. Although she doesn't look like much now, you're certain she has potential.
+ 
+    One glance at her ragged clothing brings back memories of your orphanage days, back when you lived on the charity and leftovers of others. She wears a hand-me-down coat that is two sizes too big for her and a pair of worn boots which have almost slipped off her feet. You'd like to know who thought it was a good idea to bring a child aboard a smuggling ship.
+
+    You clear your throat so your voice can be heard over the thunder. "Sienna, you need to start climbing!"
+
+    "But I'm scared!" Sienna cries. "What if I fall?"
+    *choice
+      #"I'll walk you through it step-by-step so you won't have trouble." 
+        *set responsible %+10
+        *label Siennapanic3
+        "Okay... I'll try..." says Sienna.
+
+        With a sob, Sienna lifts one hand shakily into the air. She stretches her arm as far as it can go and grabs hold of the next section of rigging. Her entire body trembles with exertion as she leverages her body onto the next wrung. You think about leaping down and offering help when suddenly Sienna's pace begins to steady and quicken. Before you know it, Sienna has almost reached the rail.
+
+        "There! See how easy th—"
+
+        Suddenly, Sienna slips. You lunge over the rail and try to grab her but miss, sliding a few inches down the rigging before coming to an unsteady halt.
+        *goto fall
+
+      #"Toughen up. You got yourself into this mess; now get yourself out."
+        *set cautious %-10
+        *goto Siennapanic3
+
+      #"What are you worried about? We already passed through the turbulence," I lie. 
+        *set honest %-10
+        *goto Siennapanic3
+
+
+*label fall
+
+The rain has made the rigging so slick that you're about to lose your grip.
+
+As you desperately consider your next move, you recall a memory from your final disasterous mission with ex-Captain Pyritos. Several crates had smashed open, scattering illegal adrenaline pills across the deck. You were still finding them between cracks in the floorboards and stuffing them into your pockets so your deckhands wouldn't succumb to them. Now you can't help but wonder if they could be of use in this increasingly desperate situation. 
+
+With an adrenaline boost, you'd definitely have the speed and reflexes to save Sienna. On the other hand, it's addictive and overpowering to the point where you could completely lose control. 
+
+You reach into your pocket and consider taking one the adrenaline pills.
+*choice
+  #Swallow the adrenaline pill and try not to lose control. I need to save her!
+    *comment Swallow an illegal adrenaline pill that temporarily gives me extraordinary strength. 
+    *set addiction %+10
+    A surge of superhuman strength courses through your veins as you wrap one arm around Sienna and pry her off the rigging. "You're hurting me!" Sienna cries as your fingers dig into her ribs. 
+
+    You try to loosen your grip but your mind is spinning as the substance enters your system. For a moment you forget where you are. Then you see a thin cord of rigging clenched in your fist and the empty air beneath your feet.
+
+    *if responsible > 60
+      *set Sienna %+20
+      You remind yourself that you're responsible for Sienna's safety and loosen your grip slightly. The adrenaline rush is still out of control but you can try to get Sienna to safety. Using one hand, you climb the hull like an ape, heaving yourself higher with upper-body strength unfit for a bipedal creature. 
+
+      You leap over the rail and land on the deck with ease. A few deckhands stare at you in horror. Perhaps you're frothing at the mouth or your eyes have gone bloodshot. Whatever happened, there's suddenly three deckhands running toward you, intent on taking you down. 
+ 
+      "It's okay! She's okay," you say. Somehow you manage to fight the overpowering desire to fling the deckhands aside as you lower Sienna to the ground. 
+      *goto Sienna_end
+
+    *else
+      Once again, you try loosening your grip on Sienna to no avail. You're panicking. The adrenaline rush is out of control but you can try to get Sienna to safety. Using one hand, you climb the hull like an ape, heaving yourself higher with upper-body strength unfit for a bipedal creature. 
+
+      You leap over the rail and land on the deck with ease. A few deckhands stare at you in horror. Perhaps you're frothing at the mouth or your eyes have gone bloodshot. Whatever happened, there's suddenly three deckhands running toward you, intent on taking you down. You feel an uncontrollable urge to rip them apart.
+      *choice
+        #Meet the deckhands head on. I'll take my rage out on them.
+          *set morale %-10
+          You smash your elbow into the first deckhand's stomach. Before he can hit the ground, you've already elbowed the second deckhand in the face. He staggers back, clutching his jaw and whimpering in pain. Just when it seems like your opponents have finally learned their lesson, two more descend on you. Sienna is knocked from your hands, facilitating your next attack. 
+
+          Releasing a howl of rage, you grip the two men behind their heads and bring their foreheads crashing together with concussive strength. Both men collapse backwards with bloody noses. You turn on the spot as footsteps crash toward you. Next moment, several deckhands descend upon you like locusts.
+
+          "Captain! Calm down!"
+
+          "Someone take the girl inside!"
+
+          The voices rekindle your sanity and you realize that you're lying sprawled out on deck with every appendage pinned down by a different deckhand. Rain continues to pour from the clouds. Thanks to you, the deckhands are in complete disarray. You go limp to indicate that you've regained your composure. The deckhands help you to your feet uneasily.
+
+          "Adrenaline pills? Really Captain?" one man asks.
+
+          "You think I wanted to? It was the best option I had at the time," you grumble. "Anyway, we don't have time to be messing around like this."
+          *goto Sienna_end
+
+        #Smash my head against a nearby mast in an attempt to regain control.
+          *set health %-10
+          Unable to sate the uncontrollable rage within, you lower your eyes and charge head-first into the nearby mast. Splitting pain pierces your skull and resonates through your body. Your vision blurs and tears of pain stream from your eyes. Sienna is knocked out of your hands. You lie spread-eagled on your back, feeling somehow victorious as deckhands circle around you like curious vultures.
+
+          "Captain? What happened?"
+
+          "Someone take the girl inside!"
+
+          The voices rekindle your sanity. 
+
+          "We've got no time to be messing around like this," you mumble, reprimanding yourself as you try to fight off the pill's negative side-effects. 
+          *goto Sienna_end 
+
+        #Hurl Sienna at the deckhands to stop their advance.
+          *set Sienna %-10
+          You feel Sienna kicking and screaming as you lift her over your head. When the first deckhand closes in to tackle you, you hurl Sienna at him like a boulder. He drops to the deck, clutching the girl in his arms, as two men descend upon you, pinning your wrists to the ground. 
+
+          "Captain! Calm down!"
+
+          "Someone take the girl inside!"
+
+          The voices rekindle your sanity. You realize you're lying sprawled out on deck with every appendage pinned down by a different deckhand. Thanks to your little side show, the deckhands are in complete disarray. You go limp to indicate that you've regained your composure once more. The deckhands move aside and help you to your feet. 
+
+          "Adrenaline pills? Really, Captain?" one man asks.
+
+          "You think I wanted to? It was the best option I had at the time," you say irritably. "Anyway, we don't have time to be messing around like this."
+          *goto Sienna_end 
+
+  #Regain my grip. I'm nimble enough to save Sienna once I'm in a better position.
+    *if agility > 40
+      *set Sienna %+20
+      By shifting to a section of rigging that offers proper footing, you regain your breath and a better vantage point to carry out a second rescue attempt. Unfortunately, Sienna's strength gives out before you can make your next move. With spectacular daring, you release your grip and plummet to meet Sienna as her trembling fingers pop open. You sweep the child into one arm and pull yourself to a halt using the rigging. 
+
+      Hand over hand, you somehow manage to climb the rigging while carrying Sienna. By the time you tumble clumsily over the railing, you're completely out of breath. 
+
+      "T-thanks..." Sienna sniffles and stares at her feet, finally noticing that one of her boots is missing. 
+
+      "No problem," you say. "Now get inside. I'm not rescuing you a second time."
+
+      Sienna nods and wipes the tears from her face before running below deck. 
+      *label Sienna_end
+      *set Lazulus %-20
+
+      You look around for Dr. Lazulus but he's nowhere to be seen. Meanwhile, nearly a quarter of the cargo fell overboard. The only saving grace is that the deckhands have managed to finally haul in the fluttering sails. 
+
+      "All right everyone, gather round! I need help securing what's left of our cargo," you tell the deckhands.
+      *goto securing_cargo
+
+    *else
+      By shifting to a section of rigging that offers proper footing, you regain your breath and a better vantage point to carry out a second rescue attempt. Unfortunately, Sienna's strength gives out before you can make your next move. Her trembling fingers pop open. With no way to reach her, you stare in horror as Sienna's body flails helplessly through the air, plummeting for the ground thousands of feet below. 
+      *label Ruby_helps
+      *set Sienna_injured true
+      *set Ruby %-10
+
+      Without warning, a three-pronged metal bolt shoots past you toward Sienna and plunges through her ankle. Sienna howls in pain as her rapid decent comes to a sudden jolting stop. She dangles from her ankle, suspended upside down at the end of the rope, with blood trickling down her leg from the wound. You look up and see a shadowy figure perched on the rail. 
+
+      "Pull her up, Cap'n. 'Fore she dies of blood loss." The voice belongs to quartermaster Ruby Reed. She's tying her end of the rope to the rail. Before you can thank Ruby, she hops down from the ledge and disappears from sight.
+
+      Meanwhile, Sienna swings back and forth below, limply, gently, like a pendulum. As you rush to the rail and begin hauling on the rope, you realize Sienna must have passed out from shock. You carefully lift Sienna's body over the rail and lower her to the deck. "Call the surgeon!" 
+
+      "Would have done so already but he's below deck refusing to come up," the boatswain answers. 
+
+      "Take her to him then," you say impatiently. "He'll walk the plank if Sienna dies."
+
+      The boatswain lifts Sienna off the ground and whisks her away. You haven't earned yourself a medal for your actions but at least the girl is alive. 
+      *goto Sienna_end
+
+  #Strain myself to save Sienna even if my body is injured in the process.	
+    *set agility %-7
+    *set health %-10
+    *set Sienna %+20
+    You stretch one hand out to Sienna as you struggle to maintain hold of the rigging. "Sienna! Grab hold!"
+
+    Sienna looks up in surprise. A moment later, she grabs your arm and latches on to you. You begin to haul her up even though the tendons in your arms are tearing from the overexertion. 
+
+    You draw Sienna closer to the rail, helping her climb the rigging. The pain sears into you like fire until you let out a howl of agony. After what seems like an eternity, you finally get Sienna over the rail to safety.
+
+    When Sienna gives you a grateful hug, you wince in pain, realizing that your arm will never be the same again. 
+
+    "Now get inside," you say. "I'm not rescuing you a second time."
+
+    Sienna nods and wipes the tears from her face before running below deck. 
+    *goto Sienna_end
+
+
+
+
+
+*label secure
+*comment must secure sail to prevent loss of cargo, then next scene "cargo" Ignore the petty argument between Dr. Lazulus and Ruby and just lower the sails.
+You shove past Ruby and Dr. Lazulus and ignore Sienna's cries for help, rushing to the quarterdeck where the sails are billowing in the wind. 
+
+When you bellow for order you hear shouts of exasperation mixed with sighs of relief. Deckhands who were vomiting all over the deck only moments ago, wipe their mouths and cast nervous eyes on you. 
+
+The former captain's inefficient tyranny has taken a toll on their finances and also their confidence. They gather before you with heads hung low, shoulders hunched, and hands dangling limply at their sides. Their tattered vestments drape over famished frames and boney appendages. Like scarecrows, they stand motionless, awaiting your words.
+*choice
+  #Appeal to their greed. Bribe them with rewards.
+    *set honest %-10
+    "Whoever gets these sails in order gets a promotion!" you tell them.
+ 
+    "That means a bigger share of the profit, aye? Count me in!" The deckhand shoves past the others, rolls up his sleeves, and takes hold of the sail.
+
+    Suddenly the other deckhands swarm around him, eagar for a cut of the reward.
+    *goto securing_sail
+
+  #Threaten to throw the useless laggards overboard if they don't get their act together. 
+    *set cautious %-10
+    "Enough bellyaching!" you say with an air of finality. "Every deckhand aboard this ship must be determined to fulfill my every command. Now start hauling in that sail before I throw you overboard!"
+
+    "So it's a dictatorship," someone growls. 
+
+    "Aye. Feel free to challenge me any time we're not in the middle of a mission if you have a problem with that," you say. 
+
+    The deckhands don't dare question you further, grabbing the sail without further complaint.
+    *goto securing_sail
+
+  #Delegate the work. Give each deckhand a suitable task.
+    *set responsible %+10
+    "No need to get overwhelmed. We'll simply break the situation down into manageable tasks," you say, pulling a few of the strongest deckhands forward. "You lot could move mountains! Just look at the muscle on those arms! What's stopping you from getting a few measley sails in order?"
+
+    "You're right, Captain. Leave it to us!" The deckhands shout as they rush to secure the sails. 
+    *goto securing_sail
+
+
+
+*label securing_sail
+*choice
+  #Help them force the sails into submission quickly. There's no time to waste!
+    *set cautious %-10
+    *if barbarism > 40
+      *set morale %+10
+      You position yourself next to the mast and haul the sail in with all your might. 
+
+      Inch by inch, you draw the sail toward you until the tendons in your arms begin to burn painfully, stretched beyond their usual capacity. Ignoring the pain, you seize the flapping sail with one hand and wrap it snugly against the mast.
+
+      "There! That's how it's done!" you say proudly as the deckhands cheer. 
+      *goto sienna_injured_transition2
+
+    *else
+      *set morale %-10
+      *label sail_failed
+      You station yourself next to the mast and tug at the flapping sail but the wet cloth keeps slipping through your fingers. You pull harder, gritting your teeth until the tendons in your arms burn painfully, stretched beyond their usual capacity. 
+      *label secure_sail_fail
+
+      In a gust of wind, the sail pulls from your fingers and unfurls. You curse under your breath.
+
+      "I knew it couldn't be done!" one of the deckhands wails. 
+
+      "We could have managed it if you bothered to help," you snap at him, glowering irritably. One look at your face and the deckhands finally manage to get the sail tied down.
+      *goto sienna_injured_transition2
+
+  #Show them a clever way to draw in the sail. Technique is important here.
+    *set pragmatic %+10
+    *if guile > 40
+      *set morale %+15
+      You carefully wrap the sail around the mast as you draw it in, inch by inch, using the wood to hold the fabric in place.
+
+      "There! That's how it's done!" you say proudly as the deckhands cheer. 
+      *goto sienna_injured_transition2
+
+    *else
+      *set morale %-15
+      *goto sail_failed
+
+  #Take the time to get everyone involved. That way they'll learn how it's done.
+    *set responsible %+10
+    *if diplomacy > 40
+      *set morale %+20
+      "Gather round and watch closely," you say, stationing yourself next to the mast and portioning sections of the sail out to different deckhands. "Draw it in using the hand-over-hand method. That's right. Just like that."
+
+      As the sail approaches, you seize the flapping corner and wrap it snuggly against the mast. "Ha! That wasn't so hard now, was it?" you say as the deckhands cheer proudly.
+      *label sienna_injured_transition2
+
+      Unfortunately there's no time for a breather. You hurry to the port-side rail and find a group of deckhands crouched around Sienna. From the look of it, someone fired a hook right through her leg to stop her from falling into the abyss below. It's a mercy the young girl lost consciousness while they were hauling her back up. 
+
+      "She's alive?" you ask, panting.
+
+      "Aye, Cap'n. She'll live." There's some hesitancy in the reply, which means Sienna's wounds must be serious.
+
+      Meanwhile, Dr. Lazulus is nowhere in sight. He's probably packing his bags so he can depart the moment the ship lands. The only saving grace is that you have successfully managed to prevent the cargo from falling overboard so far. 
+
+      "All right you laggards, I need your help securing the cargo!" you say.
+      *goto securing_cargo
+
+    *else
+      *set morale %-20
+      "Gather round and watch closely." You station yourself next to the mast and tug at the flapping sail with all your might. Frustratingly, the wet cloth keeps slipping through your fingers. You pull harder, gritting your teeth while the tendons in your arms burn painfully as they are stretched beyond their usual capacity. 
+      *goto secure_sail_fail
+
+
+
+
+*label sienna_injured_transition
+*comment The transition if Sienna is injured because you picked stopping Dr Lazulus or Securing Cargo.
+*page_break
+Unfortunately there's no time for a breather. You hurry to the rail and find a group of deckhands crouched around Sienna. From the look of it, someone fired a hook right through her leg to stop her from falling into the abyss below. It's a mercy the young girl lost consciousness while they were hauling her back up. 
+
+"She's alive?" you ask, panting.
+
+"Aye, Cap'n. She'll live." There's some hesitancy in the reply, which means Sienna's wounds must be serious.
+
+Meanwhile, the cargo remains in complete disarray, with nearly a quarter being lost to the void. The only saving grace is that the deckhands have managed to finally haul in the fluttering sails. 
+
+"All right you laggards, I need your help securing the cargo!" you say.
+*label securing_cargo
+*page_break
+Gathering the crates together should be a simple task, only it's not. You watch several crates glide dangerously across the deck as a handful of disorganized men and women chase after them. When the deckhands attempted to secure a stack of crates with rope and netting earlier the crates still slid around and, before long, broke free. 
+
+As you survey the situation, an elderly deckhand shambles up from the back of the group. Slater is short and feeble-looking. Wrinkles creep from the corners of his eyes to his temples, so deep they look like flaps of elephant skin. His breeches are pulled high on his waistline and a ridiculous furry hat with flaps covers his ears and head. 
+
+"Captain, might I make a suggestion?" 
+
+"Of course," you say. "What do you have in mind?"  
+
+"See those thick metal cylinders on either side of the deck? They're bollards. By threading the rope around the notches in the deck and then wrapping the rope around the bollards we can prevent the crates from sliding around," Slater explains. 
+
+You frown slightly. How did nobody notice the bollards until now? It's an amateur mistake. You wonder if it's possible to preserve a shred of credibility in front of your crew.
+*choice
+  #Act like it was a test and offer Slater a promotion.
+    *comment Act like you were testing the deckhands all along.
+    *if guile > 40
+      *set morale %+10
+      "Well done, Slater," you say, patting him on the back. "When I thought up this little test I didn't think anyone would actually rise to the challenge. The position of boatswain is yours."
+
+      Slater blinks in surprise. "Thank you, Captain. It is an honor, but..." 
+
+      "I insist. Our current boatswain clearly doesn't have a clue what he's doing," you say.
+
+      Slater shakes your hand with an uncomfortable smile. He doesn't quite believe you, but he will soon. 
+      *goto delegate_continued2
+
+    *else
+      "As a matter of fact, that whole thing was a test. I just wanted to see who deserved the position of operational manager-in-chief."
+
+      "Captain... no such position exists." Slater scratches his forehead and studies you with concern. "Are you all right?" 
+
+      You turn red in the face. Apparently making things up on a whim isn't really your thing. 
+      *goto delegate_continued2
+
+  #Admit inexperience and defer to Slater's superior knowledge.
+    *if diplomacy > 40
+      *set morale %+10
+      "Ever considered captaincy? Because right now I'm considering resigning," you tell Slater with a wry smile.
+
+      "It's not for me, Captain. I prefer the quiet life," Slater replies with a chuckle. "But I'll teach you all I know. Pyritos never once used the bollards. He'd blunder about then blame everyone else for his failures. No time to heed the words of an old man with experience under his belt. I'm just glad we finally have a captain who listens to reason."
+      *goto delegate_continued2
+
+    *else
+      "Suppose I should have known about the bollards," you mumble. 
+
+      "Not to worry. You'll learn these things in time," Slater assures you.
+      *goto delegate_continued2
+
+  #Scold Slater for withholding crucial information until now.
+    *if barbarism > 40
+      *set morale %+10
+      "At times like these, knowledgable people like you need to step up," you tell Slater.
+
+      "Sorry Captain... I didn't want to overstep my bounds," Slater admits sheepishly.
+
+      "You're aware of the situation Pyritos left us in. If the competent members of this crew don't take responsibility we'll never get back on track," you reply.
+
+      "I'll do better next time," Slater promises.
+      *goto delegate_continued2
+
+    *else
+      "Might I ask why you found it prudent to withhold such valuable information until now?" you ask.
+
+      "I've been telling them to use the bollards all along. Nobody would listen," Slater explains.
+
+      "So they ignored you? Even though you had a solution to the problem?"
+
+      "Ask them yourself," Slater says.
+
+      "It's true, Captain. The old man mentioned something about bollards but we were trying to fulfill your orders. Don't trust anything that ain't from the horse's mouth, y'know?"
+
+      Suddenly everyone is glaring at you like you're the guilty party. You flush irritably.
+      *goto delegate_continued2
+
+
+
+*label delegate_continued2 
+
+"In any case, we might actually be able to secure the cargo now," you say. "I'll help gather the crates in one place if you can teach the deckhands how to use the bollards."
+
+"Aye, Captain." Slater nods. The deckhands observe carefully, as ordered, when he moves to one of the bollards and demonstrates the process of correctly attaching the ropes, leaving you to head for the helm and consider your next move.
+*choice 
+  #At the risk of injuring the deckhands, I'll tilt the bow so the cargo gathers in one place.
+    *set barbarism %+10
+    "Brace yourselves!" You move to the ballast board and pull both levers back as far as they will go, tilting the airship upwards so the cargo slides back toward the cabin. 
+
+    Countless hands fling out, attempting to latch on to anything anchored down. Fingers curl around rigging, arms wrap around masts, and hands clutch at the airship's railing. The helmsman clings to you, desperately trying to pry your hands off the controls. "Captain please! Stop this madness! You've got to stabilize the ship before someone is crushed by the crates!"
+
+    *if cautious < 40
+      *label willpower
+      "If we give up now, we starve!" You shove the officer aside. Deckhands and crates tumble against the cabin wall at the back of the airship. You only return the levers to their neutral positions after all the cargo has accumulated in a pile.
+
+      The deckhands slide to the floor, groaning and injured but alive. With the crates piled against the cabin you can leave the rest to Slater.  
+      *goto PC_secured
+
+    *else
+      *label lackwillpower
+      *set cargo %-25 
+      "If we give up now, we starve!" You grit your teeth, trying to block out the terrified faces of the helmsmen. In that second, the controls slip from your grip. You fall backwards, arms flailing. Your back hits the floor and you slide backwards, headfirst, straight for the forecastle. 
+
+      The crates tumble beside you. A few crash over the rail while others smash into pieces after colliding against objects. You watch helplessly, unable to do anything to save them. 
+
+      Thankfully the helmsman manages to grab the levers and ease them into neutral position, slowing you to a halt seconds before you collide with the wooden paneling. The remaining crates are still spread across the deck, threatening to tip overboard. You wasted your time for nothing. Perhaps for now it's best to let Slater get on with his work.
+      *goto PC_secured
+
+  #I'll carefully navigate the dangerous updrafts to escape the turbulence.
+    *set aeronautics %+10
+    "Step aside," you tell the helmsman while moving behind the ballast board. "We'll never get the cargo secured until we escape the turbulence."
+
+    "But how?" the helmsman asks. "Everything we've tried has failed."
+
+    "Then we'll just have to navigate the updrafts." 
+
+    "Updrafts, eh?" The helmsman rubs his chin in thought. "Might be possible... but sail too high and the air thins out. The crew could get light-headed and faint. It's a dangerous call." 
+
+    "I'll keep that in mind."
+    *choice
+      #Watch the air readings closely while rising.
+        *if responsible > 60
+          *goto nudge
+
+        *else
+          *goto lacknudge
+
+      #Raise the ship quickly before people can panic.
+        *if cautious < 40
+          *goto nudge
+
+        *else
+          *goto lacknudge
+
+      #Adjust the controls carefully.  
+        *if cautious > 60
+          *label nudge
+          You draw the levers back with practiced motions and guide the airship upwards. Beside you, the officers work to keep the airship steady as the balloon swells and accelerates into the sky on one of the updrafts. 
+
+          With a few precise adjustments, you exit the updraft safely. The airship pierces the storm clouds, breaching clear skies at last. "How's the air quality?" you inquire while stabilizing the ballast.
+
+          "Should be safe to cruise along at our current altitude," the helmsman responds.
+
+          "Then I'll leave you to it," you say, relinquishing the controls and returning to the main deck. "All hands: secure the cargo!" It should be an easy task now.
+          *goto PC_secured
+
+        *else
+          *label lacknudge
+          *set cargo %-25
+          You pull both levers back as far as they will go, letting the balloon swell and rise into the sky, urging the ship higher, eager to leave the storm clouds behind. 
+
+          Suddenly your head starts spinning. Your grip tightens on the levers. The airship rises higher and higher until you realize that you've flown too high. The air becomes thinner, making it difficult to breathe. Beside you, the officer at the gas board sways dizzily and collapses from lack of oxygen. 
+
+          Terrified at the onset of dizziness, you shove the levers forward, lowering the airship beneath the clouds until you're once again enveloped in the storm. Several crates tumble overboard due to the jerky movements.
+
+          The crew is shaken and the remaining crates continue to slide across the deck. You wasted your time for nothing, though you have noted the dangers of sailing too high. Perhaps for now it's best to let Slater get on with his work.
+          *goto PC_secured
+
+  #I'm quick on my feet. I'll just run around and collect the crates.
+    *set agility %+10
+    *if pragmatic > 60
+      At first you stay near Slater, sliding one crate after the other to his assistants. Once everyone has a crate, you head further across the deck. It takes longer to secure a crate than it does to fetch one. 
+
+      Keeping this in mind, you move the crates closer to the deckhands, sliding them to whoever finishes next. 
+      *goto PC_secured
+
+    *else
+      *set cargo %-25
+      You head toward the furthest crates near the edge, fearing they might slide overboard. It takes time to slide them toward Slater's assistants since they're so far away. Most of the deckhands end up waiting around with nothing to do.
+
+      You then return to the crates that were initially close to the deckhands and find that most have slid further away. Some topple overboard before you can reach them. You let out a grunt of frustration.
+
+      By the time you get the remaining crates together it's hard to tell how many you've lost. You wasted your time for nothing. Perhaps for now it's best to let Slater get on with his work.
+      *goto PC_secured
+
+
+
+*label PC_secured
+
+*if Sienna_injured = true
+  *page_break
+  *set Sienna %-40
+  You decide to check on Sienna. She's unconscious with blood dripping down her leg as Ruby carries her to the forecastle. "Not now, Cap'n. She's in a terrible state." Ruby's face is shadowed by her hood, making her expression unreadable. "I think her leg might need to be amputated..."
+
+  "Maybe Dr. Lazulus can save it," you say hopefully.
+
+  "I wouldn't trust the man to tie his own boots, but we'll see I suppose," Ruby says, reaching for the knob.
+
+  "Hold up," you say. "It might be better if someone else took her below. The two of you aren't exactly on good terms."
+
+  Ruby responds with a reluctant look. It's the truth and everybody knows it. Carefully she transfers Sienna from her arms to the nearest deckhand. "Take her to the infirmary. Tell Dr. Lazulus I want her back on her feet by evening. He'll walk the plank if he refuses."
+
+  The deckhand nods and carries Sienna through the door. You're about to ask Ruby for help when the crate Slater is using for his demonstration slides from his grasp, collides with your leg and smashes open, spilling rotten cabbages across the deck.          
+  *goto cabbages
+
+*else
+  "Look out!" someone cries suddenly.
+
+  The crate Slater is using for his demonstration suddenly slides from his grasp, collides with your leg and smashes open, spilling rotten cabbages across the deck. 
+  *goto cabbages
+
+*label check_carg
+*if cargo < 21
+  *achieve underdog
+*return
+
+*label cabbages
+*gosub check_carg
+*choice
+  #"Our client's crates are full of... cabbages?"
+    *goto confusion
+
+  #"Well crew, looks like we're eating cabbages for the next month!"
+    *set cautious %-10 
+    *goto confusion
+
+  #I'll remain silent until I can better assess the situation.
+    *set cautious %+10
+    *goto confusion
+	
+*label confusion
+In a moment of confusion, the deckhands stare in awe at the cheap produce they put their lives on the line to ship safely across the continent. Then all their questions are answered as a beautiful, sparkling gem of exquisite turquoise color unfolds from the leaves and rolls across the deck.
+
+Ruby slams her foot down on the gem, leans over, and retrieves it from the floor, raising it to eye-level for inspection. "It's a geminai core. Highly refined. Fashioned into a jewel for the elite from the looks of it." Ruby purses her lips and looks at you expectantly.  
+
+When you stretch out your hand and take the sparkling orb from Ruby you're surprised at the intense warmth radiating from the surface and seeping into your fingers. The core is alive with steady rhythmic contractions pulsating within. Pulses that match your own heartbeats. 
+
+In Tethyr, geminai co-exist peacefully with humans. By outward appearance it's impossible to tell them apart. The geminai look the same as humans, but have cores instead of hearts. As far as you know, you've never met one, yet they could be members of your crew. They generally keep quiet about it since cutthroat killers occasionally go after them for their valuable cores. You wouldn't be flaunting it either if someone wanted to turn your insides into jewelry.
+
+In the neighboring country of Lyon, geminai cadavers belonged to the state. But in Tethyr the body of a geminai was considered sacred and given a proper burial, which can only mean one thing. "Our client is slaughtering geminai for profit." 
+
+"Exactly," says Ruby, lowering her voice. "This is the black market we're dealing with." 
+*choice
+  #"Not my scene... But neither is poverty."
+    *set responsible %+10
+    *set altruistic %-10
+    "So we say to heck with it and deliver the goods?" Ruby frowns. 
+	
+    "What's wrong with that?" you say. "We're smugglers. Transporting questionable goods is our job."
+	
+    "With all due respect, it doesn't feel right. Not when people are being murdered," says Ruby.
+    *goto endchapter	
+
+  #"Smugglers are hired to do questionable things. That's what we get paid for."
+    *set pragmatic %+10
+    *set altruistic %-10
+    Ruby quirks an eyebrow. "Quite the callous statement to make..."
+
+    You shrug. "Everyone needs to put bread on the table somehow. The alternative is starvation and poverty."
+ 
+    Ruby sighs heavily. "So what are we doing to do?"
+    *goto endchapter
+
+  #"It's too immoral. We can't let our clients get away with this."
+    *set altruistic %+10
+    *set pragmatic %-10
+    "But... if we don't deliver the cargo, we won't get paid. Then we'll have no money for food," Ruby points out.
+
+    "A minute ago it sounded like you were against this."
+
+    "I am against this, but I'm also concerned about everyone on board starving to death. So what are we going to do?"
+    *goto endchapter
+
+  #"I'm starting to reconsider this whole captaincy thing."
+    *set honest %+10
+    *set responsible %-10
+    "I'm assuming it's like everything else. Fake confidence," says Ruby. "That being said, I'd happily take this airship off your hands any time, Captain. Just give the word."
+
+    "Don't pack my luggage just yet," you say.
+
+    "So what are we going to do?"
+    *goto endchapter
+
+  #"Killing geminai is wrong, but I'm going to ignore this and pretend it never happened."
+    *set cautious %+10
+    *set responsible %-10
+    You kick the cabbage back into the crate and whistle. 
+
+    "Captain... you can't pretend that everyone didn't just see that," says Ruby.
+    *goto endchapter
+
+*label endchapter
+
+"Hmm..." You take a moment to consider how to proceed with the operation.
+*choice
+  #"Let's deliver the goods then report our client to the authorities anonymously."
+    *set cores_betray true
+    *set pragmatic %+10
+    *set cautious %+10
+    "Our client might be long gone by then. These people are professionals with a lot of capital on the line," says Ruby.
+    *goto end
+
+  #"We'll bring the geminai cores to the authorities. Maybe they'll even give us a reward."
+    *set olivier 1
+    *set cores_surrender true
+    *set cautious %-10
+    *set responsible %+10
+    "More likely the authorities will realize we're smugglers and arrest us. But we can try to play it smart I suppose," says Ruby.
+    *goto end
+
+  #"Betraying our client would be too risky. Let's proceed with the delivery and find better jobs in the future."
+    *set cores_give true
+    *set cautious %+10
+    *set altruistic %-10
+    "I was afraid it would come down to that," says Ruby. 
+    *goto end
+
+  #"Geminai cores are incredibly valuable. We'll make double the profit if we sell them ourselves."
+    *set olivier 1 
+    *set cores_keep true 
+    *set responsible %-10 
+    *set cautious %-10
+    "But our client will be furious," says Ruby. "A powerful woman like her makes a deadly enemy." 
+    *goto end
+
+*label end 
+
+"It's the best option we've got right now," you say, glancing at the crates containing the geminai cores.  
+
+Although you feel unsettled you try not to let it show on your face because the deckhands are watching.
+*finish Chapter Two: Stowaways
+
+

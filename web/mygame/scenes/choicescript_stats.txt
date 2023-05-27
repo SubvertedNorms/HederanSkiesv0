@@ -1,0 +1,84 @@
+*title Hederan Skies
+*author Subverted Norms
+
+*script chatGPT.php
+
+*scene_intro
+Welcome to Hederan Skies!
+
+*label chapter1
+You face a difficult choice...
+*choice
+  #Option 1
+    *set game_choice "Option 1"
+    ${get_custom_choices("Option 1")}
+    *goto chapter2
+  #Option 2
+
+*label captains
+[b]............The Captain's Ledger............[/b]
+*stat_chart
+  text name Name 
+  text Wealth
+  text Debt
+  percent Cargo
+  percent Health
+
+[b]................Skills & Talents.................[/b]
+*stat_chart
+  percent Diplomacy 
+  percent Barbarism Brute Force
+  percent Guile 
+  percent Agility
+  percent Thievery
+  percent Aeronautics
+
+[b]....................Personality....................[/b]
+*stat_chart
+  percent Humanity
+  percent Notoriety
+  percent Addiction
+  opposed_pair Cautious
+    Brazen
+  opposed_pair Responsible
+    Carefree
+  opposed_pair Pragmatic
+    Empathetic
+  opposed_pair Altruistic
+    Egoistic
+  opposed_pair Honest
+    Deceitful
+  opposed_pair Merciful
+    Vindictive
+
+*page_break Airship & Crew
+[b].................Airship Status..................[/b]
+*stat_chart
+  percent Ship_Health Ship Condition
+  percent Defense Armored Hull
+  percent Firepower Cannon Firepower
+  percent Speed Speed
+  percent Morale Crew Morale
+
+[b]....................Resources.....................[/b]
+*stat_chart
+  percent Relations Human-Geminai Relations
+  percent Research Geminai Core Research
+  percent Military Geminai Island Military
+  percent Authority Authority & Renown
+  percent Evidence Evidence against Volodeus
+ 
+[b]..................Relationships..................[/b]
+*stat_chart 
+  percent Ruby Ruby Reed
+  percent Flint Flint Moore 
+  percent Malikye Malikye Cavely 
+  percent Kaolin Kaolin Windrider
+  percent Sienna Sienna O'tsky
+  percent Lazulus Dr. Jasper Lazulus 
+  percent Karst Karst Broadwick 
+  percent Saphiria Dr. Saphiria Skye
+
+  
+*page_break Personal Details
+*goto captains
